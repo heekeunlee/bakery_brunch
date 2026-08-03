@@ -16,8 +16,12 @@ on:
         default: '7'
         type: string
 
+# 재사용 워크플로(deploy.yml)의 권한은 호출하는 쪽 권한을 상한으로 잘린다.
+# Pages 배포까지 이어가려면 여기서 pages/id-token 도 함께 열어줘야 한다.
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: collect
