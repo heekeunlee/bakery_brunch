@@ -1,0 +1,83 @@
+name: 매일 아침 자동 수집
+
+on:
+  schedule:
+    # GitHub cron 은 UTC 기준. 21:00 UTC = 다음날 06:00 KST.
+    - cron: '0 21 * * *'
+  workflow_dispatch:
+    inputs:
+      region:
+        description: '특정 지역만 수집 (예: 강릉시). 비우면 오늘의 순환 샤드를 처리합니다.'
+        required: false
+        type: string
+      shards:
+        description: '전국을 며칠에 나눠 돌지 (기본 7일)'
+        required: false
+        default: '7'
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 시크릿 확인
+        id: guard
+        run: |
+          if [ -z "${{ secrets.NAVER_CLIENT_ID }}" ] || [ -z "${{ secrets.KAKAO_REST_KEY }}" ]; then
+            echo "::warning::NAVER_CLIENT_ID / KAKAO_REST_KEY 시크릿이 없어 수집을 건너뜁니다."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 수집 실행
+        if: steps.guard.outputs.ok == 'true'
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          KAKAO_REST_KEY: ${{ secrets.KAKAO_REST_KEY }}
+        run: |
+          if [ -n "${{ inputs.region }}" ]; then
+            node scripts/run.mjs --region "${{ inputs.region }}"
+          else
+            node scripts/run.mjs --shard auto --shards "${{ inputs.shards || '7' }}"
+          fi
+
+      - name: 변경분 커밋
+        id: commit
+        if: steps.guard.outputs.ok == 'true'
+        run: |
+          if git diff --quiet -- public/data/places.json; then
+            echo "데이터 변경 없음."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          TOTAL=$(node -e "console.log(require('./public/data/places.json').count)")
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/places.json
+          git commit -m "데이터 자동 갱신: 총 ${TOTAL}곳 ($(date -u -d '+9 hours' '+%Y-%m-%d'))"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+  # 데이터가 실제로 바뀐 날에만 다시 배포한다.
+  deploy:
+    needs: collect
+    if: needs.collect.outputs.changed == 'true'
+    uses: ./.github/workflows/deploy.yml
+    secrets: inherit
