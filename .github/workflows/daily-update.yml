@@ -6,8 +6,17 @@ on:
     - cron: '0 21 * * *'
   workflow_dispatch:
     inputs:
+      mode:
+        description: '수집 범위'
+        required: false
+        default: 'shard'
+        type: choice
+        options:
+          - shard    # 오늘의 순환 샤드 (기본, 매일 자동 실행이 쓰는 방식)
+          - missing  # 아직 한 곳도 못 건진 지역만
+          - all      # 전국 전체
       region:
-        description: '특정 지역만 수집 (예: 강릉시). 비우면 오늘의 순환 샤드를 처리합니다.'
+        description: '특정 지역만 수집 (예: 강릉시). 입력하면 mode 보다 우선합니다.'
         required: false
         type: string
       shards:
@@ -30,6 +39,9 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
+    # 전국 일괄 수집은 3시간 안팎이 걸린다. 기본 6시간 제한 안에는 들지만
+    # 무한정 매달리지 않도록 명시해 둔다.
+    timeout-minutes: 330
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
     steps:
@@ -59,7 +71,11 @@ jobs:
           if [ -n "${{ inputs.region }}" ]; then
             node scripts/run.mjs --region "${{ inputs.region }}"
           else
-            node scripts/run.mjs --shard auto --shards "${{ inputs.shards || '7' }}"
+            case "${{ inputs.mode || 'shard' }}" in
+              all)     node scripts/run.mjs --all ;;
+              missing) node scripts/run.mjs --missing ;;
+              *)       node scripts/run.mjs --shard auto --shards "${{ inputs.shards || '7' }}" ;;
+            esac
           fi
 
       - name: 변경분 커밋

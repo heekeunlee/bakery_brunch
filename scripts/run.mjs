@@ -40,13 +40,22 @@ function parseArgs(argv) {
     else if (a === '--shard') args.shard = argv[++i];
     else if (a === '--shards') args.shards = Number(argv[++i]);
     else if (a === '--all') args.all = true;
+    else if (a === '--missing') args.missing = true;
     else if (a === '--limit') args.limit = Number(argv[++i]);
     else if (a === '--dry-run') args.dryRun = true;
   }
   return args;
 }
 
-function pickRegions(regions, args) {
+function pickRegions(regions, args, existing = []) {
+  // 아직 한 곳도 못 건진 지역만 고른다. 네트워크 문제로 통째로 실패한 지역을
+  // 다시 돌릴 때 쓴다 — 이미 성공한 지역을 헛돌지 않는다.
+  if (args.missing) {
+    const have = new Set(existing.map((p) => `${p.region.sido}/${p.region.sigungu}`));
+    const picked = regions.filter((r) => !have.has(`${r.sido}/${r.sigungu}`));
+    console.log(`미수집 지역 ${picked.length}개 / 전체 ${regions.length}개`);
+    return picked;
+  }
   if (args.region) {
     const hit = regions.filter(
       (r) => r.sigungu === args.region || r.sigungu.startsWith(args.region),
@@ -194,7 +203,6 @@ function merge(existing, fresh, processedRegions) {
 async function main() {
   const args = parseArgs(process.argv);
   const regions = JSON.parse(await readFile(REGIONS_PATH, 'utf8'));
-  const targets = pickRegions(regions, args);
 
   let existing = [];
   try {
@@ -203,6 +211,8 @@ async function main() {
   } catch {
     console.log('기존 places.json 없음 — 새로 만듭니다.');
   }
+
+  const targets = pickRegions(regions, args, existing);
 
   const fresh = [];
   for (const [i, region] of targets.entries()) {

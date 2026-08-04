@@ -5,7 +5,13 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 let lastCall = 0;
 const MIN_GAP_MS = 120; // 네이버/카카오 모두 초당 수~수십 콜을 허용하지만 여유 있게.
 
-export async function getJson(url, headers, { retries = 3 } = {}) {
+/**
+ * 네트워크가 몇 분씩 끊겨도 버티도록 넉넉하게 재시도한다.
+ * 전국 수집은 몇 시간짜리 무인 작업이라, 짧은 재시도로는 일시적인 단절 하나에
+ * 지역이 통째로 빈손이 된다. 실제로 이동 중 Wi-Fi가 바뀌면서 80개 지역 중
+ * 62개가 조용히 실패한 적이 있다.
+ */
+export async function getJson(url, headers, { retries = 6 } = {}) {
   for (let attempt = 0; attempt <= retries; attempt++) {
     const gap = Date.now() - lastCall;
     if (gap < MIN_GAP_MS) await sleep(MIN_GAP_MS - gap);
@@ -15,8 +21,10 @@ export async function getJson(url, headers, { retries = 3 } = {}) {
     try {
       res = await fetch(url, { headers });
     } catch (err) {
+      // fetch 자체가 던지는 경우 = DNS 실패나 연결 끊김. 회선이 돌아올 때까지
+      // 기다려야 하므로 최대 60초까지 물러선다.
       if (attempt === retries) throw err;
-      await sleep(500 * 2 ** attempt);
+      await sleep(Math.min(60_000, 1000 * 2 ** attempt));
       continue;
     }
 
