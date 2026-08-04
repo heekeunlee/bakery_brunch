@@ -1,14 +1,13 @@
 {
-  "generatedAt": "2026-08-04T05:02:06.581Z",
-  "count": 4506,
+  "generatedAt": "2026-08-04T22:26:36.455Z",
+  "count": 4520,
   "places": [
     {
       "id": "1369502695",
       "name": "좋은",
       "category": [
         "cafe",
-        "bakery",
-        "brunch"
+        "bakery"
       ],
       "lat": 37.6377262112243,
       "lng": 126.396748564905,
@@ -23,7 +22,7 @@
         "buzz": 1,
         "mine": null
       },
-      "mentions": 72,
+      "mentions": 75,
       "tags": [
         "브런치"
       ],
@@ -225,10 +224,9 @@
         "buzz": 0.78,
         "mine": null
       },
-      "mentions": 41,
+      "mentions": 36,
       "tags": [],
-      "hours": "08:00-22:00",
-      "closedDay": "연중무휴",
+      "closedDay": "및",
       "phone": "042-229-5302",
       "placeUrl": "http://place.map.kakao.com/17733090",
       "firstSeen": "2026-08-04",
@@ -659,7 +657,7 @@
         "buzz": 0.6,
         "mine": null
       },
-      "mentions": 76,
+      "mentions": 78,
       "tags": [
         "대형"
       ],
@@ -784,6 +782,37 @@
       "hours": "11:00-20:30",
       "phone": "1588-8069",
       "placeUrl": "http://place.map.kakao.com/1148545656",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "71795975",
+      "name": "카페 러블랑",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 36.258194762033,
+      "lng": 129.373786482777,
+      "address": "경북 포항시 북구 송라면 동해대로 3310",
+      "region": {
+        "sido": "경북",
+        "sigungu": "포항시"
+      },
+      "score": 88.3,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.53,
+        "mine": null
+      },
+      "mentions": 25,
+      "tags": [
+        "오션뷰"
+      ],
+      "hours": "09:00-21:30",
+      "phone": "054-261-3535",
+      "placeUrl": "http://place.map.kakao.com/71795975",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -1026,7 +1055,8 @@
       "id": "264907580",
       "name": "맛있는땅콩빵과계란빵",
       "category": [
-        "bakery"
+        "bakery",
+        "brunch"
       ],
       "lat": 35.2357656267795,
       "lng": 128.866263530727,
@@ -1041,7 +1071,7 @@
         "buzz": 0.49,
         "mine": null
       },
-      "mentions": 35,
+      "mentions": 34,
       "tags": [
         "대형",
         "브런치"
@@ -1420,7 +1450,7 @@
         "buzz": 0.43,
         "mine": null
       },
-      "mentions": 39,
+      "mentions": 41,
       "tags": [],
       "hours": "9:00~21:50",
       "phone": "031-252-0914",
@@ -1779,9 +1809,8 @@
         "buzz": 0.42,
         "mine": null
       },
-      "mentions": 44,
+      "mentions": 40,
       "tags": [],
-      "hours": "11:30-20:00",
       "phone": "054-240-3337",
       "placeUrl": "http://place.map.kakao.com/547378324",
       "firstSeen": "2026-08-04",
@@ -1807,7 +1836,7 @@
         "buzz": 0.42,
         "mine": null
       },
-      "mentions": 70,
+      "mentions": 67,
       "tags": [],
       "phone": "02-330-4998",
       "placeUrl": "http://place.map.kakao.com/7785544",
@@ -1925,7 +1954,7 @@
         "buzz": 0.41,
         "mine": null
       },
-      "mentions": 256,
+      "mentions": 255,
       "tags": [],
       "hours": "10:00~18:30",
       "phone": "1899-9504",
@@ -1981,7 +2010,7 @@
         "buzz": 0.41,
         "mine": null
       },
-      "mentions": 37,
+      "mentions": 35,
       "tags": [
         "대형",
         "브런치"
@@ -2796,6 +2825,36 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1762194175",
+      "name": "그레그커피",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 36.08419716050074,
+      "lng": 129.3950681107667,
+      "address": "경북 포항시 북구 장량로139번길 26",
+      "region": {
+        "sido": "경북",
+        "sigungu": "포항시"
+      },
+      "score": 83.8,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.35,
+        "mine": null
+      },
+      "mentions": 74,
+      "tags": [
+        "브런치"
+      ],
+      "hours": "08:30-21:30",
+      "placeUrl": "http://place.map.kakao.com/1762194175",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "2090519049",
       "name": "이진상회",
       "category": [
@@ -2846,7 +2905,7 @@
         "buzz": 0.34,
         "mine": null
       },
-      "mentions": 45,
+      "mentions": 41,
       "tags": [],
       "hours": "8시~22시",
       "phone": "02-3280-0876",
@@ -3189,7 +3248,7 @@
         "buzz": 0.33,
         "mine": null
       },
-      "mentions": 82,
+      "mentions": 88,
       "tags": [
         "야외석",
         "브런치"
@@ -3460,36 +3519,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1815462061",
-      "name": "모모스 영도 로스터리&커피바",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 35.09623373290051,
-      "lng": 129.0425657104812,
-      "address": "부산 영도구 봉래나루로 160",
-      "region": {
-        "sido": "부산",
-        "sigungu": "영도구"
-      },
-      "score": 82.7,
-      "scoreParts": {
-        "mention": 0.96,
-        "buzz": 0.42,
-        "mine": null
-      },
-      "mentions": 22,
-      "tags": [
-        "로스터리"
-      ],
-      "hours": "08:00-18:00",
-      "phone": "051-512-7036",
-      "placeUrl": "http://place.map.kakao.com/1815462061",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1193651904",
       "name": "가평달맞이빵",
       "category": [
@@ -3598,32 +3627,6 @@
       "hours": "9:00-21:30",
       "phone": "054-243-2330",
       "placeUrl": "http://place.map.kakao.com/1708862002",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "2051622843",
-      "name": "하루카페",
-      "category": [
-        "cafe"
-      ],
-      "lat": 35.8385187874684,
-      "lng": 128.553657789674,
-      "address": "대구 달서구 대명천로12길 6",
-      "region": {
-        "sido": "대구",
-        "sigungu": "달서구"
-      },
-      "score": 82.6,
-      "scoreParts": {
-        "mention": 0.85,
-        "buzz": 0.75,
-        "mine": null
-      },
-      "mentions": 15,
-      "tags": [],
-      "phone": "053-657-1352",
-      "placeUrl": "http://place.map.kakao.com/2051622843",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -3849,7 +3852,7 @@
         "buzz": 0.3,
         "mine": null
       },
-      "mentions": 28,
+      "mentions": 26,
       "tags": [
         "오션뷰",
         "대형"
@@ -4061,37 +4064,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "71795975",
-      "name": "카페 러블랑",
-      "category": [
-        "dessert",
-        "cafe",
-        "bakery"
-      ],
-      "lat": 36.258194762033,
-      "lng": 129.373786482777,
-      "address": "경북 포항시 북구 송라면 동해대로 3310",
-      "region": {
-        "sido": "경북",
-        "sigungu": "포항시"
-      },
-      "score": 82.2,
-      "scoreParts": {
-        "mention": 0.99,
-        "buzz": 0.32,
-        "mine": null
-      },
-      "mentions": 24,
-      "tags": [
-        "오션뷰"
-      ],
-      "hours": "09:00-21:30",
-      "phone": "054-261-3535",
-      "placeUrl": "http://place.map.kakao.com/71795975",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1226283549",
       "name": "골든트리",
       "category": [
@@ -4169,7 +4141,7 @@
         "buzz": 0.28,
         "mine": null
       },
-      "mentions": 31,
+      "mentions": 34,
       "tags": [
         "브런치"
       ],
@@ -4203,6 +4175,39 @@
       "closedDay": "매달",
       "phone": "055-883-8999",
       "placeUrl": "http://place.map.kakao.com/2137942989",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "73744433",
+      "name": "오구카페",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 35.0855848266713,
+      "lng": 129.034834034527,
+      "address": "부산 영도구 남항서로 52",
+      "region": {
+        "sido": "부산",
+        "sigungu": "영도구"
+      },
+      "score": 82,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.28,
+        "mine": null
+      },
+      "mentions": 26,
+      "tags": [
+        "오션뷰",
+        "애견동반",
+        "브런치"
+      ],
+      "hours": "09:00~22:00",
+      "phone": "051-414-5949",
+      "placeUrl": "http://place.map.kakao.com/73744433",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -4382,39 +4387,6 @@
       "closedDay": "두 번째 네 번째",
       "phone": "055-741-0520",
       "placeUrl": "http://place.map.kakao.com/15962922",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "73744433",
-      "name": "오구카페",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 35.0855848266713,
-      "lng": 129.034834034527,
-      "address": "부산 영도구 남항서로 52",
-      "region": {
-        "sido": "부산",
-        "sigungu": "영도구"
-      },
-      "score": 81.9,
-      "scoreParts": {
-        "mention": 1,
-        "buzz": 0.28,
-        "mine": null
-      },
-      "mentions": 26,
-      "tags": [
-        "오션뷰",
-        "애견동반",
-        "브런치"
-      ],
-      "hours": "09:00~22:00",
-      "phone": "051-414-5949",
-      "placeUrl": "http://place.map.kakao.com/73744433",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -4609,7 +4581,7 @@
         "buzz": 0.26,
         "mine": null
       },
-      "mentions": 45,
+      "mentions": 47,
       "tags": [
         "오션뷰",
         "브런치"
@@ -4791,7 +4763,7 @@
         "buzz": 0.26,
         "mine": null
       },
-      "mentions": 30,
+      "mentions": 29,
       "tags": [
         "오션뷰",
         "대형"
@@ -5000,6 +4972,37 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "681024760",
+      "name": "티라토레",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch",
+        "dessert"
+      ],
+      "lat": 37.715854142364115,
+      "lng": 127.22021240091308,
+      "address": "경기 남양주시 진접읍 경복대로가마솥골길 85",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 81.1,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.24,
+        "mine": null
+      },
+      "mentions": 38,
+      "tags": [
+        "대형",
+        "브런치"
+      ],
+      "placeUrl": "http://place.map.kakao.com/681024760",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "8512472",
       "name": "조훈모과자점 연향점",
       "category": [
@@ -5080,37 +5083,6 @@
       "tags": [],
       "phone": "02-3277-8501",
       "placeUrl": "http://place.map.kakao.com/735590501",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "681024760",
-      "name": "티라토레",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch",
-        "dessert"
-      ],
-      "lat": 37.715854142364115,
-      "lng": 127.22021240091308,
-      "address": "경기 남양주시 진접읍 경복대로가마솥골길 85",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 81,
-      "scoreParts": {
-        "mention": 1,
-        "buzz": 0.24,
-        "mine": null
-      },
-      "mentions": 27,
-      "tags": [
-        "대형",
-        "브런치"
-      ],
-      "placeUrl": "http://place.map.kakao.com/681024760",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -5544,6 +5516,36 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1815462061",
+      "name": "모모스 영도 로스터리&커피바",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 35.09623373290051,
+      "lng": 129.0425657104812,
+      "address": "부산 영도구 봉래나루로 160",
+      "region": {
+        "sido": "부산",
+        "sigungu": "영도구"
+      },
+      "score": 80.6,
+      "scoreParts": {
+        "mention": 0.93,
+        "buzz": 0.42,
+        "mine": null
+      },
+      "mentions": 20,
+      "tags": [
+        "로스터리"
+      ],
+      "hours": "08:00-18:00",
+      "phone": "051-512-7036",
+      "placeUrl": "http://place.map.kakao.com/1815462061",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "8743858",
       "name": "고모리691",
       "category": [
@@ -5627,36 +5629,6 @@
       "closedDay": ", 브레이크타임",
       "phone": "033-731-0324",
       "placeUrl": "http://place.map.kakao.com/791419070",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1762194175",
-      "name": "그레그커피",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 36.08419716050074,
-      "lng": 129.3950681107667,
-      "address": "경북 포항시 북구 장량로139번길 26",
-      "region": {
-        "sido": "경북",
-        "sigungu": "포항시"
-      },
-      "score": 80.6,
-      "scoreParts": {
-        "mention": 1,
-        "buzz": 0.22,
-        "mine": null
-      },
-      "mentions": 74,
-      "tags": [
-        "브런치"
-      ],
-      "hours": "08:30-21:30",
-      "placeUrl": "http://place.map.kakao.com/1762194175",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -5975,6 +5947,37 @@
       "hours": "10:00~19:00",
       "phone": "054-371-0365",
       "placeUrl": "http://place.map.kakao.com/1934181178",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "13095795",
+      "name": "그린홀리데이",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.6096054335317,
+      "lng": 126.480354477967,
+      "address": "인천 강화군 길상면 해안남로 814",
+      "region": {
+        "sido": "인천",
+        "sigungu": "강화군"
+      },
+      "score": 80.3,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.21,
+        "mine": null
+      },
+      "mentions": 25,
+      "tags": [
+        "브런치"
+      ],
+      "hours": "10:00~19:00",
+      "phone": "032-937-0506",
+      "placeUrl": "http://place.map.kakao.com/13095795",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -6837,7 +6840,7 @@
         "buzz": 0.19,
         "mine": null
       },
-      "mentions": 43,
+      "mentions": 41,
       "tags": [],
       "phone": "055-335-6610",
       "placeUrl": "http://place.map.kakao.com/1539009558",
@@ -6966,37 +6969,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "828439402",
-      "name": "하우스용암",
-      "category": [
-        "cafe",
-        "brunch"
-      ],
-      "lat": 37.7162739338084,
-      "lng": 127.128172010618,
-      "address": "경기 남양주시 별내면 용암도감말길 7-10",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 79.6,
-      "scoreParts": {
-        "mention": 0.96,
-        "buzz": 0.3,
-        "mine": null
-      },
-      "mentions": 22,
-      "tags": [
-        "대형",
-        "아이동반",
-        "브런치"
-      ],
-      "phone": "031-847-8285",
-      "placeUrl": "http://place.map.kakao.com/828439402",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "666626077",
       "name": "팡뮤제 베이커리",
       "category": [
@@ -7016,7 +6988,7 @@
         "buzz": 0.19,
         "mine": null
       },
-      "mentions": 107,
+      "mentions": 105,
       "tags": [
         "대형"
       ],
@@ -7047,7 +7019,7 @@
         "buzz": 0.18,
         "mine": null
       },
-      "mentions": 63,
+      "mentions": 61,
       "tags": [
         "오션뷰",
         "대형",
@@ -7107,6 +7079,34 @@
       "tags": [],
       "hours": "12:00-19:30",
       "placeUrl": "http://place.map.kakao.com/1796840517",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2051622843",
+      "name": "하루카페",
+      "category": [
+        "cafe"
+      ],
+      "lat": 35.8385187874684,
+      "lng": 128.553657789674,
+      "address": "대구 달서구 대명천로12길 6",
+      "region": {
+        "sido": "대구",
+        "sigungu": "달서구"
+      },
+      "score": 79.5,
+      "scoreParts": {
+        "mention": 0.81,
+        "buzz": 0.75,
+        "mine": null
+      },
+      "mentions": 13,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "053-657-1352",
+      "placeUrl": "http://place.map.kakao.com/2051622843",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -8379,7 +8379,7 @@
         "buzz": 0.14,
         "mine": null
       },
-      "mentions": 30,
+      "mentions": 25,
       "tags": [
         "대형"
       ],
@@ -8495,37 +8495,6 @@
       "hours": "11:00~02:00",
       "phone": "010-8402-9296",
       "placeUrl": "http://place.map.kakao.com/1367676987",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "13095795",
-      "name": "그린홀리데이",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.6096054335317,
-      "lng": 126.480354477967,
-      "address": "인천 강화군 길상면 해안남로 814",
-      "region": {
-        "sido": "인천",
-        "sigungu": "강화군"
-      },
-      "score": 78.5,
-      "scoreParts": {
-        "mention": 0.98,
-        "buzz": 0.21,
-        "mine": null
-      },
-      "mentions": 23,
-      "tags": [
-        "브런치"
-      ],
-      "hours": "10:00~19:00",
-      "phone": "032-937-0506",
-      "placeUrl": "http://place.map.kakao.com/13095795",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -8741,6 +8710,37 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "694542513",
+      "name": "카페드첼시",
+      "category": [
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.69154732372516,
+      "lng": 126.5768559362092,
+      "address": "경기 김포시 통진읍 김포대로2435번길 107-20",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 78.5,
+      "scoreParts": {
+        "mention": 0.87,
+        "buzz": 0.53,
+        "mine": null
+      },
+      "mentions": 16,
+      "tags": [
+        "대형",
+        "브런치"
+      ],
+      "hours": "10:00~21:00",
+      "phone": "031-988-4139",
+      "placeUrl": "http://place.map.kakao.com/694542513",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1617258132",
       "name": "테라스의아침",
       "category": [
@@ -8852,42 +8852,13 @@
         "buzz": 0.14,
         "mine": null
       },
-      "mentions": 37,
+      "mentions": 36,
       "tags": [
         "대형"
       ],
+      "hours": "10시~23시",
       "phone": "053-651-0303",
       "placeUrl": "http://place.map.kakao.com/710284157",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1696912972",
-      "name": "아덴플러스 가야점",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 35.280612896563994,
-      "lng": 128.88902607508993,
-      "address": "경남 김해시 생림면 인제로 620",
-      "region": {
-        "sido": "경남",
-        "sigungu": "김해시"
-      },
-      "score": 78.4,
-      "scoreParts": {
-        "mention": 1,
-        "buzz": 0.13,
-        "mine": null
-      },
-      "mentions": 25,
-      "tags": [
-        "대형",
-        "주차가능"
-      ],
-      "phone": "0507-1419-1336",
-      "placeUrl": "http://place.map.kakao.com/1696912972",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -8918,6 +8889,37 @@
       ],
       "hours": "11:00~22:30",
       "placeUrl": "http://place.map.kakao.com/990351635",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "908899026",
+      "name": "아트센트",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 35.093950912531,
+      "lng": 129.056165011653,
+      "address": "부산 영도구 하나길 807",
+      "region": {
+        "sido": "부산",
+        "sigungu": "영도구"
+      },
+      "score": 78.4,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.13,
+        "mine": null
+      },
+      "mentions": 31,
+      "tags": [
+        "대형",
+        "브런치"
+      ],
+      "hours": "10:00~21:00",
+      "phone": "0502-5552-7575",
+      "placeUrl": "http://place.map.kakao.com/908899026",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -9004,18 +9006,19 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "908899026",
-      "name": "아트센트",
+      "id": "1680214126",
+      "name": "라데아",
       "category": [
         "cafe",
+        "bakery",
         "brunch"
       ],
-      "lat": 35.093950912531,
-      "lng": 129.056165011653,
-      "address": "부산 영도구 하나길 807",
+      "lat": 37.6485038921679,
+      "lng": 126.641192778539,
+      "address": "경기 김포시 양촌읍 김포한강4로369번길 40",
       "region": {
-        "sido": "부산",
-        "sigungu": "영도구"
+        "sido": "경기",
+        "sigungu": "김포시"
       },
       "score": 78.3,
       "scoreParts": {
@@ -9023,14 +9026,13 @@
         "buzz": 0.13,
         "mine": null
       },
-      "mentions": 31,
+      "mentions": 34,
       "tags": [
         "대형",
         "브런치"
       ],
-      "hours": "10:00~21:00",
-      "phone": "0502-5552-7575",
-      "placeUrl": "http://place.map.kakao.com/908899026",
+      "phone": "031-984-2288",
+      "placeUrl": "http://place.map.kakao.com/1680214126",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -9208,6 +9210,64 @@
       ],
       "phone": "1668-2764",
       "placeUrl": "http://place.map.kakao.com/752977632",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "15594554",
+      "name": "구루몽",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.605807397258836,
+      "lng": 127.15585180336168,
+      "address": "경기 남양주시 경춘로 377",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 78.1,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.13,
+        "mine": null
+      },
+      "mentions": 26,
+      "tags": [],
+      "hours": "08:30-22:00",
+      "phone": "031-567-9997",
+      "placeUrl": "http://place.map.kakao.com/15594554",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1345869702",
+      "name": "가혜리카페",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.6510909767651,
+      "lng": 126.538661902546,
+      "address": "경기 김포시 대곶면 덕포진로103번길 84",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 78.1,
+      "scoreParts": {
+        "mention": 0.95,
+        "buzz": 0.28,
+        "mine": null
+      },
+      "mentions": 21,
+      "tags": [
+        "대형",
+        "브런치"
+      ],
+      "phone": "010-8938-3033",
+      "placeUrl": "http://place.map.kakao.com/1345869702",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -9630,13 +9690,43 @@
         "buzz": 0.11,
         "mine": null
       },
-      "mentions": 30,
+      "mentions": 32,
       "tags": [
         "브런치"
       ],
       "hours": "10:00-22:30",
       "phone": "055-339-0773",
       "placeUrl": "http://place.map.kakao.com/676158488",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "826410723",
+      "name": "메이르",
+      "category": [
+        "cafe",
+        "bakery",
+        "dessert"
+      ],
+      "lat": 37.6213173267994,
+      "lng": 127.345649038728,
+      "address": "경기 남양주시 화도읍 북한강로 1205",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 77.7,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.11,
+        "mine": null
+      },
+      "mentions": 41,
+      "tags": [
+        "물뷰"
+      ],
+      "phone": "031-559-1205",
+      "placeUrl": "http://place.map.kakao.com/826410723",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -9990,6 +10080,36 @@
       "hours": "08:00-22:30",
       "phone": "053-561-9999",
       "placeUrl": "http://place.map.kakao.com/1756757537",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1696912972",
+      "name": "아덴플러스 가야점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 35.280612896563994,
+      "lng": 128.88902607508993,
+      "address": "경남 김해시 생림면 인제로 620",
+      "region": {
+        "sido": "경남",
+        "sigungu": "김해시"
+      },
+      "score": 77.4,
+      "scoreParts": {
+        "mention": 0.99,
+        "buzz": 0.13,
+        "mine": null
+      },
+      "mentions": 24,
+      "tags": [
+        "대형",
+        "주차가능"
+      ],
+      "phone": "0507-1419-1336",
+      "placeUrl": "http://place.map.kakao.com/1696912972",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -11107,36 +11227,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "464239111",
-      "name": "헤이안",
-      "category": [
-        "dessert",
-        "cafe",
-        "bakery"
-      ],
-      "lat": 36.064494312161536,
-      "lng": 129.38740609216754,
-      "address": "경북 포항시 북구 해안로 219",
-      "region": {
-        "sido": "경북",
-        "sigungu": "포항시"
-      },
-      "score": 76.9,
-      "scoreParts": {
-        "mention": 0.92,
-        "buzz": 0.32,
-        "mine": null
-      },
-      "mentions": 19,
-      "tags": [
-        "오션뷰"
-      ],
-      "phone": "054-252-0200",
-      "placeUrl": "http://place.map.kakao.com/464239111",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1691227790",
       "name": "카페인더숲 2호점",
       "category": [
@@ -12164,6 +12254,38 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "828439402",
+      "name": "하우스용암",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.7162739338084,
+      "lng": 127.128172010618,
+      "address": "경기 남양주시 별내면 용암도감말길 7-10",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 76.4,
+      "scoreParts": {
+        "mention": 0.92,
+        "buzz": 0.3,
+        "mine": null
+      },
+      "mentions": 19,
+      "tags": [
+        "대형",
+        "아이동반",
+        "브런치"
+      ],
+      "phone": "031-847-8285",
+      "placeUrl": "http://place.map.kakao.com/828439402",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "807529743",
       "name": "알땅카페",
       "category": [
@@ -12393,33 +12515,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "15594554",
-      "name": "구루몽",
-      "category": [
-        "bakery"
-      ],
-      "lat": 37.605807397258836,
-      "lng": 127.15585180336168,
-      "address": "경기 남양주시 경춘로 377",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 76.3,
-      "scoreParts": {
-        "mention": 0.98,
-        "buzz": 0.12,
-        "mine": null
-      },
-      "mentions": 23,
-      "tags": [],
-      "hours": "08:30-22:00",
-      "phone": "031-567-9997",
-      "placeUrl": "http://place.map.kakao.com/15594554",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1030425187",
       "name": "어바웃네이처",
       "category": [
@@ -12503,35 +12598,6 @@
       "hours": "09:00-23:00",
       "phone": "061-243-3670",
       "placeUrl": "http://place.map.kakao.com/905945965",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "10973892",
-      "name": "베이콜로지 빵학개론 샹그리나점",
-      "category": [
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.6016632093068,
-      "lng": 126.789267872604,
-      "address": "경기 김포시 고촌읍 아라육로152번길 210-14",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 76.2,
-      "scoreParts": {
-        "mention": 0.92,
-        "buzz": 0.29,
-        "mine": null
-      },
-      "mentions": 19,
-      "tags": [
-        "브런치"
-      ],
-      "phone": "031-988-3834",
-      "placeUrl": "http://place.map.kakao.com/10973892",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -13036,37 +13102,6 @@
       "hours": "11:00-21:30",
       "phone": "02-549-3898",
       "placeUrl": "http://place.map.kakao.com/1291678947",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "826410723",
-      "name": "메이르",
-      "category": [
-        "cafe",
-        "bakery",
-        "dessert"
-      ],
-      "lat": 37.6213173267994,
-      "lng": 127.345649038728,
-      "address": "경기 남양주시 화도읍 북한강로 1205",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 75.8,
-      "scoreParts": {
-        "mention": 0.98,
-        "buzz": 0.11,
-        "mine": null
-      },
-      "mentions": 23,
-      "tags": [
-        "물뷰",
-        "대형"
-      ],
-      "phone": "031-559-1205",
-      "placeUrl": "http://place.map.kakao.com/826410723",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -13812,38 +13847,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1680214126",
-      "name": "라데아",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.6485038921679,
-      "lng": 126.641192778539,
-      "address": "경기 김포시 양촌읍 김포한강4로369번길 40",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 75.5,
-      "scoreParts": {
-        "mention": 0.96,
-        "buzz": 0.13,
-        "mine": null
-      },
-      "mentions": 22,
-      "tags": [
-        "대형",
-        "브런치"
-      ],
-      "hours": "10시~21시",
-      "phone": "031-984-2288",
-      "placeUrl": "http://place.map.kakao.com/1680214126",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1443665209",
       "name": "강릉샌드",
       "category": [
@@ -13984,6 +13987,38 @@
       "tags": [],
       "phone": "052-254-9897",
       "placeUrl": "http://place.map.kakao.com/1237666866",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1472390238",
+      "name": "리버나인",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.6525383050303,
+      "lng": 127.3702334191,
+      "address": "경기 남양주시 화도읍 북한강로 1630-18",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 75.5,
+      "scoreParts": {
+        "mention": 0.9,
+        "buzz": 0.31,
+        "mine": null
+      },
+      "mentions": 18,
+      "tags": [
+        "물뷰",
+        "대형",
+        "브런치"
+      ],
+      "phone": "010-3757-2805",
+      "placeUrl": "http://place.map.kakao.com/1472390238",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -14535,7 +14570,7 @@
         "buzz": 0,
         "mine": null
       },
-      "mentions": 91,
+      "mentions": 94,
       "tags": [
         "오션뷰"
       ],
@@ -15264,7 +15299,7 @@
         "buzz": 0,
         "mine": null
       },
-      "mentions": 28,
+      "mentions": 29,
       "tags": [
         "브런치"
       ],
@@ -15630,36 +15665,6 @@
       "hours": "10:00~20:00",
       "closedDay": "서울특별시 동작구",
       "placeUrl": "http://place.map.kakao.com/1368582114",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "616927338",
-      "name": "쁠랑떼",
-      "category": [
-        "cafe",
-        "brunch"
-      ],
-      "lat": 37.4841525588437,
-      "lng": 126.977646905211,
-      "address": "서울 동작구 사당로 271",
-      "region": {
-        "sido": "서울",
-        "sigungu": "동작구"
-      },
-      "score": 75,
-      "scoreParts": {
-        "mention": 1,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 25,
-      "tags": [
-        "브런치"
-      ],
-      "hours": "10:30~01:00",
-      "phone": "010-5103-2712",
-      "placeUrl": "http://place.map.kakao.com/616927338",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -16355,7 +16360,7 @@
         "buzz": 0,
         "mine": null
       },
-      "mentions": 31,
+      "mentions": 28,
       "tags": [],
       "phone": "010-4497-2710",
       "placeUrl": "http://place.map.kakao.com/1667469069",
@@ -17153,7 +17158,7 @@
         "buzz": 0,
         "mine": null
       },
-      "mentions": 41,
+      "mentions": 42,
       "tags": [
         "오션뷰",
         "대형"
@@ -17675,7 +17680,7 @@
         "buzz": 0,
         "mine": null
       },
-      "mentions": 60,
+      "mentions": 62,
       "tags": [],
       "hours": "10:00-21:00",
       "placeUrl": "http://place.map.kakao.com/699190475",
@@ -19566,7 +19571,7 @@
         "buzz": 0,
         "mine": null
       },
-      "mentions": 60,
+      "mentions": 57,
       "tags": [
         "오션뷰"
       ],
@@ -20042,7 +20047,7 @@
         "buzz": 0,
         "mine": null
       },
-      "mentions": 28,
+      "mentions": 27,
       "tags": [],
       "hours": "07:00~21:00",
       "phone": "010-6554-5420",
@@ -20768,7 +20773,7 @@
         "buzz": 0,
         "mine": null
       },
-      "mentions": 121,
+      "mentions": 116,
       "tags": [
         "대형"
       ],
@@ -20797,7 +20802,7 @@
         "buzz": 0,
         "mine": null
       },
-      "mentions": 27,
+      "mentions": 25,
       "tags": [],
       "closedDay": "주말에는",
       "placeUrl": "http://place.map.kakao.com/591646503",
@@ -21142,6 +21147,63 @@
       ],
       "hours": "10:00~18:00",
       "placeUrl": "http://place.map.kakao.com/1055250555",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1475876292",
+      "name": "나우커피 대청계곡점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 35.1876618527655,
+      "lng": 128.794008343278,
+      "address": "경남 김해시 계동로 140",
+      "region": {
+        "sido": "경남",
+        "sigungu": "김해시"
+      },
+      "score": 75,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 26,
+      "tags": [],
+      "hours": "09:00-22:00",
+      "placeUrl": "http://place.map.kakao.com/1475876292",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "91436097",
+      "name": "더닐라이",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.64286811427,
+      "lng": 126.614027763739,
+      "address": "경기 김포시 양촌읍 양촌역길 80",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 75,
+      "scoreParts": {
+        "mention": 0.96,
+        "buzz": 0.11,
+        "mine": null
+      },
+      "mentions": 22,
+      "tags": [
+        "대형",
+        "브런치"
+      ],
+      "placeUrl": "http://place.map.kakao.com/91436097",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -21645,6 +21707,36 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "616927338",
+      "name": "쁠랑떼",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.4841525588437,
+      "lng": 126.977646905211,
+      "address": "서울 동작구 사당로 271",
+      "region": {
+        "sido": "서울",
+        "sigungu": "동작구"
+      },
+      "score": 74.1,
+      "scoreParts": {
+        "mention": 0.99,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 24,
+      "tags": [
+        "브런치"
+      ],
+      "hours": "10:30~01:00",
+      "phone": "010-5103-2712",
+      "placeUrl": "http://place.map.kakao.com/616927338",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1206734414",
       "name": "카페온아",
       "category": [
@@ -21987,33 +22079,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1475876292",
-      "name": "나우커피 대청계곡점",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 35.1876618527655,
-      "lng": 128.794008343278,
-      "address": "경남 김해시 계동로 140",
-      "region": {
-        "sido": "경남",
-        "sigungu": "김해시"
-      },
-      "score": 74.1,
-      "scoreParts": {
-        "mention": 0.99,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 24,
-      "tags": [],
-      "hours": "09:00-22:00",
-      "placeUrl": "http://place.map.kakao.com/1475876292",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "222742020",
       "name": "썸머썸머",
       "category": [
@@ -22272,6 +22337,37 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "76833101",
+      "name": "아우로라",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 36.2531190555568,
+      "lng": 129.37290869656,
+      "address": "경북 포항시 북구 송라면 동해대로3218번길 58",
+      "region": {
+        "sido": "경북",
+        "sigungu": "포항시"
+      },
+      "score": 73.9,
+      "scoreParts": {
+        "mention": 0.96,
+        "buzz": 0.07,
+        "mine": null
+      },
+      "mentions": 22,
+      "tags": [
+        "오션뷰",
+        "대형"
+      ],
+      "hours": "09:00~21:00",
+      "closedDay": "연중무휴",
+      "placeUrl": "http://place.map.kakao.com/76833101",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "623245375",
       "name": "카페성연",
       "category": [
@@ -22464,38 +22560,6 @@
       ],
       "phone": "052-254-8100",
       "placeUrl": "http://place.map.kakao.com/447704710",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1472390238",
-      "name": "리버나인",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.6525383050303,
-      "lng": 127.3702334191,
-      "address": "경기 남양주시 화도읍 북한강로 1630-18",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 73.5,
-      "scoreParts": {
-        "mention": 0.9,
-        "buzz": 0.23,
-        "mine": null
-      },
-      "mentions": 18,
-      "tags": [
-        "물뷰",
-        "대형",
-        "브런치"
-      ],
-      "phone": "010-3757-2805",
-      "placeUrl": "http://place.map.kakao.com/1472390238",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -22696,37 +22760,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1699606425",
-      "name": "테이블스 라운지 북한강점",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.6581324951703,
-      "lng": 127.373086474817,
-      "address": "경기 남양주시 화도읍 북한강로 1694",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 73.3,
-      "scoreParts": {
-        "mention": 0.96,
-        "buzz": 0.04,
-        "mine": null
-      },
-      "mentions": 22,
-      "tags": [
-        "브런치"
-      ],
-      "hours": "9:00~21:30",
-      "phone": "0503-7153-0292",
-      "placeUrl": "http://place.map.kakao.com/1699606425",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "875177414",
       "name": "세컨드원 바이브 초월점",
       "category": [
@@ -22812,6 +22845,36 @@
       "closedDay": "일",
       "phone": "061-552-0300",
       "placeUrl": "http://place.map.kakao.com/1551445556",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "464239111",
+      "name": "헤이안",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 36.064494312161536,
+      "lng": 129.38740609216754,
+      "address": "경북 포항시 북구 해안로 219",
+      "region": {
+        "sido": "경북",
+        "sigungu": "포항시"
+      },
+      "score": 73.2,
+      "scoreParts": {
+        "mention": 0.87,
+        "buzz": 0.32,
+        "mine": null
+      },
+      "mentions": 16,
+      "tags": [
+        "오션뷰"
+      ],
+      "phone": "054-252-0200",
+      "placeUrl": "http://place.map.kakao.com/464239111",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -23368,6 +23431,37 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "714194124",
+      "name": "이모션",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.6336562792242,
+      "lng": 126.695557940595,
+      "address": "경기 김포시 김포대로 1135",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 73.2,
+      "scoreParts": {
+        "mention": 0.96,
+        "buzz": 0.04,
+        "mine": null
+      },
+      "mentions": 22,
+      "tags": [
+        "대형",
+        "브런치"
+      ],
+      "phone": "031-984-8497",
+      "placeUrl": "http://place.map.kakao.com/714194124",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "19561065",
       "name": "노아베이커리 압구정본점",
       "category": [
@@ -23627,36 +23721,6 @@
       "hours": "10:00~21:00",
       "phone": "031-673-4586",
       "placeUrl": "http://place.map.kakao.com/1870858217",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "91436097",
-      "name": "더닐라이",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.64286811427,
-      "lng": 126.614027763739,
-      "address": "경기 김포시 양촌읍 양촌역길 80",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 72.9,
-      "scoreParts": {
-        "mention": 0.93,
-        "buzz": 0.11,
-        "mine": null
-      },
-      "mentions": 20,
-      "tags": [
-        "대형",
-        "브런치"
-      ],
-      "placeUrl": "http://place.map.kakao.com/91436097",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -24051,6 +24115,36 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "2113299379",
+      "name": "리스보아",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 35.0796782123237,
+      "lng": 129.043958363205,
+      "address": "부산 영도구 절영로 198",
+      "region": {
+        "sido": "부산",
+        "sigungu": "영도구"
+      },
+      "score": 72.6,
+      "scoreParts": {
+        "mention": 0.92,
+        "buzz": 0.15,
+        "mine": null
+      },
+      "mentions": 19,
+      "tags": [
+        "오션뷰",
+        "브런치"
+      ],
+      "hours": "09:00-23:00",
+      "placeUrl": "http://place.map.kakao.com/2113299379",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "342876029",
       "name": "장자바다정원카페",
       "category": [
@@ -24073,37 +24167,6 @@
       "mentions": 19,
       "tags": [],
       "placeUrl": "http://place.map.kakao.com/342876029",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "694542513",
-      "name": "카페드첼시",
-      "category": [
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.69154732372516,
-      "lng": 126.5768559362092,
-      "address": "경기 김포시 통진읍 김포대로2435번길 107-20",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 72.5,
-      "scoreParts": {
-        "mention": 0.83,
-        "buzz": 0.41,
-        "mine": null
-      },
-      "mentions": 14,
-      "tags": [
-        "대형",
-        "브런치"
-      ],
-      "hours": "10:00~21:00",
-      "phone": "031-988-4139",
-      "placeUrl": "http://place.map.kakao.com/694542513",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -24584,37 +24647,6 @@
       "tags": [],
       "phone": "0502-5552-3958",
       "placeUrl": "http://place.map.kakao.com/253546998",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1345869702",
-      "name": "가혜리카페",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.6510909767651,
-      "lng": 126.538661902546,
-      "address": "경기 김포시 대곶면 덕포진로103번길 84",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 72.2,
-      "scoreParts": {
-        "mention": 0.87,
-        "buzz": 0.28,
-        "mine": null
-      },
-      "mentions": 16,
-      "tags": [
-        "대형",
-        "브런치"
-      ],
-      "phone": "010-8938-3033",
-      "placeUrl": "http://place.map.kakao.com/1345869702",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -25328,34 +25360,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "79965674",
-      "name": "스테이블모먼트 월배점",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 35.8188144038568,
-      "lng": 128.516243274011,
-      "address": "대구 달서구 조암남로32길 24",
-      "region": {
-        "sido": "대구",
-        "sigungu": "달서구"
-      },
-      "score": 71.9,
-      "scoreParts": {
-        "mention": 0.9,
-        "buzz": 0.16,
-        "mine": null
-      },
-      "mentions": 18,
-      "tags": [
-        "대형"
-      ],
-      "placeUrl": "http://place.map.kakao.com/79965674",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "780008377",
       "name": "카페베이스",
       "category": [
@@ -25438,37 +25442,6 @@
         "브런치"
       ],
       "placeUrl": "http://place.map.kakao.com/779868024",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "76833101",
-      "name": "아우로라",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 36.2531190555568,
-      "lng": 129.37290869656,
-      "address": "경북 포항시 북구 송라면 동해대로3218번길 58",
-      "region": {
-        "sido": "경북",
-        "sigungu": "포항시"
-      },
-      "score": 71.8,
-      "scoreParts": {
-        "mention": 0.93,
-        "buzz": 0.07,
-        "mine": null
-      },
-      "mentions": 20,
-      "tags": [
-        "오션뷰",
-        "대형"
-      ],
-      "hours": "09:00~21:00",
-      "closedDay": "연중무휴",
-      "placeUrl": "http://place.map.kakao.com/76833101",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -25922,36 +25895,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "2113299379",
-      "name": "리스보아",
-      "category": [
-        "cafe",
-        "brunch"
-      ],
-      "lat": 35.0796782123237,
-      "lng": 129.043958363205,
-      "address": "부산 영도구 절영로 198",
-      "region": {
-        "sido": "부산",
-        "sigungu": "영도구"
-      },
-      "score": 71.4,
-      "scoreParts": {
-        "mention": 0.9,
-        "buzz": 0.14,
-        "mine": null
-      },
-      "mentions": 18,
-      "tags": [
-        "오션뷰",
-        "브런치"
-      ],
-      "hours": "09:00-23:00",
-      "placeUrl": "http://place.map.kakao.com/2113299379",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "8237008",
       "name": "김영모과자점 도곡타워점",
       "category": [
@@ -26323,38 +26266,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1169568551",
-      "name": "카페앤드하리",
-      "category": [
-        "cafe",
-        "brunch"
-      ],
-      "lat": 37.591017794186506,
-      "lng": 126.51916403974239,
-      "address": "인천 강화군 길상면 동검길63번길 66",
-      "region": {
-        "sido": "인천",
-        "sigungu": "강화군"
-      },
-      "score": 71.2,
-      "scoreParts": {
-        "mention": 0.95,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 21,
-      "tags": [
-        "오션뷰",
-        "애견동반",
-        "브런치"
-      ],
-      "hours": "10:00~19:00",
-      "phone": "032-937-9765",
-      "placeUrl": "http://place.map.kakao.com/1169568551",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "2036811985",
       "name": "베럴어스",
       "category": [
@@ -26603,34 +26514,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1611508671",
-      "name": "오마이데이즈",
-      "category": [
-        "dessert",
-        "cafe",
-        "bakery"
-      ],
-      "lat": 35.8535377609493,
-      "lng": 128.492501996184,
-      "address": "대구 달서구 신당로 2",
-      "region": {
-        "sido": "대구",
-        "sigungu": "달서구"
-      },
-      "score": 71.2,
-      "scoreParts": {
-        "mention": 0.95,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 21,
-      "tags": [],
-      "hours": "07:00~21:00",
-      "placeUrl": "http://place.map.kakao.com/1611508671",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1410952159",
       "name": "라푀유 마린시티점",
       "category": [
@@ -26792,37 +26675,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "714194124",
-      "name": "이모션",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.6336562792242,
-      "lng": 126.695557940595,
-      "address": "경기 김포시 김포대로 1135",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 71.1,
-      "scoreParts": {
-        "mention": 0.93,
-        "buzz": 0.04,
-        "mine": null
-      },
-      "mentions": 20,
-      "tags": [
-        "대형",
-        "브런치"
-      ],
-      "phone": "031-984-8497",
-      "placeUrl": "http://place.map.kakao.com/714194124",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1690999103",
       "name": "여기오송",
       "category": [
@@ -26959,37 +26811,6 @@
       ],
       "phone": "010-7698-6444",
       "placeUrl": "http://place.map.kakao.com/1528526138",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "850275015",
-      "name": "라온숨",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.6161696839829,
-      "lng": 127.343909247131,
-      "address": "경기 남양주시 화도읍 북한강로 1146",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 71,
-      "scoreParts": {
-        "mention": 0.83,
-        "buzz": 0.35,
-        "mine": null
-      },
-      "mentions": 14,
-      "tags": [
-        "물뷰",
-        "브런치"
-      ],
-      "phone": "031-591-3433",
-      "placeUrl": "http://place.map.kakao.com/850275015",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -27395,6 +27216,34 @@
       "hours": "11:00~20:00",
       "phone": "0507-1302-1444",
       "placeUrl": "http://place.map.kakao.com/1543630466",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "79965674",
+      "name": "스테이블모먼트 월배점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 35.8188144038568,
+      "lng": 128.516243274011,
+      "address": "대구 달서구 조암남로32길 24",
+      "region": {
+        "sido": "대구",
+        "sigungu": "달서구"
+      },
+      "score": 70.7,
+      "scoreParts": {
+        "mention": 0.89,
+        "buzz": 0.16,
+        "mine": null
+      },
+      "mentions": 17,
+      "tags": [
+        "대형"
+      ],
+      "placeUrl": "http://place.map.kakao.com/79965674",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -28000,6 +27849,34 @@
       "tags": [],
       "phone": "070-8822-9212",
       "placeUrl": "http://place.map.kakao.com/28741599",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1611508671",
+      "name": "오마이데이즈",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 35.8535377609493,
+      "lng": 128.492501996184,
+      "address": "대구 달서구 신당로 2",
+      "region": {
+        "sido": "대구",
+        "sigungu": "달서구"
+      },
+      "score": 70.1,
+      "scoreParts": {
+        "mention": 0.93,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 20,
+      "tags": [],
+      "hours": "07:00~21:00",
+      "placeUrl": "http://place.map.kakao.com/1611508671",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -29084,35 +28961,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1877911730",
-      "name": "베이커리씨어터",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.6734388513583,
-      "lng": 127.376025228359,
-      "address": "경기 남양주시 화도읍 경춘로2696번길 4-15",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 69.6,
-      "scoreParts": {
-        "mention": 0.85,
-        "buzz": 0.23,
-        "mine": null
-      },
-      "mentions": 15,
-      "tags": [
-        "대형"
-      ],
-      "phone": "031-559-7488",
-      "placeUrl": "http://place.map.kakao.com/1877911730",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "14078905",
       "name": "바로구운빵",
       "category": [
@@ -29251,6 +29099,37 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "850275015",
+      "name": "라온숨",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.6161696839829,
+      "lng": 127.343909247131,
+      "address": "경기 남양주시 화도읍 북한강로 1146",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 69.4,
+      "scoreParts": {
+        "mention": 0.81,
+        "buzz": 0.35,
+        "mine": null
+      },
+      "mentions": 13,
+      "tags": [
+        "물뷰",
+        "브런치"
+      ],
+      "phone": "031-591-3433",
+      "placeUrl": "http://place.map.kakao.com/850275015",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "489544486",
       "name": "팥고당 타임빌라스 수원점",
       "category": [
@@ -29273,7 +29152,6 @@
       },
       "mentions": 10,
       "tags": [],
-      "hours": "10:30~22:00",
       "phone": "031-8066-1804",
       "placeUrl": "http://place.map.kakao.com/489544486",
       "firstSeen": "2026-08-04",
@@ -29562,6 +29440,37 @@
       ],
       "hours": "11:00~19:00",
       "placeUrl": "http://place.map.kakao.com/316034580",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1169568551",
+      "name": "카페앤드하리",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.591017794186506,
+      "lng": 126.51916403974239,
+      "address": "인천 강화군 길상면 동검길63번길 66",
+      "region": {
+        "sido": "인천",
+        "sigungu": "강화군"
+      },
+      "score": 69,
+      "scoreParts": {
+        "mention": 0.92,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 19,
+      "tags": [
+        "오션뷰",
+        "브런치"
+      ],
+      "hours": "10:00~19:00",
+      "phone": "032-937-9765",
+      "placeUrl": "http://place.map.kakao.com/1169568551",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -30395,6 +30304,37 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1699606425",
+      "name": "테이블스 라운지 북한강점",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.6581324951703,
+      "lng": 127.373086474817,
+      "address": "경기 남양주시 화도읍 북한강로 1694",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 68.9,
+      "scoreParts": {
+        "mention": 0.9,
+        "buzz": 0.05,
+        "mine": null
+      },
+      "mentions": 18,
+      "tags": [
+        "브런치"
+      ],
+      "hours": "9:00~21:30",
+      "phone": "0503-7153-0292",
+      "placeUrl": "http://place.map.kakao.com/1699606425",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "39192828",
       "name": "릴리베이커리",
       "category": [
@@ -30965,7 +30905,7 @@
       "score": 68.2,
       "scoreParts": {
         "mention": 0.89,
-        "buzz": 0.06,
+        "buzz": 0.07,
         "mine": null
       },
       "mentions": 17,
@@ -31002,6 +30942,33 @@
         "오션뷰"
       ],
       "placeUrl": "http://place.map.kakao.com/402325697",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1877911730",
+      "name": "베이커리씨어터",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.6734388513583,
+      "lng": 127.376025228359,
+      "address": "경기 남양주시 화도읍 경춘로2696번길 4-15",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 68.1,
+      "scoreParts": {
+        "mention": 0.83,
+        "buzz": 0.23,
+        "mine": null
+      },
+      "mentions": 14,
+      "tags": [],
+      "phone": "031-559-7488",
+      "placeUrl": "http://place.map.kakao.com/1877911730",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -31229,6 +31196,36 @@
         "야외석"
       ],
       "placeUrl": "http://place.map.kakao.com/313082909",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "697436185",
+      "name": "호호브레드&카페",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.64543587919668,
+      "lng": 126.62633344398229,
+      "address": "경기 김포시 김포한강9로76번길 87",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 67.9,
+      "scoreParts": {
+        "mention": 0.89,
+        "buzz": 0.06,
+        "mine": null
+      },
+      "mentions": 17,
+      "tags": [],
+      "hours": "08:00~23:00",
+      "closedDay": "경기도 김포시",
+      "phone": "070-7374-0499",
+      "placeUrl": "http://place.map.kakao.com/697436185",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -31973,6 +31970,65 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1925911031",
+      "name": "닐라이",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.7166800781971,
+      "lng": 126.537345886862,
+      "address": "경기 김포시 월곶면 김포대로 2857-15",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 67.8,
+      "scoreParts": {
+        "mention": 0.85,
+        "buzz": 0.16,
+        "mine": null
+      },
+      "mentions": 15,
+      "tags": [
+        "대형",
+        "브런치"
+      ],
+      "phone": "0507-1399-5779",
+      "placeUrl": "http://place.map.kakao.com/1925911031",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "992221886",
+      "name": "트라토리아베이커리카페",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.26258528063255,
+      "lng": 127.03584705022384,
+      "address": "경기 수원시 팔달구 효원로307번길 39",
+      "region": {
+        "sido": "경기",
+        "sigungu": "수원시"
+      },
+      "score": 67.8,
+      "scoreParts": {
+        "mention": 0.89,
+        "buzz": 0.05,
+        "mine": null
+      },
+      "mentions": 17,
+      "tags": [],
+      "hours": "11:00~23:00",
+      "phone": "031-225-7797",
+      "placeUrl": "http://place.map.kakao.com/992221886",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "817788119",
       "name": "그램",
       "category": [
@@ -32025,36 +32081,6 @@
       "hours": "09:00~20:00",
       "phone": "010-9960-8867",
       "placeUrl": "http://place.map.kakao.com/761446987",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1288766189",
-      "name": "솔몽베이커리",
-      "category": [
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.7138258496916,
-      "lng": 127.32477590132,
-      "address": "경기 남양주시 수동면 비룡로850번길 16",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 67.7,
-      "scoreParts": {
-        "mention": 0.76,
-        "buzz": 0.42,
-        "mine": null
-      },
-      "mentions": 11,
-      "tags": [
-        "대형",
-        "브런치"
-      ],
-      "phone": "070-7755-1474",
-      "placeUrl": "http://place.map.kakao.com/1288766189",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -33028,37 +33054,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1012506923",
-      "name": "카페대너리스 북한강지점",
-      "category": [
-        "cafe",
-        "brunch"
-      ],
-      "lat": 37.597502696792354,
-      "lng": 127.3390537905512,
-      "address": "경기 남양주시 조안면 북한강로 914",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 66.7,
-      "scoreParts": {
-        "mention": 0.74,
-        "buzz": 0.46,
-        "mine": null
-      },
-      "mentions": 10,
-      "tags": [
-        "물뷰",
-        "대형",
-        "브런치"
-      ],
-      "phone": "031-521-9700",
-      "placeUrl": "http://place.map.kakao.com/1012506923",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1319341879",
       "name": "유투베이커리카페",
       "category": [
@@ -33199,34 +33194,6 @@
       ],
       "phone": "031-335-4590",
       "placeUrl": "http://place.map.kakao.com/42583982",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1386651321",
-      "name": "하탐베이커리카페",
-      "category": [
-        "bakery"
-      ],
-      "lat": 37.54444551582958,
-      "lng": 127.248333547576,
-      "address": "경기 남양주시 와부읍 팔당로 155-6",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 66.6,
-      "scoreParts": {
-        "mention": 0.87,
-        "buzz": 0.06,
-        "mine": null
-      },
-      "mentions": 16,
-      "tags": [
-        "대형"
-      ],
-      "phone": "070-7007-7788",
-      "placeUrl": "http://place.map.kakao.com/1386651321",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -33744,34 +33711,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "21682295",
-      "name": "레베랑스과자점",
-      "category": [
-        "bakery"
-      ],
-      "lat": 35.242362528917326,
-      "lng": 128.90029188341202,
-      "address": "경남 김해시 활천로 195-5",
-      "region": {
-        "sido": "경남",
-        "sigungu": "김해시"
-      },
-      "score": 66.5,
-      "scoreParts": {
-        "mention": 0.89,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 17,
-      "tags": [],
-      "hours": "08:00~03:00",
-      "closedDay": "배달 가능, 포장가능",
-      "phone": "055-325-4119",
-      "placeUrl": "http://place.map.kakao.com/21682295",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1136116896",
       "name": "사랑해베이글 하단점",
       "category": [
@@ -33821,6 +33760,37 @@
       "tags": [],
       "phone": "051-710-0832",
       "placeUrl": "http://place.map.kakao.com/75060358",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2084348779",
+      "name": "타래퀸 중앙대점",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.5074262490431,
+      "lng": 126.959815278343,
+      "address": "서울 동작구 흑석로 93",
+      "region": {
+        "sido": "서울",
+        "sigungu": "동작구"
+      },
+      "score": 66.5,
+      "scoreParts": {
+        "mention": 0.89,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 17,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "070-7750-3639",
+      "placeUrl": "http://place.map.kakao.com/2084348779",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -33879,6 +33849,35 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "10973892",
+      "name": "베이콜로지 빵학개론 샹그리나점",
+      "category": [
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.6016632093068,
+      "lng": 126.789267872604,
+      "address": "경기 김포시 고촌읍 아라육로152번길 210-14",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 66.3,
+      "scoreParts": {
+        "mention": 0.79,
+        "buzz": 0.29,
+        "mine": null
+      },
+      "mentions": 12,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "031-988-3834",
+      "placeUrl": "http://place.map.kakao.com/10973892",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1692310130",
       "name": "라크루뜨 서울 본점",
       "category": [
@@ -33906,37 +33905,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1925911031",
-      "name": "닐라이",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.7166800781971,
-      "lng": 126.537345886862,
-      "address": "경기 김포시 월곶면 김포대로 2857-15",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 66.3,
-      "scoreParts": {
-        "mention": 0.83,
-        "buzz": 0.16,
-        "mine": null
-      },
-      "mentions": 14,
-      "tags": [
-        "대형",
-        "브런치"
-      ],
-      "phone": "0507-1399-5779",
-      "placeUrl": "http://place.map.kakao.com/1925911031",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "345909533",
       "name": "센트럴베이크샵",
       "category": [
@@ -33959,6 +33927,34 @@
       "tags": [],
       "hours": "10:00~22:00",
       "placeUrl": "http://place.map.kakao.com/345909533",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "320761634",
+      "name": "사계",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 35.228626853992964,
+      "lng": 128.87974305177514,
+      "address": "경남 김해시 김해대로2315번길 26-7",
+      "region": {
+        "sido": "경남",
+        "sigungu": "김해시"
+      },
+      "score": 66.3,
+      "scoreParts": {
+        "mention": 0.79,
+        "buzz": 0.29,
+        "mine": null
+      },
+      "mentions": 12,
+      "tags": [],
+      "phone": "010-2602-2261",
+      "placeUrl": "http://place.map.kakao.com/320761634",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -34252,6 +34248,38 @@
       "mentions": 13,
       "tags": [],
       "placeUrl": "http://place.map.kakao.com/19974595",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2068241305",
+      "name": "포븐",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 35.1856795461332,
+      "lng": 128.79014903146,
+      "address": "경남 김해시 대청계곡길 36",
+      "region": {
+        "sido": "경남",
+        "sigungu": "김해시"
+      },
+      "score": 66,
+      "scoreParts": {
+        "mention": 0.83,
+        "buzz": 0.15,
+        "mine": null
+      },
+      "mentions": 14,
+      "tags": [
+        "대형",
+        "주차가능"
+      ],
+      "hours": "09:00-22:00",
+      "phone": "055-324-6777",
+      "placeUrl": "http://place.map.kakao.com/2068241305",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -34912,6 +34940,34 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "21682295",
+      "name": "레베랑스과자점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 35.242362528917326,
+      "lng": 128.90029188341202,
+      "address": "경남 김해시 활천로 195-5",
+      "region": {
+        "sido": "경남",
+        "sigungu": "김해시"
+      },
+      "score": 65.2,
+      "scoreParts": {
+        "mention": 0.87,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 16,
+      "tags": [],
+      "hours": "08:00~03:00",
+      "closedDay": "배달 가능, 포장가능",
+      "phone": "055-325-4119",
+      "placeUrl": "http://place.map.kakao.com/21682295",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "27474497",
       "name": "르팡",
       "category": [
@@ -35019,37 +35075,6 @@
       "hours": "10:30~22:00",
       "phone": "02-2635-0615",
       "placeUrl": "http://place.map.kakao.com/27269058",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "2084348779",
-      "name": "타래퀸 중앙대점",
-      "category": [
-        "dessert",
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.5074262490431,
-      "lng": 126.959815278343,
-      "address": "서울 동작구 흑석로 93",
-      "region": {
-        "sido": "서울",
-        "sigungu": "동작구"
-      },
-      "score": 65.2,
-      "scoreParts": {
-        "mention": 0.87,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 16,
-      "tags": [
-        "브런치"
-      ],
-      "phone": "070-7750-3639",
-      "placeUrl": "http://place.map.kakao.com/2084348779",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -35254,36 +35279,6 @@
       "mentions": 16,
       "tags": [],
       "placeUrl": "http://place.map.kakao.com/222487424",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "697436185",
-      "name": "호호브레드&카페",
-      "category": [
-        "dessert",
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.64543587919668,
-      "lng": 126.62633344398229,
-      "address": "경기 김포시 김포한강9로76번길 87",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 65.2,
-      "scoreParts": {
-        "mention": 0.85,
-        "buzz": 0.06,
-        "mine": null
-      },
-      "mentions": 15,
-      "tags": [],
-      "hours": "08:00~23:00",
-      "closedDay": "경기도 김포시",
-      "phone": "070-7374-0499",
-      "placeUrl": "http://place.map.kakao.com/697436185",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -36019,6 +36014,35 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "679726610",
+      "name": "메타포레스트",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.6305955405334,
+      "lng": 126.514410565055,
+      "address": "인천 강화군 길상면 길상로95번길 68-46",
+      "region": {
+        "sido": "인천",
+        "sigungu": "강화군"
+      },
+      "score": 65.2,
+      "scoreParts": {
+        "mention": 0.81,
+        "buzz": 0.18,
+        "mine": null
+      },
+      "mentions": 13,
+      "tags": [
+        "산뷰",
+        "애견동반"
+      ],
+      "placeUrl": "http://place.map.kakao.com/679726610",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1928040143",
       "name": "홍철책빵",
       "category": [
@@ -36043,34 +36067,6 @@
       "tags": [],
       "phone": "070-4252-3377",
       "placeUrl": "http://place.map.kakao.com/1928040143",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "992221886",
-      "name": "트라토리아베이커리카페",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.26258528063255,
-      "lng": 127.03584705022384,
-      "address": "경기 수원시 팔달구 효원로307번길 39",
-      "region": {
-        "sido": "경기",
-        "sigungu": "수원시"
-      },
-      "score": 65.1,
-      "scoreParts": {
-        "mention": 0.85,
-        "buzz": 0.05,
-        "mine": null
-      },
-      "mentions": 15,
-      "tags": [],
-      "hours": "11:00~23:00",
-      "phone": "031-225-7797",
-      "placeUrl": "http://place.map.kakao.com/992221886",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -36153,6 +36149,32 @@
       ],
       "phone": "0507-1418-7864",
       "placeUrl": "http://place.map.kakao.com/785412429",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1342763826",
+      "name": "쟝블랑제리 이수역점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.4843739447142,
+      "lng": 126.981326008921,
+      "address": "서울 동작구 동작대로23길 8",
+      "region": {
+        "sido": "서울",
+        "sigungu": "동작구"
+      },
+      "score": 65.1,
+      "scoreParts": {
+        "mention": 0.83,
+        "buzz": 0.11,
+        "mine": null
+      },
+      "mentions": 14,
+      "tags": [],
+      "hours": "10:00-21:00",
+      "placeUrl": "http://place.map.kakao.com/1342763826",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -36726,66 +36748,6 @@
       "hours": "10:00~22:00",
       "phone": "0502-5552-8940",
       "placeUrl": "http://place.map.kakao.com/1806773091",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "320761634",
-      "name": "사계",
-      "category": [
-        "dessert",
-        "cafe",
-        "bakery"
-      ],
-      "lat": 35.228626853992964,
-      "lng": 128.87974305177514,
-      "address": "경남 김해시 김해대로2315번길 26-7",
-      "region": {
-        "sido": "경남",
-        "sigungu": "김해시"
-      },
-      "score": 64.4,
-      "scoreParts": {
-        "mention": 0.76,
-        "buzz": 0.29,
-        "mine": null
-      },
-      "mentions": 11,
-      "tags": [],
-      "phone": "010-2602-2261",
-      "placeUrl": "http://place.map.kakao.com/320761634",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "2068241305",
-      "name": "포븐",
-      "category": [
-        "dessert",
-        "cafe",
-        "bakery"
-      ],
-      "lat": 35.1856795461332,
-      "lng": 128.79014903146,
-      "address": "경남 김해시 대청계곡길 36",
-      "region": {
-        "sido": "경남",
-        "sigungu": "김해시"
-      },
-      "score": 64.4,
-      "scoreParts": {
-        "mention": 0.81,
-        "buzz": 0.15,
-        "mine": null
-      },
-      "mentions": 13,
-      "tags": [
-        "대형",
-        "주차가능"
-      ],
-      "hours": "09:00-22:00",
-      "phone": "055-324-6777",
-      "placeUrl": "http://place.map.kakao.com/2068241305",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -38570,6 +38532,35 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "2063709640",
+      "name": "글로우베이글",
+      "category": [
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.4977568319061,
+      "lng": 126.925046446669,
+      "address": "서울 동작구 여의대방로22길 92",
+      "region": {
+        "sido": "서울",
+        "sigungu": "동작구"
+      },
+      "score": 63.8,
+      "scoreParts": {
+        "mention": 0.85,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 15,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "010-2790-6539",
+      "placeUrl": "http://place.map.kakao.com/2063709640",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "515225316",
       "name": "한재",
       "category": [
@@ -38809,28 +38800,32 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1342763826",
-      "name": "쟝블랑제리 이수역점",
+      "id": "1288766189",
+      "name": "솔몽베이커리",
       "category": [
-        "bakery"
+        "bakery",
+        "brunch"
       ],
-      "lat": 37.4843739447142,
-      "lng": 126.981326008921,
-      "address": "서울 동작구 동작대로23길 8",
+      "lat": 37.7138258496916,
+      "lng": 127.32477590132,
+      "address": "경기 남양주시 수동면 비룡로850번길 16",
       "region": {
-        "sido": "서울",
-        "sigungu": "동작구"
+        "sido": "경기",
+        "sigungu": "남양주시"
       },
       "score": 63.5,
       "scoreParts": {
-        "mention": 0.81,
-        "buzz": 0.11,
+        "mention": 0.71,
+        "buzz": 0.42,
         "mine": null
       },
-      "mentions": 13,
-      "tags": [],
-      "hours": "10:00-21:00",
-      "placeUrl": "http://place.map.kakao.com/1342763826",
+      "mentions": 9,
+      "tags": [
+        "대형",
+        "브런치"
+      ],
+      "phone": "070-7755-1474",
+      "placeUrl": "http://place.map.kakao.com/1288766189",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -39762,6 +39757,37 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "305323988",
+      "name": "키스톤 스피시즈",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.636560879941705,
+      "lng": 127.22547982828894,
+      "address": "경기 남양주시 경춘로 1104-2",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 62.4,
+      "scoreParts": {
+        "mention": 0.71,
+        "buzz": 0.38,
+        "mine": null
+      },
+      "mentions": 9,
+      "tags": [
+        "산뷰",
+        "대형",
+        "야외석"
+      ],
+      "phone": "070-8887-1104",
+      "placeUrl": "http://place.map.kakao.com/305323988",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1254228746",
       "name": "수잔나의앞치마",
       "category": [
@@ -39992,60 +40018,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "2063709640",
-      "name": "글로우베이글",
-      "category": [
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.4977568319061,
-      "lng": 126.925046446669,
-      "address": "서울 동작구 여의대방로22길 92",
-      "region": {
-        "sido": "서울",
-        "sigungu": "동작구"
-      },
-      "score": 62.3,
-      "scoreParts": {
-        "mention": 0.83,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 14,
-      "tags": [
-        "브런치"
-      ],
-      "phone": "010-2790-6539",
-      "placeUrl": "http://place.map.kakao.com/2063709640",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "18771379",
-      "name": "흑석동프랑세즈",
-      "category": [
-        "bakery"
-      ],
-      "lat": 37.5079367465831,
-      "lng": 126.964264421125,
-      "address": "서울 동작구 현충로 96",
-      "region": {
-        "sido": "서울",
-        "sigungu": "동작구"
-      },
-      "score": 62.3,
-      "scoreParts": {
-        "mention": 0.83,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 14,
-      "tags": [],
-      "placeUrl": "http://place.map.kakao.com/18771379",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "297508565",
       "name": "사생활 신림점",
       "category": [
@@ -40190,34 +40162,6 @@
       ],
       "phone": "010-5911-3287",
       "placeUrl": "http://place.map.kakao.com/672486651",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "140539224",
-      "name": "더베이커스가든 화도본점",
-      "category": [
-        "dessert",
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.6689259835974,
-      "lng": 127.298823613618,
-      "address": "경기 남양주시 화도읍 묵현로 178",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 62.3,
-      "scoreParts": {
-        "mention": 0.81,
-        "buzz": 0.06,
-        "mine": null
-      },
-      "mentions": 13,
-      "tags": [],
-      "phone": "031-559-6313",
-      "placeUrl": "http://place.map.kakao.com/140539224",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -41106,34 +41050,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "2019416655",
-      "name": "보밀당",
-      "category": [
-        "bakery"
-      ],
-      "lat": 35.80903267284,
-      "lng": 128.520137343358,
-      "address": "대구 달서구 상화로7길 38",
-      "region": {
-        "sido": "대구",
-        "sigungu": "달서구"
-      },
-      "score": 62.3,
-      "scoreParts": {
-        "mention": 0.83,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 14,
-      "tags": [
-        "주차가능"
-      ],
-      "hours": "10시~20시",
-      "placeUrl": "http://place.map.kakao.com/2019416655",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1625071514",
       "name": "무무베이커리카페",
       "category": [
@@ -41341,6 +41257,35 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1386651321",
+      "name": "하탐베이커리카페",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.54444551582958,
+      "lng": 127.248333547576,
+      "address": "경기 남양주시 와부읍 팔당로 155-6",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 62.2,
+      "scoreParts": {
+        "mention": 0.81,
+        "buzz": 0.06,
+        "mine": null
+      },
+      "mentions": 13,
+      "tags": [
+        "대형",
+        "주차가능"
+      ],
+      "phone": "070-7007-7788",
+      "placeUrl": "http://place.map.kakao.com/1386651321",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1521740987",
       "name": "이노",
       "category": [
@@ -41457,6 +41402,37 @@
       ],
       "phone": "064-731-7310",
       "placeUrl": "http://place.map.kakao.com/1619094267",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1012506923",
+      "name": "카페대너리스 북한강지점",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.597502696792354,
+      "lng": 127.3390537905512,
+      "address": "경기 남양주시 조안면 북한강로 914",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 62.1,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 0.46,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [
+        "물뷰",
+        "대형",
+        "브런치"
+      ],
+      "phone": "031-521-9700",
+      "placeUrl": "http://place.map.kakao.com/1012506923",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -42136,36 +42112,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1983641242",
-      "name": "더브라운 광교교보엘포트점",
-      "category": [
-        "dessert",
-        "cafe",
-        "brunch"
-      ],
-      "lat": 37.28704438302025,
-      "lng": 127.05773380004543,
-      "address": "경기 수원시 영통구 광교중앙로 145",
-      "region": {
-        "sido": "경기",
-        "sigungu": "수원시"
-      },
-      "score": 61.5,
-      "scoreParts": {
-        "mention": 0.76,
-        "buzz": 0.17,
-        "mine": null
-      },
-      "mentions": 11,
-      "tags": [
-        "브런치"
-      ],
-      "phone": "031-217-1806",
-      "placeUrl": "http://place.map.kakao.com/1983641242",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "25711395",
       "name": "리버레인",
       "category": [
@@ -42429,6 +42375,38 @@
       "closedDay": "연중무휴",
       "phone": "051-921-2019",
       "placeUrl": "http://place.map.kakao.com/811889551",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "731936638",
+      "name": "언캐니",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.636976309704146,
+      "lng": 126.54563531780833,
+      "address": "경기 김포시 대곶면 대명항로 726-23",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 61.3,
+      "scoreParts": {
+        "mention": 0.81,
+        "buzz": 0.02,
+        "mine": null
+      },
+      "mentions": 13,
+      "tags": [
+        "오션뷰",
+        "대형",
+        "브런치"
+      ],
+      "phone": "010-7372-9274",
+      "placeUrl": "http://place.map.kakao.com/731936638",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -42866,6 +42844,59 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "18771379",
+      "name": "흑석동프랑세즈",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.5079367465831,
+      "lng": 126.964264421125,
+      "address": "서울 동작구 현충로 96",
+      "region": {
+        "sido": "서울",
+        "sigungu": "동작구"
+      },
+      "score": 60.7,
+      "scoreParts": {
+        "mention": 0.81,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 13,
+      "tags": [],
+      "placeUrl": "http://place.map.kakao.com/18771379",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2019416655",
+      "name": "보밀당",
+      "category": [
+        "bakery"
+      ],
+      "lat": 35.80903267284,
+      "lng": 128.520137343358,
+      "address": "대구 달서구 상화로7길 38",
+      "region": {
+        "sido": "대구",
+        "sigungu": "달서구"
+      },
+      "score": 60.7,
+      "scoreParts": {
+        "mention": 0.81,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 13,
+      "tags": [
+        "주차가능"
+      ],
+      "hours": "10시~20시",
+      "placeUrl": "http://place.map.kakao.com/2019416655",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "26817378",
       "name": "컴컴베이커리카페",
       "category": [
@@ -42950,36 +42981,6 @@
       ],
       "phone": "02-332-7811",
       "placeUrl": "http://place.map.kakao.com/262409927",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1829849240",
-      "name": "카바르나프라하",
-      "category": [
-        "cafe",
-        "brunch",
-        "dessert"
-      ],
-      "lat": 37.56814741873,
-      "lng": 126.932326693435,
-      "address": "서울 서대문구 연희로16길 7-9",
-      "region": {
-        "sido": "서울",
-        "sigungu": "서대문구"
-      },
-      "score": 60.7,
-      "scoreParts": {
-        "mention": 0.81,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 13,
-      "tags": [
-        "브런치"
-      ],
-      "phone": "0503-7152-6320",
-      "placeUrl": "http://place.map.kakao.com/1829849240",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -44172,6 +44173,93 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1382624826",
+      "name": "디아즈 인계점",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.26420489710372,
+      "lng": 127.03435068281169,
+      "address": "경기 수원시 팔달구 인계로166번길 48-7",
+      "region": {
+        "sido": "경기",
+        "sigungu": "수원시"
+      },
+      "score": 60.7,
+      "scoreParts": {
+        "mention": 0.74,
+        "buzz": 0.22,
+        "mine": null
+      },
+      "mentions": 10,
+      "tags": [],
+      "hours": "10:30-20:00",
+      "phone": "031-235-0712",
+      "placeUrl": "http://place.map.kakao.com/1382624826",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "809187735",
+      "name": "소보심 덕소점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.5829204560759,
+      "lng": 127.209917349687,
+      "address": "경기 남양주시 와부읍 덕소로2번길 90",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 60.7,
+      "scoreParts": {
+        "mention": 0.81,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 13,
+      "tags": [
+        "물뷰"
+      ],
+      "hours": "8:30~22:00",
+      "phone": "070-8830-7000",
+      "placeUrl": "http://place.map.kakao.com/809187735",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "140539224",
+      "name": "더베이커스가든 화도본점",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.6689259835974,
+      "lng": 127.298823613618,
+      "address": "경기 남양주시 화도읍 묵현로 178",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 60.6,
+      "scoreParts": {
+        "mention": 0.79,
+        "buzz": 0.06,
+        "mine": null
+      },
+      "mentions": 12,
+      "tags": [],
+      "phone": "031-559-6313",
+      "placeUrl": "http://place.map.kakao.com/140539224",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "727987184",
       "name": "가위바위보",
       "category": [
@@ -44471,7 +44559,7 @@
         "buzz": 0.62,
         "mine": null
       },
-      "mentions": 45,
+      "mentions": 46,
       "tags": [
         "브런치"
       ],
@@ -44586,13 +44674,42 @@
         "buzz": 0.61,
         "mine": null
       },
-      "mentions": 23,
+      "mentions": 24,
       "tags": [
         "오션뷰",
         "브런치"
       ],
       "hours": "9:00-21:30",
       "placeUrl": "http://place.map.kakao.com/1644707744",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1480344344",
+      "name": "곰소리11",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 35.59095755477869,
+      "lng": 126.60301115466497,
+      "address": "전북특별자치도 부안군 진서면 청자로 884",
+      "region": {
+        "sido": "전북",
+        "sigungu": "부안군"
+      },
+      "score": 60,
+      "scoreParts": {
+        "mention": 0.76,
+        "buzz": 0.11,
+        "mine": null
+      },
+      "mentions": 11,
+      "tags": [
+        "아이동반"
+      ],
+      "phone": "0507-1340-2654",
+      "placeUrl": "http://place.map.kakao.com/1480344344",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -44624,35 +44741,6 @@
       ],
       "phone": "02-456-3218",
       "placeUrl": "http://place.map.kakao.com/2056994766",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1480344344",
-      "name": "곰소리11",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 35.59095755477869,
-      "lng": 126.60301115466497,
-      "address": "전북특별자치도 부안군 진서면 청자로 884",
-      "region": {
-        "sido": "전북",
-        "sigungu": "부안군"
-      },
-      "score": 59.9,
-      "scoreParts": {
-        "mention": 0.76,
-        "buzz": 0.11,
-        "mine": null
-      },
-      "mentions": 11,
-      "tags": [
-        "아이동반"
-      ],
-      "phone": "0507-1340-2654",
-      "placeUrl": "http://place.map.kakao.com/1480344344",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -45081,6 +45169,32 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "267845778",
+      "name": "더머커피",
+      "category": [
+        "cafe"
+      ],
+      "lat": 37.4975107025576,
+      "lng": 126.927689508821,
+      "address": "서울 동작구 보라매로 91",
+      "region": {
+        "sido": "서울",
+        "sigungu": "동작구"
+      },
+      "score": 59.7,
+      "scoreParts": {
+        "mention": 0.74,
+        "buzz": 0.18,
+        "mine": null
+      },
+      "mentions": 10,
+      "tags": [],
+      "phone": "02-3280-1203",
+      "placeUrl": "http://place.map.kakao.com/267845778",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1417428495",
       "name": "루체",
       "category": [
@@ -45196,6 +45310,37 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1555483809",
+      "name": "신기커피 영도",
+      "category": [
+        "cafe",
+        "brunch",
+        "dessert"
+      ],
+      "lat": 35.0868520105981,
+      "lng": 129.060273492947,
+      "address": "부산 영도구 와치로 65",
+      "region": {
+        "sido": "부산",
+        "sigungu": "영도구"
+      },
+      "score": 59.6,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 0.36,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [
+        "산뷰",
+        "브런치"
+      ],
+      "phone": "051-414-7774",
+      "placeUrl": "http://place.map.kakao.com/1555483809",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "454460196",
       "name": "코유",
       "category": [
@@ -45252,37 +45397,6 @@
         "브런치"
       ],
       "placeUrl": "http://place.map.kakao.com/1871495771",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "771419463",
-      "name": "포지티브스페이스566",
-      "category": [
-        "dessert",
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.62024663956504,
-      "lng": 126.69789391011473,
-      "address": "경기 김포시 검단로 910",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 59.5,
-      "scoreParts": {
-        "mention": 0.67,
-        "buzz": 0.36,
-        "mine": null
-      },
-      "mentions": 8,
-      "tags": [
-        "대형"
-      ],
-      "hours": "10:00-22:00",
-      "phone": "02-333-0008",
-      "placeUrl": "http://place.map.kakao.com/771419463",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -45686,35 +45800,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1421621289",
-      "name": "고요",
-      "category": [
-        "cafe",
-        "brunch"
-      ],
-      "lat": 35.8111302603403,
-      "lng": 128.531661105124,
-      "address": "대구 달서구 상화로35안길 27",
-      "region": {
-        "sido": "대구",
-        "sigungu": "달서구"
-      },
-      "score": 59.3,
-      "scoreParts": {
-        "mention": 0.64,
-        "buzz": 0.46,
-        "mine": null
-      },
-      "mentions": 7,
-      "tags": [
-        "브런치"
-      ],
-      "closedDay": "유동적",
-      "placeUrl": "http://place.map.kakao.com/1421621289",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1986704897",
       "name": "보물섬유자빵",
       "category": [
@@ -45908,6 +45993,37 @@
       "tags": [],
       "phone": "0502-5553-6310",
       "placeUrl": "http://place.map.kakao.com/334017250",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1154869084",
+      "name": "닉센",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.65000376380951,
+      "lng": 127.10505022419201,
+      "address": "경기 남양주시 불암산로59번길 16-15",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 59.1,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0.45,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [
+        "대형",
+        "브런치"
+      ],
+      "phone": "031-571-8583",
+      "placeUrl": "http://place.map.kakao.com/1154869084",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -48185,6 +48301,33 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "565997743",
+      "name": "하얀풍차제과 곡반점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.2417329195648,
+      "lng": 127.034160157769,
+      "address": "경기 수원시 권선구 곡반정로 160",
+      "region": {
+        "sido": "경기",
+        "sigungu": "수원시"
+      },
+      "score": 59,
+      "scoreParts": {
+        "mention": 0.79,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 12,
+      "tags": [],
+      "hours": "07:30~23:00",
+      "phone": "0507-1327-3738",
+      "placeUrl": "http://place.map.kakao.com/565997743",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1786457619",
       "name": "윤숲과자점",
       "category": [
@@ -48630,35 +48773,6 @@
       "tags": [],
       "phone": "02-567-9501",
       "placeUrl": "http://place.map.kakao.com/27480112",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1382624826",
-      "name": "디아즈 인계점",
-      "category": [
-        "dessert",
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.26420489710372,
-      "lng": 127.03435068281169,
-      "address": "경기 수원시 팔달구 인계로166번길 48-7",
-      "region": {
-        "sido": "경기",
-        "sigungu": "수원시"
-      },
-      "score": 58.5,
-      "scoreParts": {
-        "mention": 0.71,
-        "buzz": 0.22,
-        "mine": null
-      },
-      "mentions": 9,
-      "tags": [],
-      "hours": "10:30-20:00",
-      "phone": "031-235-0712",
-      "placeUrl": "http://place.map.kakao.com/1382624826",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -49565,6 +49679,36 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "615627710",
+      "name": "카페 파도",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 35.97678980092526,
+      "lng": 129.55145887824582,
+      "address": "경북 포항시 남구 구룡포읍 하정로172번길 2",
+      "region": {
+        "sido": "경북",
+        "sigungu": "포항시"
+      },
+      "score": 57.8,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.83,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "오션뷰",
+        "브런치"
+      ],
+      "phone": "054-281-3118",
+      "placeUrl": "http://place.map.kakao.com/615627710",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "27561268",
       "name": "곤지암리조트 카페라운지",
       "category": [
@@ -49679,34 +49823,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "40840195",
-      "name": "변산제빵소",
-      "category": [
-        "bakery"
-      ],
-      "lat": 35.6784829706713,
-      "lng": 126.530424504992,
-      "address": "전북특별자치도 부안군 변산면 변산로 2104",
-      "region": {
-        "sido": "전북",
-        "sigungu": "부안군"
-      },
-      "score": 57.5,
-      "scoreParts": {
-        "mention": 0.67,
-        "buzz": 0.28,
-        "mine": null
-      },
-      "mentions": 8,
-      "tags": [
-        "오션뷰"
-      ],
-      "phone": "063-582-7249",
-      "placeUrl": "http://place.map.kakao.com/40840195",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1841391165",
       "name": "산호",
       "category": [
@@ -49817,35 +49933,6 @@
       ],
       "phone": "010-8174-7286",
       "placeUrl": "http://place.map.kakao.com/200699641",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "679726610",
-      "name": "메타포레스트",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.6305955405334,
-      "lng": 126.514410565055,
-      "address": "인천 강화군 길상면 길상로95번길 68-46",
-      "region": {
-        "sido": "인천",
-        "sigungu": "강화군"
-      },
-      "score": 57.5,
-      "scoreParts": {
-        "mention": 0.71,
-        "buzz": 0.18,
-        "mine": null
-      },
-      "mentions": 9,
-      "tags": [
-        "산뷰",
-        "애견동반"
-      ],
-      "placeUrl": "http://place.map.kakao.com/679726610",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -50128,6 +50215,36 @@
       "hours": "10:00~20:00",
       "phone": "051-743-6778",
       "placeUrl": "http://place.map.kakao.com/930661152",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1829849240",
+      "name": "카바르나프라하",
+      "category": [
+        "cafe",
+        "brunch",
+        "dessert"
+      ],
+      "lat": 37.56814741873,
+      "lng": 126.932326693435,
+      "address": "서울 서대문구 연희로16길 7-9",
+      "region": {
+        "sido": "서울",
+        "sigungu": "서대문구"
+      },
+      "score": 57.2,
+      "scoreParts": {
+        "mention": 0.76,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 11,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "0503-7152-6320",
+      "placeUrl": "http://place.map.kakao.com/1829849240",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -50555,33 +50672,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "565997743",
-      "name": "하얀풍차제과 곡반점",
-      "category": [
-        "bakery"
-      ],
-      "lat": 37.2417329195648,
-      "lng": 127.034160157769,
-      "address": "경기 수원시 권선구 곡반정로 160",
-      "region": {
-        "sido": "경기",
-        "sigungu": "수원시"
-      },
-      "score": 57.2,
-      "scoreParts": {
-        "mention": 0.76,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 11,
-      "tags": [],
-      "hours": "07:30~23:00",
-      "phone": "0507-1327-3738",
-      "placeUrl": "http://place.map.kakao.com/565997743",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "406804886",
       "name": "김성민커피",
       "category": [
@@ -50804,36 +50894,6 @@
       "hours": "09:00-21:30",
       "phone": "0503-7150-9680",
       "placeUrl": "http://place.map.kakao.com/1908925537",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1706742795",
-      "name": "우리동네식빵&베이글",
-      "category": [
-        "bakery",
-        "brunch",
-        "dessert"
-      ],
-      "lat": 37.628071272926,
-      "lng": 126.701983476953,
-      "address": "경기 김포시 봉화로 180",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 57.2,
-      "scoreParts": {
-        "mention": 0.76,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 11,
-      "tags": [
-        "브런치"
-      ],
-      "hours": "11:00~20:00",
-      "placeUrl": "http://place.map.kakao.com/1706742795",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -52176,6 +52236,64 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "226492906",
+      "name": "초대카페 대명항점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.6409924610359,
+      "lng": 126.541802775696,
+      "address": "경기 김포시 대곶면 대명항1로92번길 60",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 57.2,
+      "scoreParts": {
+        "mention": 0.76,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 11,
+      "tags": [
+        "대형"
+      ],
+      "placeUrl": "http://place.map.kakao.com/226492906",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1626850530",
+      "name": "카페옥순",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.7437971791707,
+      "lng": 126.569667164864,
+      "address": "경기 김포시 월곶면 용강로250번길 180",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 57.2,
+      "scoreParts": {
+        "mention": 0.76,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 11,
+      "tags": [
+        "대형"
+      ],
+      "hours": "10:00-19:00",
+      "phone": "031-989-5747",
+      "placeUrl": "http://place.map.kakao.com/1626850530",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "21392992",
       "name": "빵이가득한집",
       "category": [
@@ -52255,11 +52373,10 @@
         "buzz": 0.49,
         "mine": null
       },
-      "mentions": 43,
+      "mentions": 33,
       "tags": [
         "브런치"
       ],
-      "hours": "10:00~21:00",
       "phone": "031-985-6672",
       "placeUrl": "http://place.map.kakao.com/115796887",
       "firstSeen": "2026-08-04",
@@ -52321,32 +52438,6 @@
       ],
       "phone": "0502-5553-5801",
       "placeUrl": "http://place.map.kakao.com/856310029",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1225080796",
-      "name": "수원의아침 영통본점",
-      "category": [
-        "bakery"
-      ],
-      "lat": 37.25586596459381,
-      "lng": 127.0734563622185,
-      "address": "경기 수원시 영통구 매영로345번길 95",
-      "region": {
-        "sido": "경기",
-        "sigungu": "수원시"
-      },
-      "score": 57,
-      "scoreParts": {
-        "mention": 0.49,
-        "buzz": 0.8,
-        "mine": null
-      },
-      "mentions": 4,
-      "tags": [],
-      "phone": "031-273-9885",
-      "placeUrl": "http://place.map.kakao.com/1225080796",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -52684,37 +52775,6 @@
       "hours": "10:00-20:30",
       "phone": "070-8824-5421",
       "placeUrl": "http://place.map.kakao.com/1674812807",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1555483809",
-      "name": "신기커피 영도",
-      "category": [
-        "cafe",
-        "brunch",
-        "dessert"
-      ],
-      "lat": 35.0868520105981,
-      "lng": 129.060273492947,
-      "address": "부산 영도구 와치로 65",
-      "region": {
-        "sido": "부산",
-        "sigungu": "영도구"
-      },
-      "score": 56.9,
-      "scoreParts": {
-        "mention": 0.64,
-        "buzz": 0.36,
-        "mine": null
-      },
-      "mentions": 7,
-      "tags": [
-        "산뷰",
-        "브런치"
-      ],
-      "phone": "051-414-7774",
-      "placeUrl": "http://place.map.kakao.com/1555483809",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -53237,6 +53297,35 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1421621289",
+      "name": "고요",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 35.8111302603403,
+      "lng": 128.531661105124,
+      "address": "대구 달서구 상화로35안길 27",
+      "region": {
+        "sido": "대구",
+        "sigungu": "달서구"
+      },
+      "score": 56.3,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.46,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [
+        "브런치"
+      ],
+      "closedDay": "유동적",
+      "placeUrl": "http://place.map.kakao.com/1421621289",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1395566126",
       "name": "커피파는집",
       "category": [
@@ -53573,37 +53662,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1154869084",
-      "name": "닉센",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.65000376380951,
-      "lng": 127.10505022419201,
-      "address": "경기 남양주시 불암산로59번길 16-15",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 56.1,
-      "scoreParts": {
-        "mention": 0.6,
-        "buzz": 0.45,
-        "mine": null
-      },
-      "mentions": 6,
-      "tags": [
-        "대형",
-        "브런치"
-      ],
-      "phone": "031-571-8583",
-      "placeUrl": "http://place.map.kakao.com/1154869084",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "2023436936",
       "name": "카페진리",
       "category": [
@@ -53915,6 +53973,39 @@
       "hours": "10:00~22:00",
       "phone": "010-8678-9239",
       "placeUrl": "http://place.map.kakao.com/2145919074",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1697210810",
+      "name": "슬로칠보하우스",
+      "category": [
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.2622982889834,
+      "lng": 126.940606496731,
+      "address": "경기 수원시 권선구 칠보로88번길 189",
+      "region": {
+        "sido": "경기",
+        "sigungu": "수원시"
+      },
+      "score": 55.9,
+      "scoreParts": {
+        "mention": 0.74,
+        "buzz": 0.03,
+        "mine": null
+      },
+      "mentions": 10,
+      "tags": [
+        "대형",
+        "주차가능",
+        "야외석",
+        "브런치"
+      ],
+      "hours": "09:00~20:00",
+      "phone": "070-8885-1100",
+      "placeUrl": "http://place.map.kakao.com/1697210810",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -54430,6 +54521,36 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1450567423",
+      "name": "카페풍무",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.60391408867722,
+      "lng": 126.71327087986685,
+      "address": "경기 김포시 서로3로 283",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 55.5,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0.57,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [
+        "대형"
+      ],
+      "hours": "10:00~21:00",
+      "phone": "010-6277-2795",
+      "placeUrl": "http://place.map.kakao.com/1450567423",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1389218551",
       "name": "아침에",
       "category": [
@@ -54479,36 +54600,6 @@
       "tags": [],
       "phone": "1668-2764",
       "placeUrl": "http://place.map.kakao.com/21604864",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "2066972976",
-      "name": "수풀사이",
-      "category": [
-        "cafe",
-        "brunch"
-      ],
-      "lat": 37.63667092376149,
-      "lng": 127.30235611673172,
-      "address": "경기 남양주시 화도읍 수레로 1105-19",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 55.3,
-      "scoreParts": {
-        "mention": 0.67,
-        "buzz": 0.19,
-        "mine": null
-      },
-      "mentions": 8,
-      "tags": [
-        "애견동반",
-        "브런치"
-      ],
-      "phone": "070-4224-4842",
-      "placeUrl": "http://place.map.kakao.com/2066972976",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -54633,6 +54724,36 @@
       "hours": "10:00~22:00",
       "phone": "053-793-3645",
       "placeUrl": "http://place.map.kakao.com/612222488",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1706742795",
+      "name": "우리동네식빵&베이글",
+      "category": [
+        "bakery",
+        "brunch",
+        "dessert"
+      ],
+      "lat": 37.628071272926,
+      "lng": 126.701983476953,
+      "address": "경기 김포시 봉화로 180",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 55.2,
+      "scoreParts": {
+        "mention": 0.74,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 10,
+      "tags": [
+        "브런치"
+      ],
+      "hours": "11:00~20:00",
+      "placeUrl": "http://place.map.kakao.com/1706742795",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -55417,36 +55538,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "809187735",
-      "name": "소보심 덕소점",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.5829204560759,
-      "lng": 127.209917349687,
-      "address": "경기 남양주시 와부읍 덕소로2번길 90",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 55.2,
-      "scoreParts": {
-        "mention": 0.74,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 10,
-      "tags": [
-        "주차가능"
-      ],
-      "hours": "8:30~22:00",
-      "phone": "070-8830-7000",
-      "placeUrl": "http://place.map.kakao.com/809187735",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "584194265",
       "name": "빵집오빠 초월점",
       "category": [
@@ -55596,34 +55687,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "226492906",
-      "name": "초대카페 대명항점",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.6409924610359,
-      "lng": 126.541802775696,
-      "address": "경기 김포시 대곶면 대명항1로92번길 60",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 55.2,
-      "scoreParts": {
-        "mention": 0.74,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 10,
-      "tags": [
-        "대형"
-      ],
-      "placeUrl": "http://place.map.kakao.com/226492906",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "872472555",
       "name": "청수당 김포점",
       "category": [
@@ -55766,35 +55829,6 @@
       "hours": "10:00-21:00",
       "phone": "0507-1347-3402",
       "placeUrl": "http://place.map.kakao.com/1253950533",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "756733291",
-      "name": "어노인트 교동도점",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.77669323538272,
-      "lng": 126.30576251077478,
-      "address": "인천 강화군 교동면 교동남로 341-6",
-      "region": {
-        "sido": "인천",
-        "sigungu": "강화군"
-      },
-      "score": 55.2,
-      "scoreParts": {
-        "mention": 0.74,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 10,
-      "tags": [
-        "주차가능"
-      ],
-      "phone": "010-4492-2541",
-      "placeUrl": "http://place.map.kakao.com/756733291",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -56876,34 +56910,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1431182700",
-      "name": "루반커피",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 35.2643296458828,
-      "lng": 128.898227077786,
-      "address": "경남 김해시 인제로398번길 23",
-      "region": {
-        "sido": "경남",
-        "sigungu": "김해시"
-      },
-      "score": 55.2,
-      "scoreParts": {
-        "mention": 0.74,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 10,
-      "tags": [
-        "대형"
-      ],
-      "placeUrl": "http://place.map.kakao.com/1431182700",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "568679070",
       "name": "씬 브런치카페",
       "category": [
@@ -57250,28 +57256,30 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "267845778",
-      "name": "더머커피",
+      "id": "8796526",
+      "name": "김덕규과자점 삼정점",
       "category": [
-        "cafe"
+        "bakery"
       ],
-      "lat": 37.4975107025576,
-      "lng": 126.927689508821,
-      "address": "서울 동작구 보라매로 91",
+      "lat": 35.2307687488973,
+      "lng": 128.89391692448,
+      "address": "경남 김해시 활천로 32",
       "region": {
-        "sido": "서울",
-        "sigungu": "동작구"
+        "sido": "경남",
+        "sigungu": "김해시"
       },
-      "score": 55.1,
+      "score": 55.2,
       "scoreParts": {
-        "mention": 0.67,
-        "buzz": 0.18,
+        "mention": 0.74,
+        "buzz": 0,
         "mine": null
       },
-      "mentions": 8,
+      "mentions": 10,
       "tags": [],
-      "phone": "02-3280-1203",
-      "placeUrl": "http://place.map.kakao.com/267845778",
+      "hours": "08:00~24:00",
+      "closedDay": "배달 가능, 포장가능",
+      "phone": "055-333-3874",
+      "placeUrl": "http://place.map.kakao.com/8796526",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -57526,31 +57534,6 @@
       "mentions": 3,
       "tags": [],
       "placeUrl": "http://place.map.kakao.com/49648744",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1624464057",
-      "name": "봉주르팔당",
-      "category": [
-        "cafe"
-      ],
-      "lat": 37.5253609542852,
-      "lng": 127.287853609098,
-      "address": "경기 남양주시 조안면 다산로 478-56",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 55,
-      "scoreParts": {
-        "mention": 0.64,
-        "buzz": 0.28,
-        "mine": null
-      },
-      "mentions": 7,
-      "tags": [],
-      "placeUrl": "http://place.map.kakao.com/1624464057",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -57835,6 +57818,34 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "40840195",
+      "name": "변산제빵소",
+      "category": [
+        "bakery"
+      ],
+      "lat": 35.6784829706713,
+      "lng": 126.530424504992,
+      "address": "전북특별자치도 부안군 변산면 변산로 2104",
+      "region": {
+        "sido": "전북",
+        "sigungu": "부안군"
+      },
+      "score": 54.8,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0.28,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [
+        "오션뷰"
+      ],
+      "phone": "063-582-7249",
+      "placeUrl": "http://place.map.kakao.com/40840195",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1447743205",
       "name": "밥브레드",
       "category": [
@@ -58113,6 +58124,33 @@
       "tags": [],
       "phone": "055-757-3995",
       "placeUrl": "http://place.map.kakao.com/1971889227",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1660604538",
+      "name": "스톤",
+      "category": [
+        "cafe",
+        "dessert"
+      ],
+      "lat": 37.269143984779454,
+      "lng": 127.00022886918829,
+      "address": "경기 수원시 팔달구 덕영대로895번길 15",
+      "region": {
+        "sido": "경기",
+        "sigungu": "수원시"
+      },
+      "score": 54.6,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.7,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "0503-7153-1537",
+      "placeUrl": "http://place.map.kakao.com/1660604538",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -58441,33 +58479,6 @@
       "tags": [],
       "phone": "02-2633-0403",
       "placeUrl": "http://place.map.kakao.com/222282739",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "302052626",
-      "name": "가람베이커리카페",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.64825877556287,
-      "lng": 127.36731361661698,
-      "address": "경기 남양주시 화도읍 북한강로1570번길 5",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 54.2,
-      "scoreParts": {
-        "mention": 0.64,
-        "buzz": 0.25,
-        "mine": null
-      },
-      "mentions": 7,
-      "tags": [],
-      "phone": "031-523-2211",
-      "placeUrl": "http://place.map.kakao.com/302052626",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -59569,38 +59580,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "731936638",
-      "name": "언캐니",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.636976309704146,
-      "lng": 126.54563531780833,
-      "address": "경기 김포시 대곶면 대명항로 726-23",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 53.5,
-      "scoreParts": {
-        "mention": 0.71,
-        "buzz": 0.02,
-        "mine": null
-      },
-      "mentions": 9,
-      "tags": [
-        "오션뷰",
-        "대형",
-        "브런치"
-      ],
-      "hours": "10:00-24:00",
-      "phone": "010-7372-9274",
-      "placeUrl": "http://place.map.kakao.com/731936638",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1210642467",
       "name": "토성마을",
       "category": [
@@ -59918,35 +59897,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "585660022",
-      "name": "인크커피 다산점",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.6130533533373,
-      "lng": 127.151542638307,
-      "address": "경기 남양주시 다산순환로 20",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 53.3,
-      "scoreParts": {
-        "mention": 0.64,
-        "buzz": 0.22,
-        "mine": null
-      },
-      "mentions": 7,
-      "tags": [
-        "대형"
-      ],
-      "phone": "0507-1317-0275",
-      "placeUrl": "http://place.map.kakao.com/585660022",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "308161104",
       "name": "동학사베이커리",
       "category": [
@@ -60257,6 +60207,63 @@
       "tags": [],
       "phone": "051-754-4588",
       "placeUrl": "http://place.map.kakao.com/20174781",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "756733291",
+      "name": "어노인트 교동도점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.77669323538272,
+      "lng": 126.30576251077478,
+      "address": "인천 강화군 교동면 교동남로 341-6",
+      "region": {
+        "sido": "인천",
+        "sigungu": "강화군"
+      },
+      "score": 53,
+      "scoreParts": {
+        "mention": 0.71,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 9,
+      "tags": [
+        "주차가능"
+      ],
+      "phone": "010-4492-2541",
+      "placeUrl": "http://place.map.kakao.com/756733291",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1431182700",
+      "name": "루반커피",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 35.2643296458828,
+      "lng": 128.898227077786,
+      "address": "경남 김해시 인제로398번길 23",
+      "region": {
+        "sido": "경남",
+        "sigungu": "김해시"
+      },
+      "score": 53,
+      "scoreParts": {
+        "mention": 0.71,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 9,
+      "tags": [
+        "대형"
+      ],
+      "placeUrl": "http://place.map.kakao.com/1431182700",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -62148,34 +62155,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "8796526",
-      "name": "김덕규과자점 삼정점",
-      "category": [
-        "bakery"
-      ],
-      "lat": 35.2307687488973,
-      "lng": 128.89391692448,
-      "address": "경남 김해시 활천로 32",
-      "region": {
-        "sido": "경남",
-        "sigungu": "김해시"
-      },
-      "score": 53,
-      "scoreParts": {
-        "mention": 0.71,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 9,
-      "tags": [],
-      "hours": "08:00~24:00",
-      "closedDay": "배달 가능, 포장가능",
-      "phone": "055-333-3874",
-      "placeUrl": "http://place.map.kakao.com/8796526",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "10901325",
       "name": "파란풍차과자점",
       "category": [
@@ -62462,6 +62441,35 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "2060968440",
+      "name": "리아쿠킹스튜디오&브런치카페",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.2765452002138,
+      "lng": 127.050441842241,
+      "address": "경기 수원시 영통구 광교중앙로25번길 64",
+      "region": {
+        "sido": "경기",
+        "sigungu": "수원시"
+      },
+      "score": 53,
+      "scoreParts": {
+        "mention": 0.71,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 9,
+      "tags": [
+        "야외석",
+        "브런치"
+      ],
+      "placeUrl": "http://place.map.kakao.com/2060968440",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "768666442",
       "name": "에브리띵베이글",
       "category": [
@@ -62617,6 +62625,38 @@
       ],
       "phone": "0507-1326-8478",
       "placeUrl": "http://place.map.kakao.com/2107871210",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2004272980",
+      "name": "55갤런 비스트로카페",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.6625099694311,
+      "lng": 126.657690440328,
+      "address": "경기 김포시 양촌읍 김포대로 1619",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 52.9,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0.2,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [
+        "대형",
+        "아이동반",
+        "브런치"
+      ],
+      "phone": "031-988-2536",
+      "placeUrl": "http://place.map.kakao.com/2004272980",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -63295,7 +63335,7 @@
         "buzz": 0.3,
         "mine": null
       },
-      "mentions": 22,
+      "mentions": 19,
       "tags": [
         "대형"
       ],
@@ -63759,6 +63799,59 @@
         "대형"
       ],
       "placeUrl": "http://place.map.kakao.com/279829460",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1225080796",
+      "name": "수원의아침 영통본점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.25586596459381,
+      "lng": 127.0734563622185,
+      "address": "경기 수원시 영통구 매영로345번길 95",
+      "region": {
+        "sido": "경기",
+        "sigungu": "수원시"
+      },
+      "score": 51.9,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0.8,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [],
+      "phone": "031-273-9885",
+      "placeUrl": "http://place.map.kakao.com/1225080796",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1624464057",
+      "name": "봉주르팔당",
+      "category": [
+        "cafe"
+      ],
+      "lat": 37.5253609542852,
+      "lng": 127.287853609098,
+      "address": "경기 남양주시 조안면 다산로 478-56",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 51.9,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.29,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [
+        "물뷰"
+      ],
+      "placeUrl": "http://place.map.kakao.com/1624464057",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -64537,34 +64630,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1450567423",
-      "name": "카페풍무",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.60391408867722,
-      "lng": 126.71327087986685,
-      "address": "경기 김포시 서로3로 283",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 51.3,
-      "scoreParts": {
-        "mention": 0.49,
-        "buzz": 0.57,
-        "mine": null
-      },
-      "mentions": 4,
-      "tags": [],
-      "hours": "10:00~21:00",
-      "phone": "010-6277-2795",
-      "placeUrl": "http://place.map.kakao.com/1450567423",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "382675252",
       "name": "유기농카페",
       "category": [
@@ -64756,6 +64821,35 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "302052626",
+      "name": "가람베이커리카페",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.64825877556287,
+      "lng": 127.36731361661698,
+      "address": "경기 남양주시 화도읍 북한강로1570번길 5",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 51.1,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.25,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [
+        "물뷰"
+      ],
+      "phone": "031-523-2211",
+      "placeUrl": "http://place.map.kakao.com/302052626",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1711609581",
       "name": "커피랑도서관 가락시장역점",
       "category": [
@@ -64838,36 +64932,6 @@
       "hours": "10:00~19:00",
       "phone": "010-2564-5935",
       "placeUrl": "http://place.map.kakao.com/377885864",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "615627710",
-      "name": "카페 파도",
-      "category": [
-        "cafe",
-        "brunch"
-      ],
-      "lat": 35.97678980092526,
-      "lng": 129.55145887824582,
-      "address": "경북 포항시 남구 구룡포읍 하정로172번길 2",
-      "region": {
-        "sido": "경북",
-        "sigungu": "포항시"
-      },
-      "score": 51.1,
-      "scoreParts": {
-        "mention": 0.49,
-        "buzz": 0.56,
-        "mine": null
-      },
-      "mentions": 4,
-      "tags": [
-        "오션뷰",
-        "브런치"
-      ],
-      "phone": "054-281-3118",
-      "placeUrl": "http://place.map.kakao.com/615627710",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -65143,6 +65207,36 @@
       "hours": "09:00~19:00",
       "phone": "054-854-7430",
       "placeUrl": "http://place.map.kakao.com/501790577",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2086543052",
+      "name": "카페연일",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 36.0297483415983,
+      "lng": 129.311311154257,
+      "address": "경북 포항시 남구 연일읍 연지로 90-4",
+      "region": {
+        "sido": "경북",
+        "sigungu": "포항시"
+      },
+      "score": 50.9,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.56,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "주차가능",
+        "브런치"
+      ],
+      "phone": "054-283-9599",
+      "placeUrl": "http://place.map.kakao.com/2086543052",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -65490,6 +65584,32 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "863342167",
+      "name": "대청마루카페사계",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 35.1828935893752,
+      "lng": 128.760917586145,
+      "address": "경남 김해시 대청계곡길 313-21",
+      "region": {
+        "sido": "경남",
+        "sigungu": "김해시"
+      },
+      "score": 50.7,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.24,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [],
+      "placeUrl": "http://place.map.kakao.com/863342167",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1761099960",
       "name": "에디션엠",
       "category": [
@@ -65761,32 +65881,6 @@
       "tags": [],
       "hours": "10:00~20:00",
       "placeUrl": "http://place.map.kakao.com/1880963204",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "790666411",
-      "name": "늦여름베이커리",
-      "category": [
-        "bakery"
-      ],
-      "lat": 37.5754736812605,
-      "lng": 126.923896581484,
-      "address": "서울 서대문구 가재울로4길 40",
-      "region": {
-        "sido": "서울",
-        "sigungu": "서대문구"
-      },
-      "score": 50.6,
-      "scoreParts": {
-        "mention": 0.67,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 8,
-      "tags": [],
-      "phone": "010-8839-5364",
-      "placeUrl": "http://place.map.kakao.com/790666411",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -66328,7 +66422,7 @@
         "buzz": 0.23,
         "mine": null
       },
-      "mentions": 95,
+      "mentions": 96,
       "tags": [],
       "hours": "8시~22시",
       "closedDay": "월,화",
@@ -68496,6 +68590,60 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1990273776",
+      "name": "위너스커피 율하점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 35.1724332553582,
+      "lng": 128.813971845621,
+      "address": "경남 김해시 율하2로97번길 26",
+      "region": {
+        "sido": "경남",
+        "sigungu": "김해시"
+      },
+      "score": 50.6,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [],
+      "hours": "11:00~22:30",
+      "closedDay": "연중무휴",
+      "placeUrl": "http://place.map.kakao.com/1990273776",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "15717572",
+      "name": "피터팬1978 본점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.569338212236644,
+      "lng": 126.93176643597728,
+      "address": "서울 서대문구 증가로 10",
+      "region": {
+        "sido": "서울",
+        "sigungu": "서대문구"
+      },
+      "score": 50.6,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [],
+      "phone": "02-336-4775",
+      "placeUrl": "http://place.map.kakao.com/15717572",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1465721986",
       "name": "담다",
       "category": [
@@ -68703,6 +68851,64 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "858271598",
+      "name": "잇츠베이글 수원신동카페거리점",
+      "category": [
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.24701185114268,
+      "lng": 127.04077751711023,
+      "address": "경기 수원시 영통구 권선로882번길 108-21",
+      "region": {
+        "sido": "경기",
+        "sigungu": "수원시"
+      },
+      "score": 50.4,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.22,
+        "mine": null
+      },
+      "mentions": 25,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "070-4651-7186",
+      "placeUrl": "http://place.map.kakao.com/858271598",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "585660022",
+      "name": "인크커피 다산점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.6130533533373,
+      "lng": 127.151542638307,
+      "address": "경기 남양주시 다산순환로 20",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 50.3,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.22,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [
+        "대형"
+      ],
+      "phone": "0507-1317-0275",
+      "placeUrl": "http://place.map.kakao.com/585660022",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1795268318",
       "name": "카페유림",
       "category": [
@@ -68752,36 +68958,6 @@
       "mentions": 2,
       "tags": [],
       "placeUrl": "http://place.map.kakao.com/741199630",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "858271598",
-      "name": "잇츠베이글 수원신동카페거리점",
-      "category": [
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.24701185114268,
-      "lng": 127.04077751711023,
-      "address": "경기 수원시 영통구 권선로882번길 108-21",
-      "region": {
-        "sido": "경기",
-        "sigungu": "수원시"
-      },
-      "score": 50.3,
-      "scoreParts": {
-        "mention": 0.6,
-        "buzz": 0.22,
-        "mine": null
-      },
-      "mentions": 29,
-      "tags": [
-        "브런치"
-      ],
-      "hours": "10:30~21:30",
-      "phone": "070-4651-7186",
-      "placeUrl": "http://place.map.kakao.com/858271598",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -69532,6 +69708,34 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "785234178",
+      "name": "카페디아즈 케이크부띠끄",
+      "category": [
+        "cafe",
+        "bakery",
+        "dessert"
+      ],
+      "lat": 37.2641985930697,
+      "lng": 127.034339406342,
+      "address": "경기 수원시 팔달구 인계로166번길 48-7",
+      "region": {
+        "sido": "경기",
+        "sigungu": "수원시"
+      },
+      "score": 49.7,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.5,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "031-235-0712",
+      "placeUrl": "http://place.map.kakao.com/785234178",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "693214872",
       "name": "화우 디저트베이커리카페",
       "category": [
@@ -69758,6 +69962,36 @@
       "hours": "09:30~20:00",
       "phone": "010-3304-6264",
       "placeUrl": "http://place.map.kakao.com/24924539",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2066972976",
+      "name": "수풀사이",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.63667092376149,
+      "lng": 127.30235611673172,
+      "address": "경기 남양주시 화도읍 수레로 1105-19",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 49.5,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.19,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [
+        "애견동반",
+        "브런치"
+      ],
+      "phone": "070-4224-4842",
+      "placeUrl": "http://place.map.kakao.com/2066972976",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -71094,6 +71328,7 @@
       "name": "특별한하루",
       "category": [
         "bakery",
+        "brunch",
         "dessert"
       ],
       "lat": 37.65251039802922,
@@ -71111,7 +71346,8 @@
       },
       "mentions": 5,
       "tags": [
-        "대형"
+        "대형",
+        "브런치"
       ],
       "phone": "010-5944-1438",
       "placeUrl": "http://place.map.kakao.com/1616733916",
@@ -71197,37 +71433,6 @@
       "tags": [],
       "phone": "02-326-2269",
       "placeUrl": "http://place.map.kakao.com/1251590315",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1697210810",
-      "name": "슬로칠보하우스",
-      "category": [
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.2622982889834,
-      "lng": 126.940606496731,
-      "address": "경기 수원시 권선구 칠보로88번길 189",
-      "region": {
-        "sido": "경기",
-        "sigungu": "수원시"
-      },
-      "score": 48.6,
-      "scoreParts": {
-        "mention": 0.64,
-        "buzz": 0.03,
-        "mine": null
-      },
-      "mentions": 7,
-      "tags": [
-        "대형",
-        "브런치"
-      ],
-      "hours": "09:00~20:00",
-      "phone": "070-8885-1100",
-      "placeUrl": "http://place.map.kakao.com/1697210810",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -72255,6 +72460,65 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1849124637",
+      "name": "브레댄코 숭실대입구역점",
+      "category": [
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.49581469115424,
+      "lng": 126.95405990659631,
+      "address": "서울 동작구 상도로 지하 378",
+      "region": {
+        "sido": "서울",
+        "sigungu": "동작구"
+      },
+      "score": 48,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.13,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "02-823-1479",
+      "placeUrl": "http://place.map.kakao.com/1849124637",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2076535170",
+      "name": "어레인지먼트",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 36.16411815427859,
+      "lng": 129.39852287790671,
+      "address": "경북 포항시 북구 흥해읍 해안로 1804",
+      "region": {
+        "sido": "경북",
+        "sigungu": "포항시"
+      },
+      "score": 48,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0.27,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [
+        "오션뷰",
+        "대형"
+      ],
+      "phone": "054-612-5050",
+      "placeUrl": "http://place.map.kakao.com/2076535170",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1718109027",
       "name": "콘웨이커피 안국점",
       "category": [
@@ -72501,35 +72765,6 @@
       "closedDay": "연중무휴",
       "phone": "070-8292-0956",
       "placeUrl": "http://place.map.kakao.com/27233682",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1202950813",
-      "name": "새라울",
-      "category": [
-        "cafe",
-        "brunch",
-        "dessert"
-      ],
-      "lat": 37.5703205314005,
-      "lng": 126.932173044866,
-      "address": "서울 서대문구 연희로27길 99",
-      "region": {
-        "sido": "서울",
-        "sigungu": "서대문구"
-      },
-      "score": 47.9,
-      "scoreParts": {
-        "mention": 0.64,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 7,
-      "tags": [
-        "브런치"
-      ],
-      "placeUrl": "http://place.map.kakao.com/1202950813",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -72925,35 +73160,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1849124637",
-      "name": "브레댄코 숭실대입구역점",
-      "category": [
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.49581469115424,
-      "lng": 126.95405990659631,
-      "address": "서울 동작구 상도로 지하 378",
-      "region": {
-        "sido": "서울",
-        "sigungu": "동작구"
-      },
-      "score": 47.9,
-      "scoreParts": {
-        "mention": 0.6,
-        "buzz": 0.13,
-        "mine": null
-      },
-      "mentions": 8,
-      "tags": [
-        "브런치"
-      ],
-      "phone": "02-823-1479",
-      "placeUrl": "http://place.map.kakao.com/1849124637",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1149336702",
       "name": "BGT호두단팥빵",
       "category": [
@@ -73117,61 +73323,6 @@
       "tags": [],
       "phone": "070-7505-7611",
       "placeUrl": "http://place.map.kakao.com/1162908678",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "2099444837",
-      "name": "코끼리밀관 영통점",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.2523037887719,
-      "lng": 127.074019876941,
-      "address": "경기 수원시 영통구 반달로7번길 6",
-      "region": {
-        "sido": "경기",
-        "sigungu": "수원시"
-      },
-      "score": 47.9,
-      "scoreParts": {
-        "mention": 0.64,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 7,
-      "tags": [],
-      "hours": "08:00-22:00",
-      "placeUrl": "http://place.map.kakao.com/2099444837",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "2060968440",
-      "name": "리아쿠킹스튜디오&브런치카페",
-      "category": [
-        "cafe",
-        "brunch"
-      ],
-      "lat": 37.2765452002138,
-      "lng": 127.050441842241,
-      "address": "경기 수원시 영통구 광교중앙로25번길 64",
-      "region": {
-        "sido": "경기",
-        "sigungu": "수원시"
-      },
-      "score": 47.9,
-      "scoreParts": {
-        "mention": 0.64,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 7,
-      "tags": [
-        "브런치"
-      ],
-      "placeUrl": "http://place.map.kakao.com/2060968440",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -73625,61 +73776,6 @@
       "closedDay": "주 차",
       "phone": "031-372-0276",
       "placeUrl": "http://place.map.kakao.com/2115944593",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1324881997",
-      "name": "달미랑베이커리카페",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.6530126746764,
-      "lng": 126.61637425943594,
-      "address": "경기 김포시 양촌읍 구래로42번길 123-11",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 47.9,
-      "scoreParts": {
-        "mention": 0.64,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 7,
-      "tags": [],
-      "placeUrl": "http://place.map.kakao.com/1324881997",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1141622712",
-      "name": "안세르",
-      "category": [
-        "cafe",
-        "brunch"
-      ],
-      "lat": 37.6464957828981,
-      "lng": 126.62530833752909,
-      "address": "경기 김포시 김포한강9로 109",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 47.9,
-      "scoreParts": {
-        "mention": 0.64,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 7,
-      "tags": [
-        "브런치"
-      ],
-      "phone": "0503-7153-5723",
-      "placeUrl": "http://place.map.kakao.com/1141622712",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -75383,34 +75479,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1990273776",
-      "name": "위너스커피 율하점",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 35.1724332553582,
-      "lng": 128.813971845621,
-      "address": "경남 김해시 율하2로97번길 26",
-      "region": {
-        "sido": "경남",
-        "sigungu": "김해시"
-      },
-      "score": 47.9,
-      "scoreParts": {
-        "mention": 0.64,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 7,
-      "tags": [],
-      "hours": "11:00~22:30",
-      "closedDay": "연중무휴",
-      "placeUrl": "http://place.map.kakao.com/1990273776",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "71638276",
       "name": "더쉼터 호포점",
       "category": [
@@ -75716,6 +75784,66 @@
       "tags": [],
       "phone": "0507-1367-2634",
       "placeUrl": "http://place.map.kakao.com/1780007263",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2100365175",
+      "name": "릿",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.5694208165427,
+      "lng": 126.928242616573,
+      "address": "서울 서대문구 연희로11길 71",
+      "region": {
+        "sido": "서울",
+        "sigungu": "서대문구"
+      },
+      "score": 47.9,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [
+        "브런치"
+      ],
+      "hours": "09:00-18:00",
+      "closedDay": "화장실 외부",
+      "phone": "010-2694-0508",
+      "placeUrl": "http://place.map.kakao.com/2100365175",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "270304470",
+      "name": "동양찻집 김포운양점",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.6546875056894,
+      "lng": 126.682431972647,
+      "address": "경기 김포시 김포한강11로 288-19",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 47.9,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "0502-5554-1993",
+      "placeUrl": "http://place.map.kakao.com/270304470",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -76412,34 +76540,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "27075635",
-      "name": "빵장수단팥빵 성서점",
-      "category": [
-        "bakery"
-      ],
-      "lat": 35.8555705802615,
-      "lng": 128.505085269589,
-      "address": "대구 달서구 계대동문로 123",
-      "region": {
-        "sido": "대구",
-        "sigungu": "달서구"
-      },
-      "score": 47.3,
-      "scoreParts": {
-        "mention": 0.6,
-        "buzz": 0.1,
-        "mine": null
-      },
-      "mentions": 6,
-      "tags": [
-        "브런치"
-      ],
-      "phone": "053-477-8080",
-      "placeUrl": "http://place.map.kakao.com/27075635",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1114183874",
       "name": "바다아라",
       "category": [
@@ -76552,32 +76652,6 @@
       "tags": [],
       "phone": "055-291-0045",
       "placeUrl": "http://place.map.kakao.com/1518969390",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "863342167",
-      "name": "대청마루카페사계",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 35.1828935893752,
-      "lng": 128.760917586145,
-      "address": "경남 김해시 대청계곡길 313-21",
-      "region": {
-        "sido": "경남",
-        "sigungu": "김해시"
-      },
-      "score": 47.2,
-      "scoreParts": {
-        "mention": 0.55,
-        "buzz": 0.24,
-        "mine": null
-      },
-      "mentions": 5,
-      "tags": [],
-      "placeUrl": "http://place.map.kakao.com/863342167",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -78235,37 +78309,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "2004272980",
-      "name": "55갤런 비스트로카페",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.6625099694311,
-      "lng": 126.657690440328,
-      "address": "경기 김포시 양촌읍 김포대로 1619",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 46.3,
-      "scoreParts": {
-        "mention": 0.55,
-        "buzz": 0.2,
-        "mine": null
-      },
-      "mentions": 5,
-      "tags": [
-        "대형",
-        "브런치"
-      ],
-      "phone": "031-988-2536",
-      "placeUrl": "http://place.map.kakao.com/2004272980",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "683313442",
       "name": "카페굿웨더 범계",
       "category": [
@@ -78380,36 +78423,6 @@
       ],
       "hours": "11:00~21:00",
       "placeUrl": "http://place.map.kakao.com/1840937973",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "2086543052",
-      "name": "카페연일",
-      "category": [
-        "cafe",
-        "brunch"
-      ],
-      "lat": 36.0297483415983,
-      "lng": 129.311311154257,
-      "address": "경북 포항시 남구 연일읍 연지로 90-4",
-      "region": {
-        "sido": "경북",
-        "sigungu": "포항시"
-      },
-      "score": 46.2,
-      "scoreParts": {
-        "mention": 0.49,
-        "buzz": 0.36,
-        "mine": null
-      },
-      "mentions": 4,
-      "tags": [
-        "주차가능",
-        "브런치"
-      ],
-      "phone": "054-283-9599",
-      "placeUrl": "http://place.map.kakao.com/2086543052",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -78777,6 +78790,36 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "771419463",
+      "name": "포지티브스페이스566",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.62024663956504,
+      "lng": 126.69789391011473,
+      "address": "경기 김포시 검단로 910",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 45.9,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.36,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "대형"
+      ],
+      "phone": "02-333-0008",
+      "placeUrl": "http://place.map.kakao.com/771419463",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1755713937",
       "name": "체리커피",
       "category": [
@@ -78802,36 +78845,6 @@
       ],
       "phone": "02-444-7222",
       "placeUrl": "http://place.map.kakao.com/1755713937",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1157235503",
-      "name": "샬로우커피 김포장기역점",
-      "category": [
-        "cafe",
-        "brunch",
-        "dessert"
-      ],
-      "lat": 37.64691028103675,
-      "lng": 126.67061383564308,
-      "address": "경기 김포시 김포한강1로97번길 14",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 45.9,
-      "scoreParts": {
-        "mention": 0.6,
-        "buzz": 0.04,
-        "mine": null
-      },
-      "mentions": 6,
-      "tags": [
-        "브런치"
-      ],
-      "hours": "11:00~20:00",
-      "placeUrl": "http://place.map.kakao.com/1157235503",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -79229,6 +79242,35 @@
       "tags": [],
       "hours": "8시~22시",
       "placeUrl": "http://place.map.kakao.com/1032692156",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1953418754",
+      "name": "상두그레이",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.6313306036421,
+      "lng": 126.640106231969,
+      "address": "경기 김포시 양촌읍 김포한강8로 100-51",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 45.8,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.35,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "대형"
+      ],
+      "phone": "0507-1397-4101",
+      "placeUrl": "http://place.map.kakao.com/1953418754",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -79886,6 +79928,32 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "378927798",
+      "name": "좋은아침페스츄리 롯데백화점 수원점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.264631550308295,
+      "lng": 126.99795270125038,
+      "address": "경기 수원시 권선구 세화로 134",
+      "region": {
+        "sido": "경기",
+        "sigungu": "수원시"
+      },
+      "score": 45.3,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0.54,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [],
+      "phone": "031-8066-0801",
+      "placeUrl": "http://place.map.kakao.com/378927798",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1427828053",
       "name": "퍼블릭가든",
       "category": [
@@ -80363,6 +80431,87 @@
       "mentions": 6,
       "tags": [],
       "placeUrl": "http://place.map.kakao.com/1835469776",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "790666411",
+      "name": "늦여름베이커리",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.5754736812605,
+      "lng": 126.923896581484,
+      "address": "서울 서대문구 가재울로4길 40",
+      "region": {
+        "sido": "서울",
+        "sigungu": "서대문구"
+      },
+      "score": 44.8,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [],
+      "phone": "010-8839-5364",
+      "placeUrl": "http://place.map.kakao.com/790666411",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2099444837",
+      "name": "코끼리밀관 영통점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.2523037887719,
+      "lng": 127.074019876941,
+      "address": "경기 수원시 영통구 반달로7번길 6",
+      "region": {
+        "sido": "경기",
+        "sigungu": "수원시"
+      },
+      "score": 44.8,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [],
+      "hours": "08:00-22:00",
+      "placeUrl": "http://place.map.kakao.com/2099444837",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1324881997",
+      "name": "달미랑베이커리카페",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.6530126746764,
+      "lng": 126.61637425943594,
+      "address": "경기 김포시 양촌읍 구래로42번길 123-11",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 44.8,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [
+        "주차가능"
+      ],
+      "placeUrl": "http://place.map.kakao.com/1324881997",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -80867,7 +81016,7 @@
         "buzz": 0,
         "mine": null
       },
-      "mentions": 12,
+      "mentions": 11,
       "tags": [],
       "phone": "070-7736-1004",
       "placeUrl": "http://place.map.kakao.com/692403334",
@@ -80979,67 +81128,6 @@
       "tags": [],
       "phone": "02-6402-1298",
       "placeUrl": "http://place.map.kakao.com/528652545",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "2100365175",
-      "name": "릿",
-      "category": [
-        "cafe",
-        "brunch"
-      ],
-      "lat": 37.5694208165427,
-      "lng": 126.928242616573,
-      "address": "서울 서대문구 연희로11길 71",
-      "region": {
-        "sido": "서울",
-        "sigungu": "서대문구"
-      },
-      "score": 44.8,
-      "scoreParts": {
-        "mention": 0.6,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 6,
-      "tags": [
-        "브런치"
-      ],
-      "hours": "09:00-18:00",
-      "closedDay": "화장실 외부",
-      "phone": "010-2694-0508",
-      "placeUrl": "http://place.map.kakao.com/2100365175",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "10371912",
-      "name": "벨라프라하",
-      "category": [
-        "dessert",
-        "cafe",
-        "brunch"
-      ],
-      "lat": 37.55906705470698,
-      "lng": 126.944146247964,
-      "address": "서울 서대문구 이화여대길 77",
-      "region": {
-        "sido": "서울",
-        "sigungu": "서대문구"
-      },
-      "score": 44.8,
-      "scoreParts": {
-        "mention": 0.6,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 6,
-      "tags": [
-        "브런치"
-      ],
-      "phone": "02-363-3559",
-      "placeUrl": "http://place.map.kakao.com/10371912",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -82860,7 +82948,7 @@
         "buzz": 0,
         "mine": null
       },
-      "mentions": 76,
+      "mentions": 77,
       "tags": [
         "브런치"
       ],
@@ -82874,7 +82962,8 @@
       "id": "1175442616",
       "name": "복호두 수원시청역점",
       "category": [
-        "bakery"
+        "bakery",
+        "dessert"
       ],
       "lat": 37.2609536303675,
       "lng": 127.032234368394,
@@ -82889,7 +82978,7 @@
         "buzz": 0,
         "mine": null
       },
-      "mentions": 9,
+      "mentions": 7,
       "tags": [],
       "placeUrl": "http://place.map.kakao.com/1175442616",
       "firstSeen": "2026-08-04",
@@ -82943,8 +83032,8 @@
       "mentions": 6,
       "tags": [
         "대형",
-        "주차가능",
-        "아이동반"
+        "아이동반",
+        "브런치"
       ],
       "hours": "10:00~21:00",
       "phone": "031-217-0004",
@@ -83429,7 +83518,7 @@
         "buzz": 0,
         "mine": null
       },
-      "mentions": 13,
+      "mentions": 8,
       "tags": [],
       "hours": "08:30~19:00",
       "placeUrl": "http://place.map.kakao.com/97449127",
@@ -83626,35 +83715,6 @@
       "closedDay": "월요일은",
       "phone": "0507-1493-0636",
       "placeUrl": "http://place.map.kakao.com/1488790741",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "270304470",
-      "name": "동양찻집 김포운양점",
-      "category": [
-        "cafe",
-        "brunch"
-      ],
-      "lat": 37.6546875056894,
-      "lng": 126.682431972647,
-      "address": "경기 김포시 김포한강11로 288-19",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 44.8,
-      "scoreParts": {
-        "mention": 0.6,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 6,
-      "tags": [
-        "브런치"
-      ],
-      "phone": "0502-5554-1993",
-      "placeUrl": "http://place.map.kakao.com/270304470",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -84562,7 +84622,7 @@
         "buzz": 0,
         "mine": null
       },
-      "mentions": 7,
+      "mentions": 8,
       "tags": [],
       "placeUrl": "http://place.map.kakao.com/409512360",
       "firstSeen": "2026-08-04",
@@ -85975,8 +86035,7 @@
       "id": "350294033",
       "name": "죽도시장 땅콩빵",
       "category": [
-        "bakery",
-        "dessert"
+        "bakery"
       ],
       "lat": 36.0346209519408,
       "lng": 129.368852784278,
@@ -85991,9 +86050,8 @@
         "buzz": 0,
         "mine": null
       },
-      "mentions": 7,
+      "mentions": 9,
       "tags": [],
-      "hours": "09:00-23:00",
       "phone": "010-4239-0242",
       "placeUrl": "http://place.map.kakao.com/350294033",
       "firstSeen": "2026-08-04",
@@ -87038,7 +87096,7 @@
         "buzz": 0,
         "mine": null
       },
-      "mentions": 34,
+      "mentions": 33,
       "tags": [
         "브런치"
       ],
@@ -88300,34 +88358,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "785234178",
-      "name": "카페디아즈 케이크부띠끄",
-      "category": [
-        "cafe",
-        "bakery",
-        "dessert"
-      ],
-      "lat": 37.2641985930697,
-      "lng": 127.034339406342,
-      "address": "경기 수원시 팔달구 인계로166번길 48-7",
-      "region": {
-        "sido": "경기",
-        "sigungu": "수원시"
-      },
-      "score": 44.5,
-      "scoreParts": {
-        "mention": 0.43,
-        "buzz": 0.5,
-        "mine": null
-      },
-      "mentions": 3,
-      "tags": [],
-      "phone": "031-235-0712",
-      "placeUrl": "http://place.map.kakao.com/785234178",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "85411389",
       "name": "흑유재",
       "category": [
@@ -89340,6 +89370,35 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "27075635",
+      "name": "빵장수단팥빵 성서점",
+      "category": [
+        "bakery",
+        "brunch"
+      ],
+      "lat": 35.8555705802615,
+      "lng": 128.505085269589,
+      "address": "대구 달서구 계대동문로 123",
+      "region": {
+        "sido": "대구",
+        "sigungu": "달서구"
+      },
+      "score": 43.7,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0.1,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "053-477-8080",
+      "placeUrl": "http://place.map.kakao.com/27075635",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "751469352",
       "name": "리프커피",
       "category": [
@@ -89427,36 +89486,6 @@
       ],
       "phone": "010-4524-9997",
       "placeUrl": "http://place.map.kakao.com/690608650",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "2076535170",
-      "name": "어레인지먼트",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 36.16411815427859,
-      "lng": 129.39852287790671,
-      "address": "경북 포항시 북구 흥해읍 해안로 1804",
-      "region": {
-        "sido": "경북",
-        "sigungu": "포항시"
-      },
-      "score": 43.7,
-      "scoreParts": {
-        "mention": 0.49,
-        "buzz": 0.27,
-        "mine": null
-      },
-      "mentions": 4,
-      "tags": [
-        "오션뷰",
-        "대형"
-      ],
-      "phone": "054-612-5050",
-      "placeUrl": "http://place.map.kakao.com/2076535170",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -90074,6 +90103,35 @@
       "tags": [],
       "phone": "064-739-2323",
       "placeUrl": "http://place.map.kakao.com/1437167844",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2119990696",
+      "name": "카페빈땅",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 36.0835451359671,
+      "lng": 129.416406249893,
+      "address": "경북 포항시 북구 흥해읍 죽천길 11",
+      "region": {
+        "sido": "경북",
+        "sigungu": "포항시"
+      },
+      "score": 43.3,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.25,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "오션뷰",
+        "브런치"
+      ],
+      "placeUrl": "http://place.map.kakao.com/2119990696",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -91424,6 +91482,67 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "2039993822",
+      "name": "카페발랑솔",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.61986423270826,
+      "lng": 127.34558341072267,
+      "address": "경기 남양주시 화도읍 북한강로 1190",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 42.4,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0.05,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [
+        "물뷰",
+        "브런치"
+      ],
+      "phone": "0507-1390-0383",
+      "placeUrl": "http://place.map.kakao.com/2039993822",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1157235503",
+      "name": "샬로우커피 김포장기역점",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch",
+        "dessert"
+      ],
+      "lat": 37.64691028103675,
+      "lng": 126.67061383564308,
+      "address": "경기 김포시 김포한강1로97번길 14",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 42.3,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0.04,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [
+        "브런치"
+      ],
+      "hours": "11:00~20:00",
+      "placeUrl": "http://place.map.kakao.com/1157235503",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "534198045",
       "name": "데저트",
       "category": [
@@ -91940,34 +92059,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1905555867",
-      "name": "우노커피",
-      "category": [
-        "cafe",
-        "bakery",
-        "dessert"
-      ],
-      "lat": 35.81404729599293,
-      "lng": 128.53928032308224,
-      "address": "대구 달서구 월배로40길 120",
-      "region": {
-        "sido": "대구",
-        "sigungu": "달서구"
-      },
-      "score": 42,
-      "scoreParts": {
-        "mention": 0.55,
-        "buzz": 0.03,
-        "mine": null
-      },
-      "mentions": 5,
-      "tags": [],
-      "phone": "010-8605-5352",
-      "placeUrl": "http://place.map.kakao.com/1905555867",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1140230507",
       "name": "하녹",
       "category": [
@@ -92233,6 +92324,31 @@
       ],
       "phone": "051-900-4045",
       "placeUrl": "http://place.map.kakao.com/1039626229",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "27059106",
+      "name": "애견카페왕",
+      "category": [
+        "cafe"
+      ],
+      "lat": 37.627638019679,
+      "lng": 127.19099912008,
+      "address": "경기 남양주시 경춘로773번길 12-16",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 41.9,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.19,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "placeUrl": "http://place.map.kakao.com/27059106",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -92641,35 +92757,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "197441229",
-      "name": "온더온",
-      "category": [
-        "dessert",
-        "cafe"
-      ],
-      "lat": 35.8143074678551,
-      "lng": 128.522889898635,
-      "address": "대구 달서구 월배로15길 8",
-      "region": {
-        "sido": "대구",
-        "sigungu": "달서구"
-      },
-      "score": 41.5,
-      "scoreParts": {
-        "mention": 0.55,
-        "buzz": 0.01,
-        "mine": null
-      },
-      "mentions": 5,
-      "tags": [
-        "주차가능"
-      ],
-      "phone": "010-7749-9435",
-      "placeUrl": "http://place.map.kakao.com/197441229",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "216643771",
       "name": "딥슬로우커피바",
       "category": [
@@ -92691,6 +92778,63 @@
       "mentions": 5,
       "tags": [],
       "placeUrl": "http://place.map.kakao.com/216643771",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2130999132",
+      "name": "네스트카페",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 36.056609639615,
+      "lng": 129.576805777449,
+      "address": "경북 포항시 남구 호미곶면 해맞이로46번길 164",
+      "region": {
+        "sido": "경북",
+        "sigungu": "포항시"
+      },
+      "score": 41.5,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0.39,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [
+        "오션뷰"
+      ],
+      "phone": "0502-5551-6852",
+      "placeUrl": "http://place.map.kakao.com/2130999132",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1983641242",
+      "name": "더브라운 광교교보엘포트점",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.28704438302025,
+      "lng": 127.05773380004543,
+      "address": "경기 수원시 영통구 광교중앙로 145",
+      "region": {
+        "sido": "경기",
+        "sigungu": "수원시"
+      },
+      "score": 41.4,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.17,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "031-217-1806",
+      "placeUrl": "http://place.map.kakao.com/1983641242",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -92962,6 +93106,65 @@
       "tags": [],
       "phone": "0507-1425-5350",
       "placeUrl": "http://place.map.kakao.com/1798985547",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1141622712",
+      "name": "안세르",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.6464957828981,
+      "lng": 126.62530833752909,
+      "address": "경기 김포시 김포한강9로 109",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 41.2,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "0503-7153-5723",
+      "placeUrl": "http://place.map.kakao.com/1141622712",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "10371912",
+      "name": "벨라프라하",
+      "category": [
+        "dessert",
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.55906705470698,
+      "lng": 126.944146247964,
+      "address": "서울 서대문구 이화여대길 77",
+      "region": {
+        "sido": "서울",
+        "sigungu": "서대문구"
+      },
+      "score": 41.2,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "02-363-3559",
+      "placeUrl": "http://place.map.kakao.com/10371912",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -93402,32 +93605,6 @@
         "브런치"
       ],
       "placeUrl": "http://place.map.kakao.com/27295344",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "15717572",
-      "name": "피터팬1978 본점",
-      "category": [
-        "bakery"
-      ],
-      "lat": 37.569338212236644,
-      "lng": 126.93176643597728,
-      "address": "서울 서대문구 증가로 10",
-      "region": {
-        "sido": "서울",
-        "sigungu": "서대문구"
-      },
-      "score": 41.2,
-      "scoreParts": {
-        "mention": 0.55,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 5,
-      "tags": [],
-      "phone": "02-336-4775",
-      "placeUrl": "http://place.map.kakao.com/15717572",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -95942,36 +96119,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1626850530",
-      "name": "카페옥순",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.7437971791707,
-      "lng": 126.569667164864,
-      "address": "경기 김포시 월곶면 용강로250번길 180",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 41.2,
-      "scoreParts": {
-        "mention": 0.55,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 5,
-      "tags": [
-        "대형"
-      ],
-      "hours": "10:00-19:00",
-      "phone": "031-989-5747",
-      "placeUrl": "http://place.map.kakao.com/1626850530",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1273995149",
       "name": "디 헤르D he r카페",
       "category": [
@@ -95995,36 +96142,6 @@
       "mentions": 5,
       "tags": [],
       "placeUrl": "http://place.map.kakao.com/1273995149",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1636136588",
-      "name": "하늘콩마카롱",
-      "category": [
-        "dessert",
-        "cafe",
-        "brunch"
-      ],
-      "lat": 37.64709029438863,
-      "lng": 126.67119433013941,
-      "address": "경기 김포시 김포한강1로97번길 10-8",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 41.2,
-      "scoreParts": {
-        "mention": 0.55,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 5,
-      "tags": [
-        "브런치"
-      ],
-      "phone": "010-2464-8408",
-      "placeUrl": "http://place.map.kakao.com/1636136588",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -98717,39 +98834,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1222391083",
-      "name": "바르벳 브런치카페",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 36.0097414186635,
-      "lng": 129.333226104764,
-      "address": "경북 포항시 남구 효자동길10번길 33-12",
-      "region": {
-        "sido": "경북",
-        "sigungu": "포항시"
-      },
-      "score": 41.2,
-      "scoreParts": {
-        "mention": 0.55,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 5,
-      "tags": [
-        "산뷰",
-        "대형",
-        "브런치"
-      ],
-      "hours": "11:00~21:00",
-      "phone": "054-273-2266",
-      "placeUrl": "http://place.map.kakao.com/1222391083",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "572080924",
       "name": "올드몬트베이글 포항점",
       "category": [
@@ -100244,6 +100328,67 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1503793880",
+      "name": "히즈브런치",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.59895527518104,
+      "lng": 126.7558337699578,
+      "address": "경기 김포시 고촌읍 태리로 189-51",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 41.2,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "0507-1306-7134",
+      "placeUrl": "http://place.map.kakao.com/1503793880",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1553829204",
+      "name": "복호두 월성점",
+      "category": [
+        "bakery",
+        "brunch",
+        "dessert"
+      ],
+      "lat": 35.82499859997819,
+      "lng": 128.52589145714052,
+      "address": "대구 달서구 조암로 38",
+      "region": {
+        "sido": "대구",
+        "sigungu": "달서구"
+      },
+      "score": 41.2,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [
+        "대형",
+        "브런치"
+      ],
+      "phone": "010-8677-6048",
+      "placeUrl": "http://place.map.kakao.com/1553829204",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "26605841",
       "name": "파네트",
       "category": [
@@ -100320,35 +100465,6 @@
       "mentions": 3,
       "tags": [],
       "placeUrl": "http://place.map.kakao.com/1133812269",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1953418754",
-      "name": "상두그레이",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.6313306036421,
-      "lng": 126.640106231969,
-      "address": "경기 김포시 양촌읍 김포한강8로 100-51",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 41.1,
-      "scoreParts": {
-        "mention": 0.49,
-        "buzz": 0.16,
-        "mine": null
-      },
-      "mentions": 4,
-      "tags": [
-        "대형"
-      ],
-      "phone": "0507-1397-4101",
-      "placeUrl": "http://place.map.kakao.com/1953418754",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -100937,6 +101053,33 @@
       "closedDay": "일요일",
       "phone": "010-7979-6549",
       "placeUrl": "http://place.map.kakao.com/866060512",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "766434177",
+      "name": "해빙모먼트",
+      "category": [
+        "cafe"
+      ],
+      "lat": 35.07979932499,
+      "lng": 129.043723496902,
+      "address": "부산 영도구 절영로 196",
+      "region": {
+        "sido": "부산",
+        "sigungu": "영도구"
+      },
+      "score": 40.6,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.14,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "오션뷰"
+      ],
+      "placeUrl": "http://place.map.kakao.com/766434177",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -102259,32 +102402,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "912135604",
-      "name": "강화 호미",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 37.6612377344717,
-      "lng": 126.524588916432,
-      "address": "인천 강화군 불은면 해안동로 436",
-      "region": {
-        "sido": "인천",
-        "sigungu": "강화군"
-      },
-      "score": 39.3,
-      "scoreParts": {
-        "mention": 0.49,
-        "buzz": 0.09,
-        "mine": null
-      },
-      "mentions": 4,
-      "tags": [],
-      "placeUrl": "http://place.map.kakao.com/912135604",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1958497195",
       "name": "카페 이스트앵글",
       "category": [
@@ -102339,6 +102456,32 @@
       ],
       "phone": "0502-5551-5853",
       "placeUrl": "http://place.map.kakao.com/499384304",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "912135604",
+      "name": "강화 호미",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.6612377344717,
+      "lng": 126.524588916432,
+      "address": "인천 강화군 불은면 해안동로 436",
+      "region": {
+        "sido": "인천",
+        "sigungu": "강화군"
+      },
+      "score": 39.2,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.09,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "placeUrl": "http://place.map.kakao.com/912135604",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -103266,6 +103409,32 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "601080655",
+      "name": "고양이자리표",
+      "category": [
+        "cafe"
+      ],
+      "lat": 37.2520359033265,
+      "lng": 127.074459214764,
+      "address": "경기 수원시 영통구 청명남로 21",
+      "region": {
+        "sido": "경기",
+        "sigungu": "수원시"
+      },
+      "score": 38.4,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.05,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "070-8834-4948",
+      "placeUrl": "http://place.map.kakao.com/601080655",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1683696274",
       "name": "데스툴",
       "category": [
@@ -103373,36 +103542,6 @@
       "tags": [],
       "phone": "02-391-5170",
       "placeUrl": "http://place.map.kakao.com/565065885",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "2039993822",
-      "name": "카페발랑솔",
-      "category": [
-        "cafe",
-        "brunch"
-      ],
-      "lat": 37.61986423270826,
-      "lng": 127.34558341072267,
-      "address": "경기 남양주시 화도읍 북한강로 1190",
-      "region": {
-        "sido": "경기",
-        "sigungu": "남양주시"
-      },
-      "score": 38.2,
-      "scoreParts": {
-        "mention": 0.49,
-        "buzz": 0.05,
-        "mine": null
-      },
-      "mentions": 4,
-      "tags": [
-        "물뷰",
-        "브런치"
-      ],
-      "phone": "0507-1390-0383",
-      "placeUrl": "http://place.map.kakao.com/2039993822",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -103523,32 +103662,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1249268852",
-      "name": "호뜨프라하",
-      "category": [
-        "bakery"
-      ],
-      "lat": 37.286789317275,
-      "lng": 127.012269350176,
-      "address": "경기 수원시 팔달구 화서문로17번길 56",
-      "region": {
-        "sido": "경기",
-        "sigungu": "수원시"
-      },
-      "score": 38,
-      "scoreParts": {
-        "mention": 0.49,
-        "buzz": 0.04,
-        "mine": null
-      },
-      "mentions": 4,
-      "tags": [],
-      "phone": "0503-7153-0373",
-      "placeUrl": "http://place.map.kakao.com/1249268852",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "615360935",
       "name": "아우어베이커리 광교앨리웨이점",
       "category": [
@@ -103564,7 +103677,7 @@
       "score": 38,
       "scoreParts": {
         "mention": 0.43,
-        "buzz": 0.25,
+        "buzz": 0.24,
         "mine": null
       },
       "mentions": 3,
@@ -103801,6 +103914,34 @@
       ],
       "phone": "031-943-0145",
       "placeUrl": "http://place.map.kakao.com/1855508351",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1905555867",
+      "name": "우노커피",
+      "category": [
+        "cafe",
+        "bakery",
+        "dessert"
+      ],
+      "lat": 35.81404729599293,
+      "lng": 128.53928032308224,
+      "address": "대구 달서구 월배로40길 120",
+      "region": {
+        "sido": "대구",
+        "sigungu": "달서구"
+      },
+      "score": 37.8,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.03,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "010-8605-5352",
+      "placeUrl": "http://place.map.kakao.com/1905555867",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -104128,35 +104269,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "2119990696",
-      "name": "카페빈땅",
-      "category": [
-        "cafe",
-        "brunch"
-      ],
-      "lat": 36.0835451359671,
-      "lng": 129.416406249893,
-      "address": "경북 포항시 북구 흥해읍 죽천길 11",
-      "region": {
-        "sido": "경북",
-        "sigungu": "포항시"
-      },
-      "score": 37.6,
-      "scoreParts": {
-        "mention": 0.49,
-        "buzz": 0.02,
-        "mine": null
-      },
-      "mentions": 4,
-      "tags": [
-        "오션뷰",
-        "브런치"
-      ],
-      "placeUrl": "http://place.map.kakao.com/2119990696",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "861121295",
       "name": "오텀",
       "category": [
@@ -104300,6 +104412,34 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "2142052852",
+      "name": "콜링우드",
+      "category": [
+        "cafe",
+        "bakery",
+        "dessert"
+      ],
+      "lat": 37.28732867895965,
+      "lng": 127.01535822357485,
+      "address": "경기 수원시 팔달구 정조로 888",
+      "region": {
+        "sido": "경기",
+        "sigungu": "수원시"
+      },
+      "score": 37.5,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0.22,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [],
+      "phone": "031-252-8880",
+      "placeUrl": "http://place.map.kakao.com/2142052852",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1520080778",
       "name": "던모스",
       "category": [
@@ -104407,6 +104547,33 @@
       "closedDay": "연중무휴",
       "phone": "052-243-0001",
       "placeUrl": "http://place.map.kakao.com/1870959060",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "197441229",
+      "name": "온더온",
+      "category": [
+        "dessert",
+        "cafe"
+      ],
+      "lat": 35.8143074678551,
+      "lng": 128.522889898635,
+      "address": "대구 달서구 월배로15길 8",
+      "region": {
+        "sido": "대구",
+        "sigungu": "달서구"
+      },
+      "score": 37.3,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.01,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "010-7749-9435",
+      "placeUrl": "http://place.map.kakao.com/197441229",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -104884,6 +105051,69 @@
       "tags": [],
       "phone": "055-912-5505",
       "placeUrl": "http://place.map.kakao.com/1182986791",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1636136588",
+      "name": "하늘콩마카롱",
+      "category": [
+        "dessert",
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.64709029438863,
+      "lng": 126.67119433013941,
+      "address": "경기 김포시 김포한강1로97번길 10-8",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 37,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "010-2464-8408",
+      "placeUrl": "http://place.map.kakao.com/1636136588",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1222391083",
+      "name": "바르벳 브런치카페",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 36.0097414186635,
+      "lng": 129.333226104764,
+      "address": "경북 포항시 남구 효자동길10번길 33-12",
+      "region": {
+        "sido": "경북",
+        "sigungu": "포항시"
+      },
+      "score": 37,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "산뷰",
+        "대형",
+        "브런치"
+      ],
+      "hours": "11:00~21:00",
+      "phone": "054-273-2266",
+      "placeUrl": "http://place.map.kakao.com/1222391083",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -109727,36 +109957,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1503793880",
-      "name": "히즈브런치",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.59895527518104,
-      "lng": 126.7558337699578,
-      "address": "경기 김포시 고촌읍 태리로 189-51",
-      "region": {
-        "sido": "경기",
-        "sigungu": "김포시"
-      },
-      "score": 37,
-      "scoreParts": {
-        "mention": 0.49,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 4,
-      "tags": [
-        "브런치"
-      ],
-      "phone": "0507-1306-7134",
-      "placeUrl": "http://place.map.kakao.com/1503793880",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1921178960",
       "name": "똣똣빵집",
       "category": [
@@ -113640,37 +113840,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "1553829204",
-      "name": "복호두 월성점",
-      "category": [
-        "bakery",
-        "brunch",
-        "dessert"
-      ],
-      "lat": 35.82499859997819,
-      "lng": 128.52589145714052,
-      "address": "대구 달서구 조암로 38",
-      "region": {
-        "sido": "대구",
-        "sigungu": "달서구"
-      },
-      "score": 37,
-      "scoreParts": {
-        "mention": 0.49,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 4,
-      "tags": [
-        "대형",
-        "브런치"
-      ],
-      "phone": "010-8677-6048",
-      "placeUrl": "http://place.map.kakao.com/1553829204",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "451642134",
       "name": "오더블유오 대구점",
       "category": [
@@ -115978,6 +116147,144 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "347330253",
+      "name": "카페인중독 상도점",
+      "category": [
+        "cafe",
+        "bakery",
+        "dessert"
+      ],
+      "lat": 37.5008113185966,
+      "lng": 126.937573856787,
+      "address": "서울 동작구 성대로29길 61",
+      "region": {
+        "sido": "서울",
+        "sigungu": "동작구"
+      },
+      "score": 37,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "02-3280-1928",
+      "placeUrl": "http://place.map.kakao.com/347330253",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "949876016",
+      "name": "화이트리에 망포점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.245159863629134,
+      "lng": 127.05096078648266,
+      "address": "경기 수원시 영통구 덕영대로 1470",
+      "region": {
+        "sido": "경기",
+        "sigungu": "수원시"
+      },
+      "score": 37,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "주차가능"
+      ],
+      "phone": "0507-1440-2093",
+      "placeUrl": "http://place.map.kakao.com/949876016",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1807459489",
+      "name": "리움베이커리카페",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.59362008227731,
+      "lng": 127.19003007414676,
+      "address": "경기 남양주시 고산로 214-2",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 37,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "물뷰"
+      ],
+      "phone": "031-577-6631",
+      "placeUrl": "http://place.map.kakao.com/1807459489",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "600549396",
+      "name": "느루",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.6461755823011,
+      "lng": 126.681626319685,
+      "address": "경기 김포시 김포한강11로140번길 8-6",
+      "region": {
+        "sido": "경기",
+        "sigungu": "김포시"
+      },
+      "score": 37,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "브런치"
+      ],
+      "placeUrl": "http://place.map.kakao.com/600549396",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1411330081",
+      "name": "사과당 충주호암신도시점",
+      "category": [
+        "dessert",
+        "cafe"
+      ],
+      "lat": 36.9574190332072,
+      "lng": 127.925494163845,
+      "address": "충북 충주시 호암수청1로 53",
+      "region": {
+        "sido": "충북",
+        "sigungu": "충주시"
+      },
+      "score": 37,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "placeUrl": "http://place.map.kakao.com/1411330081",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1522995212",
       "name": "메이크씨",
       "category": [
@@ -116313,35 +116620,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "id": "2130999132",
-      "name": "네스트카페",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 36.056609639615,
-      "lng": 129.576805777449,
-      "address": "경북 포항시 남구 호미곶면 해맞이로46번길 164",
-      "region": {
-        "sido": "경북",
-        "sigungu": "포항시"
-      },
-      "score": 35.7,
-      "scoreParts": {
-        "mention": 0.43,
-        "buzz": 0.15,
-        "mine": null
-      },
-      "mentions": 3,
-      "tags": [
-        "오션뷰"
-      ],
-      "phone": "0502-5551-6852",
-      "placeUrl": "http://place.map.kakao.com/2130999132",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
       "id": "1222449826",
       "name": "꼬부랑길카페",
       "category": [
@@ -116450,33 +116728,6 @@
       "mentions": 3,
       "tags": [],
       "placeUrl": "http://place.map.kakao.com/21524790",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "766434177",
-      "name": "해빙모먼트",
-      "category": [
-        "cafe"
-      ],
-      "lat": 35.07979932499,
-      "lng": 129.043723496902,
-      "address": "부산 영도구 절영로 196",
-      "region": {
-        "sido": "부산",
-        "sigungu": "영도구"
-      },
-      "score": 35.4,
-      "scoreParts": {
-        "mention": 0.43,
-        "buzz": 0.14,
-        "mine": null
-      },
-      "mentions": 3,
-      "tags": [
-        "오션뷰"
-      ],
-      "placeUrl": "http://place.map.kakao.com/766434177",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -116902,6 +117153,32 @@
         "오션뷰"
       ],
       "placeUrl": "http://place.map.kakao.com/437055548",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1947941904",
+      "name": "정지영커피로스터즈 KT위즈파크점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.3000934460174,
+      "lng": 127.00881789271584,
+      "address": "경기 수원시 장안구 경수대로 893",
+      "region": {
+        "sido": "경기",
+        "sigungu": "수원시"
+      },
+      "score": 34.8,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0.11,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [],
+      "placeUrl": "http://place.map.kakao.com/1947941904",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -117925,6 +118202,32 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1249268852",
+      "name": "호뜨프라하",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.286789317275,
+      "lng": 127.012269350176,
+      "address": "경기 수원시 팔달구 화서문로17번길 56",
+      "region": {
+        "sido": "경기",
+        "sigungu": "수원시"
+      },
+      "score": 32.9,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0.04,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [],
+      "phone": "0503-7153-0373",
+      "placeUrl": "http://place.map.kakao.com/1249268852",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1178074502",
       "name": "코지앤레이지",
       "category": [
@@ -118557,6 +118860,32 @@
       "mentions": 3,
       "tags": [],
       "placeUrl": "http://place.map.kakao.com/406229026",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1202950813",
+      "name": "새라울",
+      "category": [
+        "cafe",
+        "dessert"
+      ],
+      "lat": 37.5703205314005,
+      "lng": 126.932173044866,
+      "address": "서울 서대문구 연희로27길 99",
+      "region": {
+        "sido": "서울",
+        "sigungu": "서대문구"
+      },
+      "score": 31.9,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [],
+      "placeUrl": "http://place.map.kakao.com/1202950813",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -126407,6 +126736,60 @@
       ],
       "phone": "064-738-8220",
       "placeUrl": "http://place.map.kakao.com/77169837",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "377836008",
+      "name": "베이커리씨어터 이석영광장점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.6328841442716,
+      "lng": 127.206687422153,
+      "address": "경기 남양주시 경춘로 946",
+      "region": {
+        "sido": "경기",
+        "sigungu": "남양주시"
+      },
+      "score": 31.9,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [],
+      "phone": "031-595-1920",
+      "placeUrl": "http://place.map.kakao.com/377836008",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1948919958",
+      "name": "비엘르",
+      "category": [
+        "cafe"
+      ],
+      "lat": 35.0794550364537,
+      "lng": 129.044367178876,
+      "address": "부산 영도구 절영로 202-2",
+      "region": {
+        "sido": "부산",
+        "sigungu": "영도구"
+      },
+      "score": 31.9,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [
+        "오션뷰"
+      ],
+      "phone": "070-8801-6150",
+      "placeUrl": "http://place.map.kakao.com/1948919958",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
