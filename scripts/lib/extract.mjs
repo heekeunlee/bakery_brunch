@@ -108,11 +108,15 @@ export function extractCandidates(items, region) {
     if (isAllAffix(raw, affixes)) return;
     let entry = candidates.get(raw);
     if (!entry) {
-      entry = { posts: new Set(), text: [] };
+      entry = { posts: new Set(), contexts: [] };
       candidates.set(raw, entry);
     }
+    // 같은 글에서 해시태그와 제목 토큰으로 두 번 걸려도 본문은 한 번만 담는다.
+    // 그래야 뒤에서 "몇 %의 글이" 를 셀 때 분모가 맞는다.
+    if (!entry.posts.has(postId) && entry.contexts.length < 20) {
+      entry.contexts.push(context);
+    }
     entry.posts.add(postId);
-    if (entry.text.length < 12) entry.text.push(context);
   };
 
   for (const item of items) {
@@ -150,8 +154,16 @@ export function extractCandidates(items, region) {
   return candidates;
 }
 
-/** 본문에서 태그를 규칙으로 추출. 있으면 좋고 없어도 그만인 부가정보. */
-export function extractTags(text) {
+/**
+ * 본문에서 태그를 규칙으로 추출.
+ * 카테고리와 같은 이유로 글 단위 비율을 본다 — 글 하나가 "주차하기 좋았다"고 썼다고
+ * 주차가능 태그를 달면, 태그가 많아질수록 아무 의미가 없어진다.
+ */
+export function extractTags(contexts) {
+  const list = Array.isArray(contexts) ? contexts : [contexts];
+  if (!list.length) return [];
+  const need = Math.max(2, Math.ceil(list.length * 0.3));
+
   const tags = [];
   const rules = [
     [/오션뷰|바다뷰|바다가\s*보이|해변\s*카페/, '오션뷰'],
@@ -168,12 +180,15 @@ export function extractTags(text) {
     [/로스팅|로스터리|자가\s*배전/, '로스터리'],
     [/24시|24시간|밤늦게|심야/, '늦게까지'],
   ];
-  for (const [re, tag] of rules) if (re.test(text)) tags.push(tag);
+  for (const [re, tag] of rules) {
+    if (list.filter((c) => re.test(c)).length >= need) tags.push(tag);
+  }
   return [...new Set(tags)];
 }
 
 /** 영업시간 / 휴무일 추출. 블로그 본문 기반이라 부정확할 수 있다. */
-export function extractHours(text) {
+export function extractHours(contexts) {
+  const text = Array.isArray(contexts) ? contexts.join(' ') : contexts;
   const out = {};
 
   const hm = text.match(

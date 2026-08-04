@@ -25,8 +25,12 @@ const PLACES_PATH = join(ROOT, 'public', 'data', 'places.json');
 
 const KEYWORDS = ['베이커리카페 추천', '브런치카페 추천', '카페 추천', '빵집 추천'];
 
-/** 한 지역에서 카카오 검증까지 보낼 후보 수 상한. 쿼터 방어선. */
-const MAX_VERIFY_PER_REGION = 120;
+/**
+ * 한 지역에서 카카오 검증까지 보낼 후보 수 상한. 쿼터 방어선.
+ * 강릉 실측에서 2회 이상 언급 후보만 1,000개가 넘게 나와 120은 너무 얕았다.
+ * 하루 처리 지역이 20곳 안팎이므로 400이면 카카오 일일 쿼터 안에 들어온다.
+ */
+const MAX_VERIFY_PER_REGION = 400;
 
 function parseArgs(argv) {
   const args = { shards: 7 };
@@ -91,7 +95,7 @@ async function collectRegion(region) {
   // [2] 후보 추출 → 빈도순 정렬
   const candidates = extractCandidates(items, region);
   const ranked = [...candidates.entries()]
-    .map(([name, v]) => ({ name, mentions: v.posts.size, text: v.text.join(' ') }))
+    .map(([name, v]) => ({ name, mentions: v.posts.size, contexts: v.contexts }))
     .sort((a, b) => b.mentions - a.mentions);
 
   // 2회 이상 언급을 우선 검증하고, 남는 예산으로 1회 언급까지 훑는다.
@@ -116,10 +120,10 @@ async function collectRegion(region) {
     if (prev) {
       // 같은 가게가 여러 표기로 잡히면 언급수를 합친다.
       prev.mentions += cand.mentions;
-      prev.text += ' ' + cand.text;
+      prev.contexts.push(...cand.contexts);
       continue;
     }
-    found.set(place.id, { ...place, mentions: cand.mentions, text: cand.text });
+    found.set(place.id, { ...place, mentions: cand.mentions, contexts: [...cand.contexts] });
   }
   console.log(`  검증 통과 ${found.size}곳`);
 
@@ -138,7 +142,7 @@ async function collectRegion(region) {
     results.push({
       id: p.id,
       name: p.name,
-      category: toCategories(p.categoryName, p.text),
+      category: toCategories(p.categoryName, p.contexts),
       lat: p.lat,
       lng: p.lng,
       address: p.address,
@@ -150,8 +154,8 @@ async function collectRegion(region) {
         mine: null,
       },
       mentions: p.mentions,
-      tags: extractTags(p.text),
-      ...extractHours(p.text),
+      tags: extractTags(p.contexts),
+      ...extractHours(p.contexts),
       phone: p.phone,
       placeUrl: p.placeUrl,
       firstSeen: today,
@@ -207,6 +211,17 @@ async function main() {
 
   if (args.dryRun) {
     console.log(`\n[dry-run] 총 ${places.length}곳 (신규 ${newCount}곳) — 저장하지 않음`);
+    if (fresh.length) {
+      console.log('\n이번 회차 수집 결과 (점수순):');
+      for (const p of [...fresh].sort((a, b) => b.score - a.score)) {
+        const cats = p.category.join(',');
+        const tags = p.tags.length ? ` [${p.tags.join(' ')}]` : '';
+        console.log(
+          `  ${String(p.score).padStart(5)}  ${String(p.mentions).padStart(3)}회  ` +
+            `${p.name.padEnd(18)} ${cats}${tags}`,
+        );
+      }
+    }
     return;
   }
 

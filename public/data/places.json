@@ -1,88 +1,1658 @@
 {
-  "generatedAt": "2026-08-03T04:00:00.000Z",
-  "count": 5,
-  "seed": true,
-  "note": "검증 단계에서 수동 확인한 강릉 샘플입니다. 첫 자동 수집이 돌면 전 지역 데이터로 대체·확장됩니다.",
+  "generatedAt": "2026-08-04T00:12:45.672Z",
+  "count": 58,
   "places": [
+    {
+      "id": "1526839621",
+      "name": "강릉카페 체크이스트",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.76617574876233,
+      "lng": 128.91292971772992,
+      "address": "강원특별자치도 강릉시 강변북길 153",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 89.1,
+      "scoreParts": {
+        "mention": 0.95,
+        "buzz": 0.72,
+        "mine": null
+      },
+      "mentions": 21,
+      "tags": [
+        "애견동반"
+      ],
+      "hours": "10:00-20:00",
+      "phone": "0502-5553-1998",
+      "placeUrl": "http://place.map.kakao.com/1526839621",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "653849031",
+      "name": "테라로사 경포호수점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.78784984270989,
+      "lng": 128.90748944290655,
+      "address": "강원특별자치도 강릉시 난설헌로 145",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 83.4,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.34,
+        "mine": null
+      },
+      "mentions": 29,
+      "tags": [],
+      "hours": "09:00~21:00",
+      "phone": "1668-2764",
+      "placeUrl": "http://place.map.kakao.com/653849031",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "401540066",
+      "name": "카페툇마루",
+      "category": [
+        "cafe"
+      ],
+      "lat": 37.7928532498626,
+      "lng": 128.914530266171,
+      "address": "강원특별자치도 강릉시 난설헌로 232",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 82.9,
+      "scoreParts": {
+        "mention": 0.9,
+        "buzz": 0.61,
+        "mine": null
+      },
+      "mentions": 18,
+      "tags": [
+        "웨이팅있음"
+      ],
+      "hours": "11:00~18:00",
+      "phone": "0507-1349-7175",
+      "placeUrl": "http://place.map.kakao.com/401540066",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "9835230",
+      "name": "바로방",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.757581476452074,
+      "lng": 128.89930472671793,
+      "address": "강원특별자치도 강릉시 옥가로 14",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 81.4,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.26,
+        "mine": null
+      },
+      "mentions": 42,
+      "tags": [
+        "주차가능"
+      ],
+      "hours": "10:00-23:00",
+      "phone": "033-646-4621",
+      "placeUrl": "http://place.map.kakao.com/9835230",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1173484619",
+      "name": "정남미명과 수평선점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.7960891136341,
+      "lng": 128.917460971967,
+      "address": "강원특별자치도 강릉시 창해로350번길 21-1",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 79.5,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.18,
+        "mine": null
+      },
+      "mentions": 27,
+      "tags": [
+        "주차가능"
+      ],
+      "hours": "11:00-19:00",
+      "placeUrl": "http://place.map.kakao.com/1173484619",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "613654548",
+      "name": "쵸딩 초당옥수수 푸딩카페",
+      "category": [
+        "dessert",
+        "cafe"
+      ],
+      "lat": 37.7877713293019,
+      "lng": 128.912886000816,
+      "address": "강원특별자치도 강릉시 초당순두부길 40",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 78.8,
+      "scoreParts": {
+        "mention": 0.79,
+        "buzz": 0.79,
+        "mine": null
+      },
+      "mentions": 12,
+      "tags": [],
+      "placeUrl": "http://place.map.kakao.com/613654548",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1895412800",
+      "name": "만동제과 강릉점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.755164009855186,
+      "lng": 128.89950386300762,
+      "address": "강원특별자치도 강릉시 금성로 6",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 76.6,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.06,
+        "mine": null
+      },
+      "mentions": 26,
+      "tags": [],
+      "hours": "11:00~18:00",
+      "phone": "033-922-6387",
+      "placeUrl": "http://place.map.kakao.com/1895412800",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1217453996",
+      "name": "시장카페",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.7531480962017,
+      "lng": 128.897816241233,
+      "address": "강원특별자치도 강릉시 금성로31번길 7",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 75.6,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 1,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [
+        "브런치"
+      ],
+      "placeUrl": "http://place.map.kakao.com/1217453996",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1443665209",
+      "name": "강릉샌드",
+      "category": [
+        "dessert",
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.7550139910327,
+      "lng": 128.898751184116,
+      "address": "강원특별자치도 강릉시 금성로12번길 6",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 75.5,
+      "scoreParts": {
+        "mention": 0.76,
+        "buzz": 0.73,
+        "mine": null
+      },
+      "mentions": 11,
+      "tags": [
+        "브런치"
+      ],
+      "hours": "07:30~20:00",
+      "placeUrl": "http://place.map.kakao.com/1443665209",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1624703892",
+      "name": "강원옥찹쌀떡 안목해변점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.7730456998502,
+      "lng": 128.94662771442,
+      "address": "강원특별자치도 강릉시 창해로14번길 14",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 75.1,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 40,
+      "tags": [
+        "오션뷰"
+      ],
+      "hours": "10:00-21:30",
+      "placeUrl": "http://place.map.kakao.com/1624703892",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1532235102",
+      "name": "해옫",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.8928324926427,
+      "lng": 128.827046569974,
+      "address": "강원특별자치도 강릉시 주문진읍 주문로 102",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 75,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 60,
+      "tags": [
+        "브런치"
+      ],
+      "hours": "10시~20시15",
+      "phone": "0507-1330-9844",
+      "placeUrl": "http://place.map.kakao.com/1532235102",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1004538025",
+      "name": "강릉이래요",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.7542402803726,
+      "lng": 128.898688289327,
+      "address": "강원특별자치도 강릉시 금성로 21",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 72.9,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 1,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [],
+      "hours": "11:00-19:30",
+      "phone": "010-4945-6443",
+      "placeUrl": "http://place.map.kakao.com/1004538025",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1342614114",
+      "name": "강릉중화짬뽕빵",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.7533278195922,
+      "lng": 128.90013538353114,
+      "address": "강원특별자치도 강릉시 금성로13번길 17",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 70.8,
+      "scoreParts": {
+        "mention": 0.71,
+        "buzz": 0.71,
+        "mine": null
+      },
+      "mentions": 9,
+      "tags": [],
+      "phone": "010-7433-7797",
+      "placeUrl": "http://place.map.kakao.com/1342614114",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "17095278",
+      "name": "베이커리가루 강릉교동점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.762522462860346,
+      "lng": 128.8772812637336,
+      "address": "강원특별자치도 강릉시 솔올로 3",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 69.4,
+      "scoreParts": {
+        "mention": 0.81,
+        "buzz": 0.34,
+        "mine": null
+      },
+      "mentions": 13,
+      "tags": [],
+      "phone": "033-647-7953",
+      "placeUrl": "http://place.map.kakao.com/17095278",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1518975131",
+      "name": "해송당 원강희과자점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.8313031559049,
+      "lng": 128.876897055582,
+      "address": "강원특별자치도 강릉시 사천면 해안로 902",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 69,
+      "scoreParts": {
+        "mention": 0.92,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 19,
+      "tags": [
+        "오션뷰"
+      ],
+      "placeUrl": "http://place.map.kakao.com/1518975131",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "16685252",
+      "name": "테라로사 사천해변점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.82240531616526,
+      "lng": 128.88503564607134,
+      "address": "강원특별자치도 강릉시 사천면 순포안길 6",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 66.5,
+      "scoreParts": {
+        "mention": 0.89,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 17,
+      "tags": [
+        "오션뷰"
+      ],
+      "phone": "1668-2764",
+      "placeUrl": "http://place.map.kakao.com/16685252",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
     {
       "id": "863215764",
       "name": "346커피스토리",
-      "category": ["bakery", "cafe"],
-      "lat": 37.794358,
-      "lng": 128.9190651,
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.79437548514633,
+      "lng": 128.91907974639335,
       "address": "강원특별자치도 강릉시 창해로 346",
-      "region": { "sido": "강원", "sigungu": "강릉시" },
-      "score": 45.7,
-      "scoreParts": { "mention": 0.43, "buzz": 0.55, "mine": null },
-      "mentions": 3,
-      "tags": ["오션뷰", "대형"],
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 65.8,
+      "scoreParts": {
+        "mention": 0.76,
+        "buzz": 0.34,
+        "mine": null
+      },
+      "mentions": 11,
+      "tags": [
+        "오션뷰",
+        "대형"
+      ],
+      "hours": "08:30~22:00",
+      "phone": "033-653-0117",
       "placeUrl": "http://place.map.kakao.com/863215764",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04"
     },
     {
-      "id": "1261279843",
-      "name": "퍼베이드",
-      "category": ["bakery", "dessert", "cafe"],
-      "lat": 37.7632052,
-      "lng": 128.8868635,
-      "address": "강원특별자치도 강릉시 화부산로 78",
-      "region": { "sido": "강원", "sigungu": "강릉시" },
-      "score": 26.5,
-      "scoreParts": { "mention": 0.21, "buzz": 0.42, "mine": null },
-      "mentions": 1,
-      "tags": ["아이동반", "대형"],
-      "placeUrl": "http://place.map.kakao.com/1261279843",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03"
+      "id": "289901136",
+      "name": "에펠루아 본점",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.7939506796789,
+      "lng": 128.917617965921,
+      "address": "강원특별자치도 강릉시 창해로 361-77",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 65.2,
+      "scoreParts": {
+        "mention": 0.87,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 16,
+      "tags": [
+        "브런치"
+      ],
+      "hours": "11:00~19:30",
+      "phone": "033-643-3702",
+      "placeUrl": "http://place.map.kakao.com/289901136",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
     },
     {
-      "id": "106643436",
-      "name": "곳베이커리",
-      "category": ["bakery", "dessert", "cafe"],
-      "lat": 37.843372,
-      "lng": 128.8726282,
-      "address": "강원특별자치도 강릉시 사천면 진리해변길 143",
-      "region": { "sido": "강원", "sigungu": "강릉시" },
-      "score": 16.0,
-      "scoreParts": { "mention": 0.21, "buzz": 0, "mine": null },
-      "mentions": 1,
-      "tags": ["오션뷰", "대형", "주차가능"],
-      "placeUrl": "http://place.map.kakao.com/106643436",
-      "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03"
+      "id": "506351806",
+      "name": "롱블랙",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.795623673444375,
+      "lng": 128.91783037411915,
+      "address": "강원특별자치도 강릉시 창해로362번길 12",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 62.1,
+      "scoreParts": {
+        "mention": 0.76,
+        "buzz": 0.19,
+        "mine": null
+      },
+      "mentions": 11,
+      "tags": [
+        "오션뷰"
+      ],
+      "placeUrl": "http://place.map.kakao.com/506351806",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
     },
     {
       "id": "206704914",
       "name": "허스크밀",
-      "category": ["bakery"],
-      "lat": 37.7943623,
-      "lng": 128.9145961,
+      "category": [
+        "bakery",
+        "dessert"
+      ],
+      "lat": 37.79435838953372,
+      "lng": 128.91459523055724,
       "address": "강원특별자치도 강릉시 난설헌로219번길 20-8",
-      "region": { "sido": "강원", "sigungu": "강릉시" },
-      "score": 16.0,
-      "scoreParts": { "mention": 0.21, "buzz": 0, "mine": null },
-      "mentions": 1,
-      "tags": [],
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 61.3,
+      "scoreParts": {
+        "mention": 0.76,
+        "buzz": 0.16,
+        "mine": null
+      },
+      "mentions": 11,
+      "tags": [
+        "대형"
+      ],
+      "hours": "09:00~21:50",
+      "phone": "033-653-1332",
       "placeUrl": "http://place.map.kakao.com/206704914",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04"
     },
     {
-      "id": "1526839621",
-      "name": "강릉카페 체크이스트",
-      "category": ["cafe"],
-      "lat": 37.7661694,
-      "lng": 128.9129429,
-      "address": "강원특별자치도 강릉시 강변북길 153",
-      "region": { "sido": "강원", "sigungu": "강릉시" },
-      "score": 16.0,
-      "scoreParts": { "mention": 0.21, "buzz": 0, "mine": null },
-      "mentions": 1,
+      "id": "607527806",
+      "name": "강릉오빠",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.7531070746724,
+      "lng": 128.900361190578,
+      "address": "강원특별자치도 강릉시 중앙시장4길 24-1",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 60.3,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.62,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [
+        "주차가능"
+      ],
+      "hours": "11:00~19:00",
+      "closedDay": "빵 굽는 고소한 향이",
+      "phone": "010-2369-7381",
+      "placeUrl": "http://place.map.kakao.com/607527806",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1482984092",
+      "name": "테라로사 강릉신라모노그램점",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.78545766662671,
+      "lng": 128.9273280169806,
+      "address": "강원특별자치도 강릉시 해안로 210",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 59.7,
+      "scoreParts": {
+        "mention": 0.74,
+        "buzz": 0.18,
+        "mine": null
+      },
+      "mentions": 10,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "1668-2764",
+      "placeUrl": "http://place.map.kakao.com/1482984092",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1755671035",
+      "name": "강릉베이글",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.75431011655668,
+      "lng": 128.8996090993074,
+      "address": "강원특별자치도 강릉시 금성로11번길 5",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 58.2,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0.42,
+        "mine": null
+      },
+      "mentions": 7,
       "tags": [],
-      "placeUrl": "http://place.map.kakao.com/1526839621",
+      "placeUrl": "http://place.map.kakao.com/1755671035",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "441407566",
+      "name": "나이슬리",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.7602195476681,
+      "lng": 128.905081952536,
+      "address": "강원특별자치도 강릉시 용지로110번길 10",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 57.2,
+      "scoreParts": {
+        "mention": 0.76,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 11,
+      "tags": [
+        "브런치"
+      ],
+      "placeUrl": "http://place.map.kakao.com/441407566",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "10534998",
+      "name": "에이엠브레드",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.77237133152584,
+      "lng": 128.94753267403644,
+      "address": "강원특별자치도 강릉시 창해로14번길 24",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 56.8,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 0.25,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [],
+      "hours": "09:00~22:30",
+      "phone": "033-655-2200",
+      "placeUrl": "http://place.map.kakao.com/10534998",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "419274867",
+      "name": "강릉커피콩빵 월화거리점",
+      "category": [
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.75319736951428,
+      "lng": 128.90023642774358,
+      "address": "강원특별자치도 강릉시 금성로13번길 19-1",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 56.6,
+      "scoreParts": {
+        "mention": 0.71,
+        "buzz": 0.15,
+        "mine": null
+      },
+      "mentions": 9,
+      "tags": [
+        "브런치"
+      ],
+      "placeUrl": "http://place.map.kakao.com/419274867",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "403447182",
+      "name": "온유",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.8195341103485,
+      "lng": 128.855101941402,
+      "address": "강원특별자치도 강릉시 사천면 방동길 43-32",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 55.2,
+      "scoreParts": {
+        "mention": 0.74,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 10,
+      "tags": [
+        "오션뷰",
+        "브런치"
+      ],
+      "hours": "08:00~20:00",
+      "placeUrl": "http://place.map.kakao.com/403447182",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "119808314",
+      "name": "에펠루아 월화점",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.7533656168298,
+      "lng": 128.90008189047,
+      "address": "강원특별자치도 강릉시 중앙시장2길 48",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 55.2,
+      "scoreParts": {
+        "mention": 0.74,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 10,
+      "tags": [
+        "브런치"
+      ],
+      "placeUrl": "http://place.map.kakao.com/119808314",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1029851516",
+      "name": "교동빵집",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.7577379988305,
+      "lng": 128.892264814264,
+      "address": "강원특별자치도 강릉시 강릉대로 198",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 54.9,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0.28,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [],
+      "hours": "08:00-18:00",
+      "phone": "033-642-0455",
+      "placeUrl": "http://place.map.kakao.com/1029851516",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "848304732",
+      "name": "카페콥스",
+      "category": [
+        "cafe",
+        "bakery",
+        "dessert"
+      ],
+      "lat": 37.7881821682735,
+      "lng": 128.914490295699,
+      "address": "강원특별자치도 강릉시 초당순두부길 54",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 54.5,
+      "scoreParts": {
+        "mention": 0.71,
+        "buzz": 0.06,
+        "mine": null
+      },
+      "mentions": 9,
+      "tags": [],
+      "hours": "11:00~20:00",
+      "phone": "033-653-2144",
+      "placeUrl": "http://place.map.kakao.com/848304732",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "22726983",
+      "name": "갤러리밥스",
+      "category": [
+        "cafe"
+      ],
+      "lat": 37.787194986056114,
+      "lng": 128.90804242454263,
+      "address": "강원특별자치도 강릉시 난설헌로 144",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 52.9,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0.46,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [],
+      "phone": "033-642-1211",
+      "placeUrl": "http://place.map.kakao.com/22726983",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "666460441",
+      "name": "강릉빵다방 본점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.7690056080449,
+      "lng": 128.91811727610298,
+      "address": "강원특별자치도 강릉시 남강초교1길 24",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 52.8,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.63,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "웨이팅있음"
+      ],
+      "phone": "033-642-8807",
+      "placeUrl": "http://place.map.kakao.com/666460441",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "26308981",
+      "name": "보헤미안로스터즈 박이추커피공장",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.84680371034389,
+      "lng": 128.8669885738761,
+      "address": "강원특별자치도 강릉시 사천면 해안로 1107",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 52.2,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.29,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [],
+      "hours": "09:00~21:00",
+      "phone": "033-642-6688",
+      "placeUrl": "http://place.map.kakao.com/26308981",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "745713163",
+      "name": "루모",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.7416239614517,
+      "lng": 128.877607364077,
+      "address": "강원특별자치도 강릉시 관대길16번길 17-6",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 50.6,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [
+        "브런치"
+      ],
+      "hours": "09:30-20:00",
+      "placeUrl": "http://place.map.kakao.com/745713163",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1615765705",
+      "name": "초당송방",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.7944798176689,
+      "lng": 128.913387095404,
+      "address": "강원특별자치도 강릉시 난설헌로219번길 24",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 50.6,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [
+        "주차가능",
+        "브런치"
+      ],
+      "phone": "0507-1414-0603",
+      "placeUrl": "http://place.map.kakao.com/1615765705",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "213973117",
+      "name": "오브리에타",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.753519735939,
+      "lng": 128.840606033779,
+      "address": "강원특별자치도 강릉시 성산면 양지말길 82",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 50.6,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "010-2752-8893",
+      "placeUrl": "http://place.map.kakao.com/213973117",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "106643436",
+      "name": "곳베이커리",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.8433720577454,
+      "lng": 128.872627309735,
+      "address": "강원특별자치도 강릉시 사천면 진리해변길 143",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 49.6,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0.71,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [],
+      "placeUrl": "http://place.map.kakao.com/106643436",
       "firstSeen": "2026-08-03",
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1896428146",
+      "name": "크림하우스",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.85044048646009,
+      "lng": 128.86100797158375,
+      "address": "강원특별자치도 강릉시 사천면 해안로 1173",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 49.2,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0.32,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "033-645-1173",
+      "placeUrl": "http://place.map.kakao.com/1896428146",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1643164090",
+      "name": "학산 경포호수지점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.7878595089078,
+      "lng": 128.907504447911,
+      "address": "강원특별자치도 강릉시 난설헌로 145",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 48.3,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0.28,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [
+        "주차가능"
+      ],
+      "hours": "10:00-21:00",
+      "placeUrl": "http://place.map.kakao.com/1643164090",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "9014214",
+      "name": "돔베이커리카페",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.7699438973328,
+      "lng": 128.914042498786,
+      "address": "강원특별자치도 강릉시 하평길 50",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 47.9,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [
+        "오션뷰",
+        "주차가능"
+      ],
+      "phone": "033-652-7953",
+      "placeUrl": "http://place.map.kakao.com/9014214",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1261279843",
+      "name": "퍼베이드",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.7631650638089,
+      "lng": 128.886848589276,
+      "address": "강원특별자치도 강릉시 화부산로 78",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 47.5,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.11,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [
+        "브런치"
+      ],
+      "hours": "10:00~19:00",
+      "phone": "033-645-7953",
+      "placeUrl": "http://place.map.kakao.com/1261279843",
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "262521196",
+      "name": "그리우니",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.789070412244,
+      "lng": 128.909439197313,
+      "address": "강원특별자치도 강릉시 난설헌로 166",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 47.1,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0.24,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [],
+      "phone": "033-652-2181",
+      "placeUrl": "http://place.map.kakao.com/262521196",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1538982474",
+      "name": "백야커피",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.8115245862634,
+      "lng": 128.899079504156,
+      "address": "강원특별자치도 강릉시 해안로 607",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 46.9,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.08,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [
+        "오션뷰"
+      ],
+      "phone": "033-646-1999",
+      "placeUrl": "http://place.map.kakao.com/1538982474",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "805132874",
+      "name": "인솔트베이커리",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.75749655384535,
+      "lng": 128.89327530682579,
+      "address": "강원특별자치도 강릉시 강릉대로194번길 12",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 44.8,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [],
+      "hours": "10:30-18:00",
+      "phone": "010-2150-1941",
+      "placeUrl": "http://place.map.kakao.com/805132874",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1759814712",
+      "name": "백온당",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.7881236972986,
+      "lng": 128.909435260147,
+      "address": "강원특별자치도 강릉시 초당순두부길 10",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 44.8,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [
+        "주차가능"
+      ],
+      "hours": "11:00-17:00",
+      "phone": "0507-1361-3809",
+      "placeUrl": "http://place.map.kakao.com/1759814712",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "599987563",
+      "name": "카페제니엘",
+      "category": [
+        "cafe",
+        "bakery",
+        "dessert"
+      ],
+      "lat": 37.8943584186524,
+      "lng": 128.833885521646,
+      "address": "강원특별자치도 강릉시 주문진읍 해안로 1822",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 44.8,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [
+        "오션뷰",
+        "대형"
+      ],
+      "phone": "033-822-4044",
+      "placeUrl": "http://place.map.kakao.com/599987563",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1273418046",
+      "name": "테라로사 본점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.69651123810461,
+      "lng": 128.8925334921386,
+      "address": "강원특별자치도 강릉시 구정면 현천길 7",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 44.2,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0.49,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [
+        "주차가능"
+      ],
+      "hours": "09:00~21:00",
+      "phone": "1668-2764",
+      "placeUrl": "http://place.map.kakao.com/1273418046",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "712866567",
+      "name": "롱브레드 초당점",
+      "category": [
+        "dessert",
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.792347742478555,
+      "lng": 128.91320835694756,
+      "address": "강원특별자치도 강릉시 난설헌로 221",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 41.2,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [
+        "오션뷰",
+        "브런치"
+      ],
+      "phone": "033-652-0030",
+      "placeUrl": "http://place.map.kakao.com/712866567",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1411833327",
+      "name": "52블럭",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.76241005237097,
+      "lng": 128.87613802204538,
+      "address": "강원특별자치도 강릉시 정원로 52",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 40.9,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.15,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "hours": "06:30~13:00",
+      "closedDay": "빵 소진 시 매장은 마감됩니다",
+      "phone": "033-646-1944",
+      "placeUrl": "http://place.map.kakao.com/1411833327",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "841306441",
+      "name": "씨엠디컴퍼니",
+      "category": [
+        "cafe"
+      ],
+      "lat": 37.803894288607,
+      "lng": 128.904225889733,
+      "address": "강원특별자치도 강릉시 경포로 489-10",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 39.6,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.1,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "주차가능"
+      ],
+      "hours": "11:00-20:00",
+      "phone": "010-3118-8414",
+      "placeUrl": "http://place.map.kakao.com/841306441",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2005771473",
+      "name": "카페소돌엔",
+      "category": [
+        "cafe"
+      ],
+      "lat": 37.906268551817995,
+      "lng": 128.827906394017,
+      "address": "강원특별자치도 강릉시 주문진읍 해안로 1987",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 38.5,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0.26,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [
+        "오션뷰"
+      ],
+      "hours": "08:00~21:00",
+      "phone": "033-661-0316",
+      "placeUrl": "http://place.map.kakao.com/2005771473",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "27320313",
+      "name": "보사노바 커피로스터스 강릉점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.772045728575314,
+      "lng": 128.94782940821094,
+      "address": "강원특별자치도 강릉시 창해로14번길 28",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 38.1,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0.25,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [
+        "오션뷰"
+      ],
+      "phone": "033-653-0038",
+      "placeUrl": "http://place.map.kakao.com/27320313",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1872554607",
+      "name": "치아바타 영진해수욕장점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.8690475705702,
+      "lng": 128.844904423726,
+      "address": "강원특별자치도 강릉시 연곡면 영진길 85",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 37,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "placeUrl": "http://place.map.kakao.com/1872554607",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1842226063",
+      "name": "카페 뤼미에르",
+      "category": [
+        "cafe"
+      ],
+      "lat": 37.77272713557293,
+      "lng": 128.94715274912144,
+      "address": "강원특별자치도 강릉시 창해로14번길 18",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 35.9,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0.16,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [
+        "오션뷰"
+      ],
+      "phone": "0507-1447-0225",
+      "placeUrl": "http://place.map.kakao.com/1842226063",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "936864949",
+      "name": "비엔남커피 그곳에브런치",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.7599144564004,
+      "lng": 128.855391846215,
+      "address": "강원특별자치도 강릉시 성산면 위촌길 104",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 31.9,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [
+        "브런치"
+      ],
+      "placeUrl": "http://place.map.kakao.com/936864949",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1886557459",
+      "name": "코즈밀",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.7574824195897,
+      "lng": 128.891182655505,
+      "address": "강원특별자치도 강릉시 강릉대로 188-1",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 31.9,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [],
+      "closedDay": "매주",
+      "phone": "0507-1357-8194",
+      "placeUrl": "http://place.map.kakao.com/1886557459",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1641643299",
+      "name": "눈꽃IN디저트",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.7592087957705,
+      "lng": 128.902741289566,
+      "address": "강원특별자치도 강릉시 경강로 2174",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 31.9,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [],
+      "placeUrl": "http://place.map.kakao.com/1641643299",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "970598742",
+      "name": "빵명장 강릉점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.76496632610716,
+      "lng": 128.9403358397922,
+      "address": "강원특별자치도 강릉시 성덕로 107",
+      "region": {
+        "sido": "강원",
+        "sigungu": "강릉시"
+      },
+      "score": 31.9,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [],
+      "hours": "10:00~21:30",
+      "closedDay": "매달 3번째 화요일 전화번호",
+      "phone": "033-652-0409",
+      "placeUrl": "http://place.map.kakao.com/970598742",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
     }
   ]
 }
