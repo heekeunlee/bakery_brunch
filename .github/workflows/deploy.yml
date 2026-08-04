@@ -24,7 +24,13 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
+      # 기본 checkout 은 워크플로를 트리거한 커밋(github.sha)을 가져온다.
+      # 자동 수집이 데이터를 커밋한 뒤 이 워크플로를 호출하는 경로에서는
+      # 그 커밋이 트리거 시점보다 뒤에 있어 갱신분이 배포에서 누락된다.
+      # 항상 main 최신을 명시적으로 체크아웃한다.
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-node@v4
         with:
