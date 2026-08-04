@@ -1,1 +1,1941 @@
-{"generatedAt":"","count":0,"places":[]}
+{
+  "generatedAt": "2026-08-04T01:04:28.708Z",
+  "count": 70,
+  "places": [
+    {
+      "id": "803688018",
+      "name": "아베베베이커리 서울",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.5695381297673,
+      "lng": 126.999943402662,
+      "address": "서울 종로구 청계천로 201",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 86.9,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.48,
+        "mine": null
+      },
+      "mentions": 54,
+      "tags": [],
+      "hours": "10:00~19:00",
+      "phone": "010-5365-7206",
+      "placeUrl": "http://place.map.kakao.com/803688018",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1021367507",
+      "name": "문화제빵",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.574275210003854,
+      "lng": 126.99088159135351,
+      "address": "서울 종로구 돈화문로 65",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 85.7,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.43,
+        "mine": null
+      },
+      "mentions": 173,
+      "tags": [],
+      "hours": "11:00~19:00",
+      "phone": "070-5147-6888",
+      "placeUrl": "http://place.map.kakao.com/1021367507",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "656095762",
+      "name": "시오팡야 광화문D타워점",
+      "category": [
+        "bakery",
+        "dessert"
+      ],
+      "lat": 37.5710120675383,
+      "lng": 126.97886047784,
+      "address": "서울 종로구 종로3길 17",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 78.8,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.15,
+        "mine": null
+      },
+      "mentions": 56,
+      "tags": [],
+      "hours": "10시-20시30",
+      "placeUrl": "http://place.map.kakao.com/656095762",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "78911659",
+      "name": "청수당 베이커리",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.57388138546145,
+      "lng": 126.98978471926921,
+      "address": "서울 종로구 돈화문로11나길 31-9",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 78.7,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.15,
+        "mine": null
+      },
+      "mentions": 28,
+      "tags": [],
+      "hours": "10:30-21:00",
+      "placeUrl": "http://place.map.kakao.com/78911659",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2141292652",
+      "name": "애쉬빌베이커리카페",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.5790246094332,
+      "lng": 126.984671496632,
+      "address": "서울 종로구 북촌로5길 5-5",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 75.7,
+      "scoreParts": {
+        "mention": 0.92,
+        "buzz": 0.27,
+        "mine": null
+      },
+      "mentions": 19,
+      "tags": [],
+      "hours": "11:00~21:30",
+      "placeUrl": "http://place.map.kakao.com/2141292652",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "760915817",
+      "name": "레스피레베이커리",
+      "category": [
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.5827605395165,
+      "lng": 126.972137864453,
+      "address": "서울 종로구 효자로13길 40-7",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 73.3,
+      "scoreParts": {
+        "mention": 0.95,
+        "buzz": 0.09,
+        "mine": null
+      },
+      "mentions": 21,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "010-9866-7702",
+      "placeUrl": "http://place.map.kakao.com/760915817",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1018206278",
+      "name": "아티스트베이커리 안국",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.5764071801326,
+      "lng": 126.984358455132,
+      "address": "서울 종로구 율곡로 45",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 73.3,
+      "scoreParts": {
+        "mention": 0.85,
+        "buzz": 0.38,
+        "mine": null
+      },
+      "mentions": 15,
+      "tags": [
+        "웨이팅있음"
+      ],
+      "phone": "116",
+      "placeUrl": "http://place.map.kakao.com/1018206278",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "746054461",
+      "name": "공간",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.566611655352844,
+      "lng": 127.00308669804463,
+      "address": "서울 중구 을지로 지하 218",
+      "region": {
+        "sido": "서울",
+        "sigungu": "중구"
+      },
+      "score": 72.9,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 1,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [
+        "브런치"
+      ],
+      "placeUrl": "http://place.map.kakao.com/746054461",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "164051108",
+      "name": "경복궁카페",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.5779060244463,
+      "lng": 126.972306088205,
+      "address": "서울 종로구 자하문로 20",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 70.6,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0.91,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [
+        "브런치"
+      ],
+      "placeUrl": "http://place.map.kakao.com/164051108",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "9625635",
+      "name": "효자베이커리",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.5809405633518,
+      "lng": 126.968667464836,
+      "address": "서울 종로구 필운대로 54",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 67.4,
+      "scoreParts": {
+        "mention": 0.76,
+        "buzz": 0.41,
+        "mine": null
+      },
+      "mentions": 11,
+      "tags": [],
+      "hours": "08:00-20:20",
+      "phone": "02-736-7629",
+      "placeUrl": "http://place.map.kakao.com/9625635",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "265446905",
+      "name": "베이커리아궁",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.5694107953304,
+      "lng": 126.98320193877,
+      "address": "서울 종로구 우정국로 6",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 63.8,
+      "scoreParts": {
+        "mention": 0.85,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 15,
+      "tags": [],
+      "hours": "09:00~22:00",
+      "phone": "02-512-2041",
+      "placeUrl": "http://place.map.kakao.com/265446905",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1331626923",
+      "name": "비비커피 서울시청역점",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.56363417667284,
+      "lng": 126.97604763338386,
+      "address": "서울 중구 서소문로 136",
+      "region": {
+        "sido": "서울",
+        "sigungu": "중구"
+      },
+      "score": 63.6,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0.63,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [
+        "브런치"
+      ],
+      "placeUrl": "http://place.map.kakao.com/1331626923",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "320882660",
+      "name": "도트블랭킷",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.5770261283167,
+      "lng": 126.984096819784,
+      "address": "서울 종로구 윤보선길 22",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 62.7,
+      "scoreParts": {
+        "mention": 0.76,
+        "buzz": 0.22,
+        "mine": null
+      },
+      "mentions": 11,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "0507-1431-2226",
+      "placeUrl": "http://place.map.kakao.com/320882660",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1254228746",
+      "name": "수잔나의앞치마",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.5633050390399,
+      "lng": 126.999609510907,
+      "address": "서울 중구 퇴계로49길 24",
+      "region": {
+        "sido": "서울",
+        "sigungu": "중구"
+      },
+      "score": 62.3,
+      "scoreParts": {
+        "mention": 0.76,
+        "buzz": 0.2,
+        "mine": null
+      },
+      "mentions": 11,
+      "tags": [
+        "대형"
+      ],
+      "hours": "07:00-22:00",
+      "phone": "02-2272-8007",
+      "placeUrl": "http://place.map.kakao.com/1254228746",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "499490341",
+      "name": "온지심",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.57315795194294,
+      "lng": 126.99057042715269,
+      "address": "서울 종로구 돈화문로11다길 17",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 61,
+      "scoreParts": {
+        "mention": 0.81,
+        "buzz": 0.01,
+        "mine": null
+      },
+      "mentions": 13,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "0503-7153-7089",
+      "placeUrl": "http://place.map.kakao.com/499490341",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1631356269",
+      "name": "아소토베이커리",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.5637435137836,
+      "lng": 126.991428431213,
+      "address": "서울 중구 수표로10길 19",
+      "region": {
+        "sido": "서울",
+        "sigungu": "중구"
+      },
+      "score": 60.1,
+      "scoreParts": {
+        "mention": 0.74,
+        "buzz": 0.2,
+        "mine": null
+      },
+      "mentions": 10,
+      "tags": [
+        "웨이팅있음"
+      ],
+      "phone": "02-2261-0077",
+      "placeUrl": "http://place.map.kakao.com/1631356269",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1584973087",
+      "name": "본지르르 서촌",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.5752196399784,
+      "lng": 126.970170937349,
+      "address": "서울 종로구 사직로8길 9-1",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 59,
+      "scoreParts": {
+        "mention": 0.79,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 12,
+      "tags": [
+        "대형"
+      ],
+      "hours": "10:00~22:00",
+      "placeUrl": "http://place.map.kakao.com/1584973087",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1591136356",
+      "name": "에이크로리즘 안국카페",
+      "category": [
+        "cafe",
+        "bakery",
+        "dessert"
+      ],
+      "lat": 37.57705417493152,
+      "lng": 126.98498095307966,
+      "address": "서울 종로구 율곡로5길 16",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 59,
+      "scoreParts": {
+        "mention": 0.79,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 12,
+      "tags": [],
+      "phone": "0507-1305-6142",
+      "placeUrl": "http://place.map.kakao.com/1591136356",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1372168402",
+      "name": "김용현베이커리",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.57797703705486,
+      "lng": 126.97160757196225,
+      "address": "서울 종로구 자하문로 21",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 57.6,
+      "scoreParts": {
+        "mention": 0.74,
+        "buzz": 0.1,
+        "mine": null
+      },
+      "mentions": 10,
+      "tags": [],
+      "phone": "02-3217-6800",
+      "placeUrl": "http://place.map.kakao.com/1372168402",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "243733683",
+      "name": "덕수궁 리에제와플",
+      "category": [
+        "cafe"
+      ],
+      "lat": 37.5647929393394,
+      "lng": 126.976452473606,
+      "address": "서울 중구 덕수궁길 5",
+      "region": {
+        "sido": "서울",
+        "sigungu": "중구"
+      },
+      "score": 56.6,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0.35,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [],
+      "hours": "11:30-22:00",
+      "phone": "02-318-5202",
+      "placeUrl": "http://place.map.kakao.com/243733683",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1847969794",
+      "name": "포스톤즈 커피로스터스 삼청점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.5847418842058,
+      "lng": 126.981653072912,
+      "address": "서울 종로구 삼청로 103-4",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 55.9,
+      "scoreParts": {
+        "mention": 0.74,
+        "buzz": 0.03,
+        "mine": null
+      },
+      "mentions": 10,
+      "tags": [],
+      "placeUrl": "http://place.map.kakao.com/1847969794",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1450380292",
+      "name": "코끼리베이글 인사동점",
+      "category": [
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.5735655611528,
+      "lng": 126.985277107722,
+      "address": "서울 종로구 인사동길 35-3",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 55.2,
+      "scoreParts": {
+        "mention": 0.74,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 10,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "02-736-7887",
+      "placeUrl": "http://place.map.kakao.com/1450380292",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "768172634",
+      "name": "해운대 달맞이 빵",
+      "category": [
+        "bakery",
+        "dessert"
+      ],
+      "lat": 37.56465428978922,
+      "lng": 126.98977918811244,
+      "address": "서울 중구 마른내로 18",
+      "region": {
+        "sido": "서울",
+        "sigungu": "중구"
+      },
+      "score": 54.9,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 0.17,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [],
+      "placeUrl": "http://place.map.kakao.com/768172634",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1041123432",
+      "name": "애즈라이크 서촌",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.5784081074036,
+      "lng": 126.973301001437,
+      "address": "서울 종로구 효자로7길 23",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 54.3,
+      "scoreParts": {
+        "mention": 0.71,
+        "buzz": 0.05,
+        "mine": null
+      },
+      "mentions": 9,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "02-722-9994",
+      "placeUrl": "http://place.map.kakao.com/1041123432",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2125250690",
+      "name": "오뷔르베이커리",
+      "category": [
+        "bakery",
+        "dessert"
+      ],
+      "lat": 37.5635912959843,
+      "lng": 126.992156232557,
+      "address": "서울 중구 마른내로2길 17",
+      "region": {
+        "sido": "서울",
+        "sigungu": "중구"
+      },
+      "score": 54.2,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 0.15,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [
+        "대형"
+      ],
+      "phone": "070-8887-9797",
+      "placeUrl": "http://place.map.kakao.com/2125250690",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1024788121",
+      "name": "광장시장찹쌀꽈배기",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.57066707631941,
+      "lng": 127.00040524305597,
+      "address": "서울 종로구 종로32길 2",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 54.1,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.37,
+        "mine": null
+      },
+      "mentions": 25,
+      "tags": [],
+      "hours": "9:00~21:30",
+      "phone": "010-9498-3115",
+      "placeUrl": "http://place.map.kakao.com/1024788121",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1228346130",
+      "name": "프랑스루브르바게트",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.5706629638417,
+      "lng": 126.981752743927,
+      "address": "서울 종로구 종로 33",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 54.1,
+      "scoreParts": {
+        "mention": 0.71,
+        "buzz": 0.04,
+        "mine": null
+      },
+      "mentions": 9,
+      "tags": [],
+      "placeUrl": "http://place.map.kakao.com/1228346130",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1077718576",
+      "name": "서울소금빵",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.5567296651634,
+      "lng": 127.013742876432,
+      "address": "서울 중구 다산로20길 32",
+      "region": {
+        "sido": "서울",
+        "sigungu": "중구"
+      },
+      "score": 54.1,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.68,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "hours": "09:00~22:00",
+      "placeUrl": "http://place.map.kakao.com/1077718576",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1774632858",
+      "name": "해운대달맞이빵 청계천점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.568940610173044,
+      "lng": 126.98417551078788,
+      "address": "서울 종로구 청계천로 59",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 53.9,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 0.13,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [],
+      "hours": "08:00-22:00",
+      "phone": "070-8680-0452",
+      "placeUrl": "http://place.map.kakao.com/1774632858",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "734737440",
+      "name": "포비 청와대점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.58375228719697,
+      "lng": 126.97977732346271,
+      "address": "서울 종로구 삼청로7길 37",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 53,
+      "scoreParts": {
+        "mention": 0.71,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 9,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "02-723-3861",
+      "placeUrl": "http://place.map.kakao.com/734737440",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "59130579",
+      "name": "솔방울베이커리",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.57417616792206,
+      "lng": 126.99179966917819,
+      "address": "서울 종로구 서순라길 89-15",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 51.2,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0.13,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [],
+      "phone": "070-8777-1130",
+      "placeUrl": "http://place.map.kakao.com/59130579",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1284491502",
+      "name": "그래도 베이커리",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.5893140125161,
+      "lng": 126.997164855557,
+      "address": "서울 종로구 성균관로 73",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 50.9,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.55,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "02-747-8383",
+      "placeUrl": "http://place.map.kakao.com/1284491502",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1761099960",
+      "name": "에디션엠",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.5821457430079,
+      "lng": 127.000863821,
+      "address": "서울 종로구 대학로11길 17-2",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 50.6,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0.11,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [],
+      "phone": "02-743-0233",
+      "placeUrl": "http://place.map.kakao.com/1761099960",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "710829529",
+      "name": "아방베이커리 을지로점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.56837091431863,
+      "lng": 126.98229776096431,
+      "address": "서울 중구 남대문로 125",
+      "region": {
+        "sido": "서울",
+        "sigungu": "중구"
+      },
+      "score": 50.6,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [],
+      "hours": "08:00-22:00",
+      "phone": "02-3789-0747",
+      "placeUrl": "http://place.map.kakao.com/710829529",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "492735630",
+      "name": "시애틀커피하우스 종로3가역점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.5706793881329,
+      "lng": 126.991544228705,
+      "address": "서울 종로구 종로 125",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 48.2,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.13,
+        "mine": null
+      },
+      "mentions": 11,
+      "tags": [],
+      "phone": "070-8835-9356",
+      "placeUrl": "http://place.map.kakao.com/492735630",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1718109027",
+      "name": "콘웨이커피 안국점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.577290072773,
+      "lng": 126.983752616168,
+      "address": "서울 종로구 윤보선길 27",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 47.9,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [],
+      "phone": "02-733-6606",
+      "placeUrl": "http://place.map.kakao.com/1718109027",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1489722933",
+      "name": "푸가 광화문점",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch",
+        "dessert"
+      ],
+      "lat": 37.5708446679726,
+      "lng": 126.979923441709,
+      "address": "서울 종로구 종로 19",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 47.9,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "02-736-1318",
+      "placeUrl": "http://place.map.kakao.com/1489722933",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1564084768",
+      "name": "노띵커피 시청점",
+      "category": [
+        "cafe"
+      ],
+      "lat": 37.5632962796233,
+      "lng": 126.97185762442,
+      "address": "서울 중구 서소문로 89-20",
+      "region": {
+        "sido": "서울",
+        "sigungu": "중구"
+      },
+      "score": 47.9,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [],
+      "phone": "02-303-7404",
+      "placeUrl": "http://place.map.kakao.com/1564084768",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1909959007",
+      "name": "베이커리텐",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.5634359888329,
+      "lng": 127.011866361771,
+      "address": "서울 중구 다산로33길 57",
+      "region": {
+        "sido": "서울",
+        "sigungu": "중구"
+      },
+      "score": 47.5,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.11,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [
+        "대형",
+        "브런치"
+      ],
+      "phone": "070-7743-3330",
+      "placeUrl": "http://place.map.kakao.com/1909959007",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1849776839",
+      "name": "카멜커피 서촌점",
+      "category": [
+        "cafe"
+      ],
+      "lat": 37.5787893200918,
+      "lng": 126.973711812813,
+      "address": "서울 종로구 효자로 31",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 46.7,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.07,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [
+        "대형",
+        "브런치"
+      ],
+      "phone": "010-6540-4940",
+      "placeUrl": "http://place.map.kakao.com/1849776839",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1420976501",
+      "name": "마사마드레",
+      "category": [
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.580436125052145,
+      "lng": 126.9691159924564,
+      "address": "서울 종로구 자하문로7길 68-3",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 46,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.05,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [
+        "웨이팅있음",
+        "브런치"
+      ],
+      "phone": "02-525-7234",
+      "placeUrl": "http://place.map.kakao.com/1420976501",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "11783888",
+      "name": "세이지핀치",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.5774736154829,
+      "lng": 126.968958726721,
+      "address": "서울 종로구 필운대로1길 8",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 45.6,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.03,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [
+        "브런치"
+      ],
+      "hours": "9:00~16:00",
+      "phone": "010-6836-6724",
+      "placeUrl": "http://place.map.kakao.com/11783888",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1311931370",
+      "name": "솔트24 동숭동본점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.57980038033022,
+      "lng": 127.00432236582269,
+      "address": "서울 종로구 동숭길 36",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 45.4,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0.17,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [],
+      "phone": "02-747-9273",
+      "placeUrl": "http://place.map.kakao.com/1311931370",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1427828053",
+      "name": "퍼블릭가든",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.5696606647617,
+      "lng": 126.999690978029,
+      "address": "서울 종로구 청계천로 199",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 45.2,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.02,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [
+        "야외석",
+        "브런치"
+      ],
+      "phone": "0507-1375-3402",
+      "placeUrl": "http://place.map.kakao.com/1427828053",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "26338242",
+      "name": "부암동스코프",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.5931241352924,
+      "lng": 126.963598694656,
+      "address": "서울 종로구 창의문로 149",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 43.8,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.27,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "070-8822-1739",
+      "placeUrl": "http://place.map.kakao.com/26338242",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "751469352",
+      "name": "리프커피",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.554988458936315,
+      "lng": 127.00944425888117,
+      "address": "서울 중구 동호로 195-15",
+      "region": {
+        "sido": "서울",
+        "sigungu": "중구"
+      },
+      "score": 43.7,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.27,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "010-2982-2026",
+      "placeUrl": "http://place.map.kakao.com/751469352",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "372133933",
+      "name": "마호가니 광화문 케이스퀘어시티점",
+      "category": [
+        "cafe",
+        "bakery",
+        "dessert"
+      ],
+      "lat": 37.568515642993574,
+      "lng": 126.98020931352166,
+      "address": "서울 중구 청계천로 24",
+      "region": {
+        "sido": "서울",
+        "sigungu": "중구"
+      },
+      "score": 42.4,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0.05,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [],
+      "phone": "02-6466-7177",
+      "placeUrl": "http://place.map.kakao.com/372133933",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "374133761",
+      "name": "도토리가든 안국점",
+      "category": [
+        "cafe",
+        "bakery",
+        "brunch",
+        "dessert"
+      ],
+      "lat": 37.57809678858027,
+      "lng": 126.98632451823079,
+      "address": "서울 종로구 계동길 19-8",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 42,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.2,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "0507-1476-1176",
+      "placeUrl": "http://place.map.kakao.com/374133761",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1426336200",
+      "name": "희작",
+      "category": [
+        "cafe"
+      ],
+      "lat": 37.5955093605678,
+      "lng": 126.967728309089,
+      "address": "서울 종로구 백석동길 155",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 41.9,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0.03,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [
+        "산뷰"
+      ],
+      "phone": "02-391-5161",
+      "placeUrl": "http://place.map.kakao.com/1426336200",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "587639814",
+      "name": "로코랩",
+      "category": [
+        "cafe"
+      ],
+      "lat": 37.57040484251755,
+      "lng": 126.98505586577747,
+      "address": "서울 종로구 종로 69",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 41.9,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0.03,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [],
+      "placeUrl": "http://place.map.kakao.com/587639814",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1879590476",
+      "name": "심세정",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.5660554515578,
+      "lng": 127.01704632444,
+      "address": "서울 중구 퇴계로 409-11",
+      "region": {
+        "sido": "서울",
+        "sigungu": "중구"
+      },
+      "score": 41.9,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.19,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "070-8823-7577",
+      "placeUrl": "http://place.map.kakao.com/1879590476",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1747103621",
+      "name": "그래도베이커리 서촌점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.579031624865,
+      "lng": 126.973432101287,
+      "address": "서울 종로구 효자로7길 6-1",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 41.2,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [],
+      "phone": "010-9446-2162",
+      "placeUrl": "http://place.map.kakao.com/1747103621",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "148705812",
+      "name": "아모르나폴리 안국점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.5779670765772,
+      "lng": 126.986596239795,
+      "address": "서울 종로구 계동길 15",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 41.2,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [],
+      "phone": "070-7585-5132",
+      "placeUrl": "http://place.map.kakao.com/148705812",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "779100605",
+      "name": "굴림 북촌점",
+      "category": [
+        "bakery",
+        "brunch"
+      ],
+      "lat": 37.5826189439903,
+      "lng": 126.986919199229,
+      "address": "서울 종로구 계동길 118",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 41.2,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "0502-5554-0840",
+      "placeUrl": "http://place.map.kakao.com/779100605",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1010518029",
+      "name": "메이타왕에그타르트 명동점",
+      "category": [
+        "bakery",
+        "dessert"
+      ],
+      "lat": 37.5619960270236,
+      "lng": 126.986553828259,
+      "address": "서울 중구 명동8가길 27",
+      "region": {
+        "sido": "서울",
+        "sigungu": "중구"
+      },
+      "score": 41.2,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [],
+      "placeUrl": "http://place.map.kakao.com/1010518029",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "7922550",
+      "name": "빵굼터 약수동점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.556238886180765,
+      "lng": 127.0112416286294,
+      "address": "서울 중구 다산로 139",
+      "region": {
+        "sido": "서울",
+        "sigungu": "중구"
+      },
+      "score": 41.2,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [],
+      "hours": "08:00-23:00",
+      "phone": "02-2231-9380",
+      "placeUrl": "http://place.map.kakao.com/7922550",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "177740025",
+      "name": "산산",
+      "category": [
+        "cafe",
+        "bakery",
+        "dessert"
+      ],
+      "lat": 37.5832546865268,
+      "lng": 126.970100934578,
+      "address": "서울 종로구 자하문로 81",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 39.8,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.11,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "02-461-2311",
+      "placeUrl": "http://place.map.kakao.com/177740025",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1546836224",
+      "name": "플러스카페 마로니에공원점",
+      "category": [
+        "cafe",
+        "bakery",
+        "dessert"
+      ],
+      "lat": 37.5804617641948,
+      "lng": 127.002418191479,
+      "address": "서울 종로구 대학로 104",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 39.8,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.11,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "02-6247-9926",
+      "placeUrl": "http://place.map.kakao.com/1546836224",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2060627604",
+      "name": "브루다커피 그랑서울점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.5717864895749,
+      "lng": 126.98165398749,
+      "address": "서울 종로구 종로7길 29-4",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 38.4,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.05,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "010-7423-3919",
+      "placeUrl": "http://place.map.kakao.com/2060627604",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "565065885",
+      "name": "묘한빵집",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.59247245060975,
+      "lng": 126.96571413722411,
+      "address": "서울 종로구 창의문로 133",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 38.2,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.05,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "02-391-5170",
+      "placeUrl": "http://place.map.kakao.com/565065885",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "94685330",
+      "name": "레망도레 광화문점",
+      "category": [
+        "bakery",
+        "dessert"
+      ],
+      "lat": 37.5674072175205,
+      "lng": 126.979045998683,
+      "address": "서울 중구 무교로 17",
+      "region": {
+        "sido": "서울",
+        "sigungu": "중구"
+      },
+      "score": 37.3,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.01,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "010-2523-5771",
+      "placeUrl": "http://place.map.kakao.com/94685330",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "821514313",
+      "name": "파네트 크루아상팩토리 광화문",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.57420631625331,
+      "lng": 126.97136335582925,
+      "address": "서울 종로구 사직로8길 24",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 37,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "02-720-5570",
+      "placeUrl": "http://place.map.kakao.com/821514313",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "853028118",
+      "name": "어니언컴퍼니 안국점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 37.57763190416756,
+      "lng": 126.98657365849033,
+      "address": "서울 종로구 계동길 5",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 37,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "070-7543-2123",
+      "placeUrl": "http://place.map.kakao.com/853028118",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "737922880",
+      "name": "더바움",
+      "category": [
+        "cafe",
+        "bakery",
+        "dessert"
+      ],
+      "lat": 37.5773761600027,
+      "lng": 126.971967796902,
+      "address": "서울 종로구 자하문로 13-2",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 37,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "070-7718-8984",
+      "placeUrl": "http://place.map.kakao.com/737922880",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2058991126",
+      "name": "곤트란쉐리에 종로타워점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 37.570751530573474,
+      "lng": 126.98358650579455,
+      "address": "서울 종로구 종로 51",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 37,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "02-3210-3755",
+      "placeUrl": "http://place.map.kakao.com/2058991126",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "318508774",
+      "name": "N258",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.5819456708621,
+      "lng": 127.015021161637,
+      "address": "서울 종로구 낙산길 258",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 37,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "브런치"
+      ],
+      "hours": "09:00~18:00",
+      "phone": "02-747-7571",
+      "placeUrl": "http://place.map.kakao.com/318508774",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "19237495",
+      "name": "카페마마스 광화문점",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 37.5746863577333,
+      "lng": 126.979043959267,
+      "address": "서울 종로구 종로1길 50",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 37,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "02-736-1250",
+      "placeUrl": "http://place.map.kakao.com/19237495",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "956163541",
+      "name": "렛잇비 청계천",
+      "category": [
+        "cafe",
+        "bakery",
+        "dessert"
+      ],
+      "lat": 37.56842339797618,
+      "lng": 126.97825675890313,
+      "address": "서울 중구 세종대로 136",
+      "region": {
+        "sido": "서울",
+        "sigungu": "중구"
+      },
+      "score": 37,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "070-4402-0025",
+      "placeUrl": "http://place.map.kakao.com/956163541",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2139630369",
+      "name": "백억커피 동묘앞역점",
+      "category": [
+        "cafe"
+      ],
+      "lat": 37.5745312670614,
+      "lng": 127.015958118749,
+      "address": "서울 종로구 지봉로 50",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 31.9,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [],
+      "phone": "070-4400-4851",
+      "placeUrl": "http://place.map.kakao.com/2139630369",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "533666375",
+      "name": "스푼 경복궁점",
+      "category": [
+        "dessert",
+        "cafe"
+      ],
+      "lat": 37.57536725609763,
+      "lng": 126.97332133173451,
+      "address": "서울 종로구 사직로 130",
+      "region": {
+        "sido": "서울",
+        "sigungu": "종로구"
+      },
+      "score": 31.9,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [],
+      "phone": "02-743-0919",
+      "placeUrl": "http://place.map.kakao.com/533666375",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    }
+  ]
+}
