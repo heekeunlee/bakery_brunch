@@ -1,7 +1,61 @@
 {
-  "generatedAt": "2026-08-04T00:12:45.672Z",
-  "count": 58,
+  "generatedAt": "2026-08-04T00:19:23.455Z",
+  "count": 109,
   "places": [
+    {
+      "id": "327137461",
+      "name": "중앙시장속초막걸리빵",
+      "category": [
+        "bakery"
+      ],
+      "lat": 38.2036987903902,
+      "lng": 128.5896383099,
+      "address": "강원특별자치도 속초시 중앙로129번길 23-1",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 94.7,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.79,
+        "mine": null
+      },
+      "mentions": 72,
+      "tags": [],
+      "hours": "09:00-19:00",
+      "closedDay": "중앙시장 근처에",
+      "placeUrl": "http://place.map.kakao.com/327137461",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "632468713",
+      "name": "속초옥수수소금빵",
+      "category": [
+        "bakery"
+      ],
+      "lat": 38.20420921140834,
+      "lng": 128.58819957980074,
+      "address": "강원특별자치도 속초시 수복로187번길 1",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 91.9,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.68,
+        "mine": null
+      },
+      "mentions": 40,
+      "tags": [],
+      "hours": "09:00-19:00",
+      "phone": "070-7799-2399",
+      "placeUrl": "http://place.map.kakao.com/632468713",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
     {
       "id": "1526839621",
       "name": "강릉카페 체크이스트",
@@ -33,6 +87,96 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1857179118",
+      "name": "카페설악산로",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 38.161619380712516,
+      "lng": 128.5961058560414,
+      "address": "강원특별자치도 속초시 설악산로 108",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 86.9,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.48,
+        "mine": null
+      },
+      "mentions": 43,
+      "tags": [],
+      "hours": "10:00~21:00",
+      "closedDay": "연중무휴",
+      "phone": "033-637-8248",
+      "placeUrl": "http://place.map.kakao.com/1857179118",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2056886384",
+      "name": "보사노바커피로스터스 속초점",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 38.1885435402464,
+      "lng": 128.603803997428,
+      "address": "강원특별자치도 속초시 해오름로 161",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 85.7,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.43,
+        "mine": null
+      },
+      "mentions": 26,
+      "tags": [
+        "오션뷰"
+      ],
+      "phone": "033-635-0038",
+      "placeUrl": "http://place.map.kakao.com/2056886384",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2104582750",
+      "name": "시드누아 속초점",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 38.1968985674422,
+      "lng": 128.530808723137,
+      "address": "강원특별자치도 속초시 바람꽃마을1길 38",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 83.9,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.36,
+        "mine": null
+      },
+      "mentions": 29,
+      "tags": [
+        "대형"
+      ],
+      "hours": "10:00-18:00",
+      "phone": "033-635-0080",
+      "placeUrl": "http://place.map.kakao.com/2104582750",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "653849031",
       "name": "테라로사 경포호수점",
       "category": [
@@ -57,6 +201,34 @@
       "hours": "09:00~21:00",
       "phone": "1668-2764",
       "placeUrl": "http://place.map.kakao.com/653849031",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "26634072",
+      "name": "봉브레드",
+      "category": [
+        "bakery"
+      ],
+      "lat": 38.202980420869665,
+      "lng": 128.56851026216341,
+      "address": "강원특별자치도 속초시 동해대로 4344-1",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 83,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.32,
+        "mine": null
+      },
+      "mentions": 25,
+      "tags": [],
+      "hours": "08:30-20:00",
+      "closedDay": "일",
+      "phone": "033-633-4826",
+      "placeUrl": "http://place.map.kakao.com/26634072",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -90,6 +262,37 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "666520663",
+      "name": "카페너래",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 38.2063015744423,
+      "lng": 128.520534538966,
+      "address": "강원특별자치도 속초시 원암학사평길 114",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 82.5,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.3,
+        "mine": null
+      },
+      "mentions": 35,
+      "tags": [
+        "대형"
+      ],
+      "hours": "09:00-18:00",
+      "closedDay": "매달 2,4번째",
+      "phone": "0502-5554-1636",
+      "placeUrl": "http://place.map.kakao.com/666520663",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "9835230",
       "name": "바로방",
       "category": [
@@ -115,6 +318,33 @@
       "hours": "10:00-23:00",
       "phone": "033-646-4621",
       "placeUrl": "http://place.map.kakao.com/9835230",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "487698285",
+      "name": "속초불탄감자빵 본점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 38.2032064733219,
+      "lng": 128.524899526102,
+      "address": "강원특별자치도 속초시 학사평길 34-20",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 80.4,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0.22,
+        "mine": null
+      },
+      "mentions": 89,
+      "tags": [],
+      "hours": "09:00~17:00",
+      "phone": "0507-1300-5347",
+      "placeUrl": "http://place.map.kakao.com/487698285",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -197,6 +427,34 @@
       "hours": "11:00~18:00",
       "phone": "033-922-6387",
       "placeUrl": "http://place.map.kakao.com/1895412800",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "940274399",
+      "name": "속초샌드",
+      "category": [
+        "bakery",
+        "brunch"
+      ],
+      "lat": 38.20423238055691,
+      "lng": 128.5901476538279,
+      "address": "강원특별자치도 속초시 중앙로147번길 16",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 76.4,
+      "scoreParts": {
+        "mention": 0.9,
+        "buzz": 0.35,
+        "mine": null
+      },
+      "mentions": 18,
+      "tags": [
+        "브런치"
+      ],
+      "placeUrl": "http://place.map.kakao.com/940274399",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -318,6 +576,179 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1191365478",
+      "name": "영랑호 카페 빈",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 38.22100023467265,
+      "lng": 128.58801196362026,
+      "address": "강원특별자치도 속초시 영랑호반길 617",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 75,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 38,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "0502-5554-3754",
+      "placeUrl": "http://place.map.kakao.com/1191365478",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1853156958",
+      "name": "심플레이스 속초점",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 38.2112621545226,
+      "lng": 128.5679995795415,
+      "address": "강원특별자치도 속초시 장천1길 140",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 75,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 41,
+      "tags": [
+        "브런치"
+      ],
+      "closedDay": "전화번호 0507",
+      "phone": "033-635-4999",
+      "placeUrl": "http://place.map.kakao.com/1853156958",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1658080901",
+      "name": "라헬의부엌 속초점",
+      "category": [
+        "dessert",
+        "cafe",
+        "brunch"
+      ],
+      "lat": 38.21633679858822,
+      "lng": 128.59551147543425,
+      "address": "강원특별자치도 속초시 영랑해안길 155",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 75,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 39,
+      "tags": [
+        "오션뷰",
+        "브런치"
+      ],
+      "hours": "10:00-19:00",
+      "closedDay": "0507",
+      "phone": "033-638-1287",
+      "placeUrl": "http://place.map.kakao.com/1658080901",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1124552838",
+      "name": "팡파미유 속초점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 38.20496265224554,
+      "lng": 128.5894374783164,
+      "address": "강원특별자치도 속초시 중앙시장로6길 14-1",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 75,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 30,
+      "tags": [],
+      "hours": "10시~19시",
+      "closedDay": "단, 수요일이 공휴일이면 영업 후",
+      "phone": "010-7756-9661",
+      "placeUrl": "http://place.map.kakao.com/1124552838",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1868266751",
+      "name": "시골빵집늘봄",
+      "category": [
+        "bakery"
+      ],
+      "lat": 38.18491338665115,
+      "lng": 128.5907512553133,
+      "address": "강원특별자치도 속초시 온정로1길 11-10",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 75,
+      "scoreParts": {
+        "mention": 1,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 25,
+      "tags": [],
+      "phone": "0502-5552-6833",
+      "placeUrl": "http://place.map.kakao.com/1868266751",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "945954282",
+      "name": "칠성조선소",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 38.19853933117601,
+      "lng": 128.58347608911419,
+      "address": "강원특별자치도 속초시 중앙로46번길 45",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 74.4,
+      "scoreParts": {
+        "mention": 0.85,
+        "buzz": 0.42,
+        "mine": null
+      },
+      "mentions": 15,
+      "tags": [],
+      "phone": "033-633-2309",
+      "placeUrl": "http://place.map.kakao.com/945954282",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1004538025",
       "name": "강릉이래요",
       "category": [
@@ -347,6 +778,32 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "2036811985",
+      "name": "베럴어스",
+      "category": [
+        "bakery"
+      ],
+      "lat": 38.1891967217226,
+      "lng": 128.583359355709,
+      "address": "강원특별자치도 속초시 조양상가길 55",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 71.2,
+      "scoreParts": {
+        "mention": 0.95,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 21,
+      "tags": [],
+      "hours": "12:00-19:00",
+      "placeUrl": "http://place.map.kakao.com/2036811985",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1342614114",
       "name": "강릉중화짬뽕빵",
       "category": [
@@ -369,6 +826,31 @@
       "tags": [],
       "phone": "010-7433-7797",
       "placeUrl": "http://place.map.kakao.com/1342614114",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "162263235",
+      "name": "삼삼고로케",
+      "category": [
+        "bakery"
+      ],
+      "lat": 38.204439379554174,
+      "lng": 128.58982908392218,
+      "address": "강원특별자치도 속초시 중앙시장로6길 28",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 70.1,
+      "scoreParts": {
+        "mention": 0.93,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 20,
+      "tags": [],
+      "placeUrl": "http://place.map.kakao.com/162263235",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -422,6 +904,63 @@
         "오션뷰"
       ],
       "placeUrl": "http://place.map.kakao.com/1518975131",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1524109458",
+      "name": "하도문 속초",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 38.165445845080704,
+      "lng": 128.59949818627572,
+      "address": "강원특별자치도 속초시 하도문길 50",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 67.9,
+      "scoreParts": {
+        "mention": 0.81,
+        "buzz": 0.29,
+        "mine": null
+      },
+      "mentions": 13,
+      "tags": [],
+      "closedDay": "많다",
+      "phone": "0503-7152-5756",
+      "placeUrl": "http://place.map.kakao.com/1524109458",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "214745732",
+      "name": "마카오박 에그타르트",
+      "category": [
+        "bakery",
+        "dessert"
+      ],
+      "lat": 38.20296922893117,
+      "lng": 128.59029597430975,
+      "address": "강원특별자치도 속초시 중앙로129번길 4",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 67.7,
+      "scoreParts": {
+        "mention": 0.85,
+        "buzz": 0.16,
+        "mine": null
+      },
+      "mentions": 15,
+      "tags": [],
+      "hours": "10:00~16:00",
+      "closedDay": "화",
+      "phone": "010-6488-3102",
+      "placeUrl": "http://place.map.kakao.com/214745732",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -486,6 +1025,38 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1319341879",
+      "name": "유투베이커리카페",
+      "category": [
+        "bakery",
+        "brunch"
+      ],
+      "lat": 38.19422473490498,
+      "lng": 128.59992786303246,
+      "address": "강원특별자치도 속초시 해오름로188번길 44",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 65.4,
+      "scoreParts": {
+        "mention": 0.87,
+        "buzz": 0.01,
+        "mine": null
+      },
+      "mentions": 16,
+      "tags": [
+        "오션뷰",
+        "브런치"
+      ],
+      "hours": "10:00~21:00",
+      "closedDay": "연중무휴",
+      "phone": "033-633-4848",
+      "placeUrl": "http://place.map.kakao.com/1319341879",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "289901136",
       "name": "에펠루아 본점",
       "category": [
@@ -513,6 +1084,35 @@
       "hours": "11:00~19:30",
       "phone": "033-643-3702",
       "placeUrl": "http://place.map.kakao.com/289901136",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1529424449",
+      "name": "콩카페 속초엑스포점",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 38.19028780749694,
+      "lng": 128.59379581669415,
+      "address": "강원특별자치도 속초시 동해대로 4030",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 62.3,
+      "scoreParts": {
+        "mention": 0.83,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 14,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "0507-1494-7001",
+      "placeUrl": "http://place.map.kakao.com/1529424449",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -634,6 +1234,65 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1748339442",
+      "name": "니어앤디어 브런치카페",
+      "category": [
+        "dessert",
+        "cafe",
+        "brunch"
+      ],
+      "lat": 38.21050373314488,
+      "lng": 128.58789455282525,
+      "address": "강원특별자치도 속초시 번영로129번길 5",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 59.5,
+      "scoreParts": {
+        "mention": 0.79,
+        "buzz": 0.02,
+        "mine": null
+      },
+      "mentions": 12,
+      "tags": [
+        "브런치"
+      ],
+      "hours": "7:00-16:00",
+      "phone": "010-6521-5656",
+      "placeUrl": "http://place.map.kakao.com/1748339442",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1021795641",
+      "name": "도리스파티세리",
+      "category": [
+        "bakery",
+        "dessert"
+      ],
+      "lat": 38.20386639362022,
+      "lng": 128.5897675308312,
+      "address": "강원특별자치도 속초시 중앙로147번길 26",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 59.3,
+      "scoreParts": {
+        "mention": 0.71,
+        "buzz": 0.25,
+        "mine": null
+      },
+      "mentions": 9,
+      "tags": [],
+      "hours": "10:00~16:00",
+      "phone": "010-6661-8898",
+      "placeUrl": "http://place.map.kakao.com/1021795641",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1755671035",
       "name": "강릉베이글",
       "category": [
@@ -655,6 +1314,64 @@
       "mentions": 7,
       "tags": [],
       "placeUrl": "http://place.map.kakao.com/1755671035",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "509332317",
+      "name": "롯데리조트 속초 카페더라운지",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 38.1803863431335,
+      "lng": 128.612506141419,
+      "address": "강원특별자치도 속초시 대포항길 186",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 58.1,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.84,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "hours": "08:00~22:00",
+      "phone": "033-634-1285",
+      "placeUrl": "http://place.map.kakao.com/509332317",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1591603495",
+      "name": "마리스텔라",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 38.19218394743086,
+      "lng": 128.5898159548467,
+      "address": "강원특별자치도 속초시 철새길 106",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 57.6,
+      "scoreParts": {
+        "mention": 0.74,
+        "buzz": 0.1,
+        "mine": null
+      },
+      "mentions": 10,
+      "tags": [
+        "대형"
+      ],
+      "phone": "033-633-7737",
+      "placeUrl": "http://place.map.kakao.com/1591603495",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -801,6 +1518,61 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1315791980",
+      "name": "고로케팩토리",
+      "category": [
+        "bakery"
+      ],
+      "lat": 38.1978359653247,
+      "lng": 128.575228341412,
+      "address": "강원특별자치도 속초시 동해대로 4258",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 55.2,
+      "scoreParts": {
+        "mention": 0.74,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 10,
+      "tags": [],
+      "phone": "033-631-0103",
+      "placeUrl": "http://place.map.kakao.com/1315791980",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "349754716",
+      "name": "한옥카페 뜰안",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 38.20152718482681,
+      "lng": 128.53651645270742,
+      "address": "강원특별자치도 속초시 신흥2길 22",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 55.2,
+      "scoreParts": {
+        "mention": 0.74,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 10,
+      "tags": [
+        "대형"
+      ],
+      "hours": "09:30-21:00",
+      "placeUrl": "http://place.map.kakao.com/349754716",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1029851516",
       "name": "교동빵집",
       "category": [
@@ -853,6 +1625,33 @@
       "hours": "11:00~20:00",
       "phone": "033-653-2144",
       "placeUrl": "http://place.map.kakao.com/848304732",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2142463100",
+      "name": "허니네",
+      "category": [
+        "bakery"
+      ],
+      "lat": 38.2103194769822,
+      "lng": 128.586531930354,
+      "address": "강원특별자치도 속초시 번영로105번길 17-2",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 53.9,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0.36,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [],
+      "hours": "08:00~15:00",
+      "phone": "010-4906-1144",
+      "placeUrl": "http://place.map.kakao.com/2142463100",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -935,6 +1734,92 @@
       "hours": "09:00~21:00",
       "phone": "033-642-6688",
       "placeUrl": "http://place.map.kakao.com/26308981",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1955616199",
+      "name": "히응커피",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 38.200894499893,
+      "lng": 128.568954082509,
+      "address": "강원특별자치도 속초시 밤골5길 6-1",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 52,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 0.06,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [],
+      "hours": "11:00~18:00",
+      "phone": "0502-5551-9746",
+      "placeUrl": "http://place.map.kakao.com/1955616199",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "377885864",
+      "name": "카페우디",
+      "category": [
+        "cafe",
+        "bakery",
+        "dessert"
+      ],
+      "lat": 38.2166067894038,
+      "lng": 128.595265036064,
+      "address": "강원특별자치도 속초시 영랑해안길 163",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 51.1,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0.13,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [],
+      "hours": "10:00~19:00",
+      "phone": "010-2564-5935",
+      "placeUrl": "http://place.map.kakao.com/377885864",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "999291340",
+      "name": "달달공장",
+      "category": [
+        "dessert",
+        "cafe",
+        "bakery"
+      ],
+      "lat": 38.202338470662475,
+      "lng": 128.56821565841798,
+      "address": "강원특별자치도 속초시 동해대로 4339",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 50.8,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0.12,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [],
+      "hours": "11:00-18:00",
+      "closedDay": "주차 전용 주차장",
+      "placeUrl": "http://place.map.kakao.com/999291340",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -1023,6 +1908,148 @@
       ],
       "phone": "010-2752-8893",
       "placeUrl": "http://place.map.kakao.com/213973117",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "4590815",
+      "name": "오베르망 본점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 38.2225039557315,
+      "lng": 128.589921919879,
+      "address": "강원특별자치도 속초시 장사항해안길 7",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 50.6,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [
+        "오션뷰",
+        "애견동반"
+      ],
+      "hours": "09:00-21:00",
+      "phone": "033-638-0304",
+      "placeUrl": "http://place.map.kakao.com/4590815",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "375890195",
+      "name": "밥테일베이커리",
+      "category": [
+        "bakery",
+        "dessert"
+      ],
+      "lat": 38.20891837239483,
+      "lng": 128.58702325374773,
+      "address": "강원특별자치도 속초시 번영로 107",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 50.6,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [],
+      "phone": "0502-5551-9455",
+      "placeUrl": "http://place.map.kakao.com/375890195",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1274356283",
+      "name": "방앗간베이글",
+      "category": [
+        "bakery",
+        "brunch"
+      ],
+      "lat": 38.2041708484517,
+      "lng": 128.588038922158,
+      "address": "강원특별자치도 속초시 수복로187번길 3",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 50.6,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [
+        "브런치"
+      ],
+      "closedDay": "중앙시장 근처에",
+      "phone": "0502-5550-4197",
+      "placeUrl": "http://place.map.kakao.com/1274356283",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "932854476",
+      "name": "미션매니아카페",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 38.2017144112001,
+      "lng": 128.588232126234,
+      "address": "강원특별자치도 속초시 중앙로108번길 5-1",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 50.6,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "033-631-5559",
+      "placeUrl": "http://place.map.kakao.com/932854476",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1622057636",
+      "name": "안가네대추빵 속초교동점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 38.20556400033459,
+      "lng": 128.577246616727,
+      "address": "강원특별자치도 속초시 교동로 74",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 50.6,
+      "scoreParts": {
+        "mention": 0.67,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 8,
+      "tags": [],
+      "phone": "010-8110-5476",
+      "placeUrl": "http://place.map.kakao.com/1622057636",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -1137,6 +2164,34 @@
       ],
       "phone": "033-652-7953",
       "placeUrl": "http://place.map.kakao.com/9014214",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "14547571",
+      "name": "행복이가득한빵집",
+      "category": [
+        "bakery",
+        "brunch"
+      ],
+      "lat": 38.203822195350156,
+      "lng": 128.59070267647763,
+      "address": "강원특별자치도 속초시 중앙로147번길 9",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 47.9,
+      "scoreParts": {
+        "mention": 0.64,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 7,
+      "tags": [
+        "브런치"
+      ],
+      "placeUrl": "http://place.map.kakao.com/14547571",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -1315,6 +2370,89 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "1821961660",
+      "name": "사잇",
+      "category": [
+        "bakery"
+      ],
+      "lat": 38.20357878956948,
+      "lng": 128.57937622203863,
+      "address": "강원특별자치도 속초시 교동로4길 20",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 44.8,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [],
+      "hours": "10:00~17:00",
+      "phone": "0503-7152-9246",
+      "placeUrl": "http://place.map.kakao.com/1821961660",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1150352869",
+      "name": "베이커리가루 속초점",
+      "category": [
+        "bakery"
+      ],
+      "lat": 38.1977509670961,
+      "lng": 128.581415726402,
+      "address": "강원특별자치도 속초시 청초호반로 208",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 44.8,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [],
+      "hours": "8:00-22:00",
+      "phone": "033-636-7953",
+      "placeUrl": "http://place.map.kakao.com/1150352869",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1688427517",
+      "name": "라임베이커리",
+      "category": [
+        "bakery",
+        "dessert"
+      ],
+      "lat": 38.1984601547325,
+      "lng": 128.57731363651934,
+      "address": "강원특별자치도 속초시 중앙로17번길 11",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 44.8,
+      "scoreParts": {
+        "mention": 0.6,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 6,
+      "tags": [],
+      "hours": "07:00-19:00",
+      "closedDay": "영업시간 매일 07",
+      "phone": "0502-5553-7955",
+      "placeUrl": "http://place.map.kakao.com/1688427517",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1273418046",
       "name": "테라로사 본점",
       "category": [
@@ -1341,6 +2479,122 @@
       "hours": "09:00~21:00",
       "phone": "1668-2764",
       "placeUrl": "http://place.map.kakao.com/1273418046",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1549985676",
+      "name": "숲휴게소",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 38.166675962204,
+      "lng": 128.565846876935,
+      "address": "강원특별자치도 속초시 싸리재길 10",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 44,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.28,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "0503-7151-4332",
+      "placeUrl": "http://place.map.kakao.com/1549985676",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "916428744",
+      "name": "카페 셜터",
+      "category": [
+        "cafe",
+        "bakery",
+        "dessert"
+      ],
+      "lat": 38.197545942502224,
+      "lng": 128.5972895006179,
+      "address": "강원특별자치도 속초시 청호해안길 97",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 42.6,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.22,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "오션뷰"
+      ],
+      "phone": "033-633-3356",
+      "placeUrl": "http://place.map.kakao.com/916428744",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "2099139428",
+      "name": "앤커피스토리",
+      "category": [
+        "cafe",
+        "brunch"
+      ],
+      "lat": 38.19558223906223,
+      "lng": 128.58144985579304,
+      "address": "강원특별자치도 속초시 엑스포로 129",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 42.4,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.21,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "브런치"
+      ],
+      "phone": "010-3453-6202",
+      "placeUrl": "http://place.map.kakao.com/2099139428",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1445620783",
+      "name": "어나더블루",
+      "category": [
+        "cafe"
+      ],
+      "lat": 38.2267718174331,
+      "lng": 128.587274150829,
+      "address": "강원특별자치도 속초시 장사항해안길 61",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 42.3,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.21,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "오션뷰"
+      ],
+      "phone": "033-632-7179",
+      "placeUrl": "http://place.map.kakao.com/1445620783",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -1376,6 +2630,35 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "552161375",
+      "name": "서락당",
+      "category": [
+        "bakery",
+        "dessert"
+      ],
+      "lat": 38.1635574278108,
+      "lng": 128.606777337757,
+      "address": "강원특별자치도 속초시 설악산로 6",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 41.2,
+      "scoreParts": {
+        "mention": 0.55,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 5,
+      "tags": [
+        "주차가능"
+      ],
+      "closedDay": "주차 가능 서락당 대청봉빵 귀여운",
+      "placeUrl": "http://place.map.kakao.com/552161375",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1411833327",
       "name": "52블럭",
       "category": [
@@ -1400,6 +2683,35 @@
       "closedDay": "빵 소진 시 매장은 마감됩니다",
       "phone": "033-646-1944",
       "placeUrl": "http://place.map.kakao.com/1411833327",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1634864979",
+      "name": "웨일라잇",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 38.19068472609365,
+      "lng": 128.6026867471573,
+      "address": "강원특별자치도 속초시 청호해안길 2",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 40.8,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.15,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [
+        "오션뷰"
+      ],
+      "phone": "033-632-8500",
+      "placeUrl": "http://place.map.kakao.com/1634864979",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -1429,6 +2741,32 @@
       "hours": "11:00-20:00",
       "phone": "010-3118-8414",
       "placeUrl": "http://place.map.kakao.com/841306441",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1269949956",
+      "name": "속초쫀드기",
+      "category": [
+        "bakery"
+      ],
+      "lat": 38.2055144830058,
+      "lng": 128.589132109717,
+      "address": "강원특별자치도 속초시 수복로 202",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 39.2,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0.09,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "phone": "070-8979-6024",
+      "placeUrl": "http://place.map.kakao.com/1269949956",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -1516,6 +2854,34 @@
       "lastSeen": "2026-08-04"
     },
     {
+      "id": "21449945",
+      "name": "뉴욕제과 본점",
+      "category": [
+        "bakery",
+        "dessert"
+      ],
+      "lat": 38.2010171442504,
+      "lng": 128.579422466108,
+      "address": "강원특별자치도 속초시 교동로 19",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 37,
+      "scoreParts": {
+        "mention": 0.49,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 4,
+      "tags": [],
+      "hours": "8:00-22:00",
+      "phone": "033-635-7966",
+      "placeUrl": "http://place.map.kakao.com/21449945",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
       "id": "1842226063",
       "name": "카페 뤼미에르",
       "category": [
@@ -1540,6 +2906,35 @@
       ],
       "phone": "0507-1447-0225",
       "placeUrl": "http://place.map.kakao.com/1842226063",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "29963661",
+      "name": "장사항바다향",
+      "category": [
+        "cafe",
+        "bakery"
+      ],
+      "lat": 38.2271499451,
+      "lng": 128.586757068789,
+      "address": "강원특별자치도 속초시 장사항해안길 64-5",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 35,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0.12,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [
+        "오션뷰"
+      ],
+      "phone": "033-633-2820",
+      "placeUrl": "http://place.map.kakao.com/29963661",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -1651,6 +3046,59 @@
       "closedDay": "매달 3번째 화요일 전화번호",
       "phone": "033-652-0409",
       "placeUrl": "http://place.map.kakao.com/970598742",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "1853770942",
+      "name": "낭그베이커리",
+      "category": [
+        "bakery"
+      ],
+      "lat": 38.1863903351757,
+      "lng": 128.599002034596,
+      "address": "강원특별자치도 속초시 조양로 17-1",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 31.9,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [],
+      "hours": "09:00~18:00",
+      "placeUrl": "http://place.map.kakao.com/1853770942",
+      "firstSeen": "2026-08-04",
+      "lastSeen": "2026-08-04"
+    },
+    {
+      "id": "301570125",
+      "name": "설담",
+      "category": [
+        "cafe"
+      ],
+      "lat": 38.1643570538295,
+      "lng": 128.580985987987,
+      "address": "강원특별자치도 속초시 설악산로 244",
+      "region": {
+        "sido": "강원",
+        "sigungu": "속초시"
+      },
+      "score": 31.9,
+      "scoreParts": {
+        "mention": 0.43,
+        "buzz": 0,
+        "mine": null
+      },
+      "mentions": 3,
+      "tags": [],
+      "hours": "10시~19시",
+      "phone": "0507-1373-1673",
+      "placeUrl": "http://place.map.kakao.com/301570125",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     }
