@@ -123,7 +123,11 @@ async function collectRegion(region) {
       prev.contexts.push(...cand.contexts);
       continue;
     }
-    found.set(place.id, { ...place, mentions: cand.mentions, contexts: [...cand.contexts] });
+    found.set(place.id, {
+      ...place,
+      mentions: cand.mentions,
+      contexts: [...cand.contexts],
+    });
   }
   console.log(`  검증 통과 ${found.size}곳`);
 
@@ -138,7 +142,14 @@ async function collectRegion(region) {
       /* buzz 는 보조 지표라 실패해도 진행한다 */
     }
 
-    const parts = { mention: mentionScore(p.mentions), buzz: buzzScore(total), mine: null };
+    // 이름이 지명·역명과 겹치는 가게는 그 동네 글마다 이름이 스치므로
+    // 언급량이 실력과 무관하게 부풀려진다. 상한을 씌워 1위를 독식하지 못하게 한다.
+    const effectiveMentions = p.placey ? Math.min(p.mentions, 6) : p.mentions;
+    const parts = {
+      mention: mentionScore(effectiveMentions),
+      buzz: buzzScore(total),
+      mine: null,
+    };
     results.push({
       id: p.id,
       name: p.name,
@@ -194,8 +205,24 @@ async function main() {
   }
 
   const fresh = [];
-  for (const region of targets) {
+  for (const [i, region] of targets.entries()) {
     fresh.push(...(await collectRegion(region)));
+
+    // 전국 수집은 몇 시간이 걸린다. 지역마다 중간 저장해 두어야
+    // 중간에 끊겨도 그때까지 모은 결과가 남는다.
+    if (!args.dryRun) {
+      const partial = merge(existing, fresh, targets.slice(0, i + 1));
+      await writeFile(
+        PLACES_PATH,
+        JSON.stringify(
+          { generatedAt: new Date().toISOString(), count: partial.length, places: partial },
+          null,
+          2,
+        ) + '\n',
+        'utf8',
+      );
+      console.log(`  … 누적 ${partial.length}곳 저장 (${i + 1}/${targets.length} 지역)`);
+    }
   }
 
   const places = merge(existing, fresh, targets);

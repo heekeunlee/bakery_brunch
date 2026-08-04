@@ -1,12 +1,14 @@
-import { CATEGORY_LABEL, type Place } from '../types';
+import { CATEGORY_LABEL, type Place, type UserRecord } from '../types';
 import { formatDistance } from '../lib/geo';
 
 type Props = {
   places: Place[];
   distances: Map<string, number>;
   wishes: Set<string>;
+  records?: Record<string, UserRecord>;
   total: number;
   onSelect: (id: string) => void;
+  showRegion?: boolean;
 };
 
 /** 신규 배지: 최근 14일 안에 처음 발견된 가게. */
@@ -15,7 +17,15 @@ function isNew(place: Place): boolean {
   return days <= 14;
 }
 
-export default function PlaceList({ places, distances, wishes, total, onSelect }: Props) {
+export default function PlaceList({
+  places,
+  distances,
+  wishes,
+  records,
+  total,
+  onSelect,
+  showRegion,
+}: Props) {
   if (total === 0) {
     return (
       <div className="empty">
@@ -30,7 +40,7 @@ export default function PlaceList({ places, distances, wishes, total, onSelect }
   if (places.length === 0) {
     return (
       <div className="empty">
-        <p>이 화면에는 조건에 맞는 곳이 없어요.</p>
+        <p>조건에 맞는 곳이 없어요.</p>
         <p className="muted">지도를 움직이거나 필터를 풀어보세요.</p>
       </div>
     );
@@ -40,6 +50,7 @@ export default function PlaceList({ places, distances, wishes, total, onSelect }
     <ul className="place-list">
       {places.map((p) => {
         const d = distances.get(p.id);
+        const visited = records?.[p.id]?.visited;
         return (
           <li key={p.id}>
             <button className="place-row" onClick={() => onSelect(p.id)}>
@@ -54,7 +65,8 @@ export default function PlaceList({ places, distances, wishes, total, onSelect }
                   {wishes.has(p.id) && <span className="badge-wish">♥</span>}
                 </span>
                 <span className="row-sub">
-                  {p.region.sigungu} · {p.category.map((c) => CATEGORY_LABEL[c]).join('·')}
+                  {showRegion ? `${p.region.sido} ${p.region.sigungu}` : p.region.sigungu} ·{' '}
+                  {p.category.map((c) => CATEGORY_LABEL[c]).join('·')}
                   {p.tags.slice(0, 2).map((t) => (
                     <span key={t} className="row-tag">
                       {t}
@@ -63,7 +75,11 @@ export default function PlaceList({ places, distances, wishes, total, onSelect }
                 </span>
               </span>
               <span className="row-right">
-                <span className="row-score">{p.score.toFixed(0)}</span>
+                {visited ? (
+                  <span className="row-mine">{'★'.repeat(visited.rating)}</span>
+                ) : (
+                  <span className="row-score">{p.score.toFixed(0)}</span>
+                )}
                 {d != null && <span className="row-dist">{formatDistance(d)}</span>}
               </span>
             </button>

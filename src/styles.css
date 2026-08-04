@@ -6,6 +6,7 @@
   --line: #ece2d8;
   --brand: #8b5e34;
   --brand-soft: #f3e6d8;
+  --accent: #e0533b;
 
   --cat-bakery: #c8763c;
   --cat-brunch: #5c8a4a;
@@ -14,6 +15,7 @@
 
   --shadow: 0 2px 12px rgba(60, 40, 20, 0.1);
   --safe-b: env(safe-area-inset-bottom, 0px);
+  --tab-h: 58px;
 }
 
 * {
@@ -45,11 +47,19 @@ button {
 
 .app {
   position: relative;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   overflow: hidden;
 }
 
 /* ---------- 지도 ---------- */
+
+.map-layer {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+}
 
 .map {
   position: absolute;
@@ -82,10 +92,17 @@ button {
   left: 0;
   right: 0;
   z-index: 20;
-  padding: 10px 12px calc(10px + env(safe-area-inset-top, 0px));
-  padding-top: calc(10px + env(safe-area-inset-top, 0px));
-  background: linear-gradient(to bottom, rgba(253, 250, 246, 0.96) 70%, transparent);
+  padding: calc(10px + env(safe-area-inset-top, 0px)) 12px 10px;
+  background: linear-gradient(to bottom, rgba(253, 250, 246, 0.97) 74%, transparent);
   pointer-events: none;
+}
+
+/* 목록 탭에서는 지도가 없으니 흐름 안에 자리를 차지하게 둔다. */
+.tab-list .topbar {
+  position: relative;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  pointer-events: auto;
 }
 
 .filters {
@@ -190,21 +207,108 @@ button {
   border-color: var(--cat-dessert);
 }
 
-/* ---------- 바텀시트 ---------- */
+.chip-sep {
+  flex: 0 0 1px;
+  align-self: stretch;
+  margin: 4px 4px;
+  background: var(--line);
+}
+
+.region-chip-row {
+  display: flex;
+  margin-top: 8px;
+  pointer-events: auto;
+}
+
+.region-chip {
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--brand);
+  border: none;
+  border-radius: 16px;
+}
+
+/* ---------- 정렬 ---------- */
+
+.sortbar {
+  display: flex;
+  gap: 4px;
+}
+
+.sortbtn {
+  padding: 5px 10px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  background: none;
+  border: none;
+  border-radius: 12px;
+}
+
+.sortbtn.on {
+  color: var(--brand);
+  background: var(--brand-soft);
+}
+
+/* ---------- 패널 (목록/지역/저장 탭) ---------- */
+
+.panel {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+}
+
+.panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.tab-region .panel-head,
+.tab-saved .panel-head {
+  padding-top: calc(12px + env(safe-area-inset-top, 0px));
+}
+
+.panel-title {
+  margin: 0;
+  font-size: 17px;
+}
+
+.panel-count {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.panel-body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ---------- 바텀시트 (지도 탭) ---------- */
 
 .sheet {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: calc(var(--tab-h) + var(--safe-b));
   z-index: 30;
   display: flex;
   flex-direction: column;
-  max-height: 78%;
+  max-height: 72%;
   background: var(--surface);
   border-radius: 18px 18px 0 0;
   box-shadow: 0 -4px 20px rgba(60, 40, 20, 0.14);
-  transform: translateY(calc(100% - 132px - var(--safe-b)));
+  transform: translateY(calc(100% - 128px));
   transition: transform 0.24s cubic-bezier(0.32, 0.72, 0, 1);
 }
 
@@ -242,7 +346,64 @@ button {
   min-height: 0;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+.sheet-body .sortbar {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+/* ---------- 하단 탭바 ---------- */
+
+.tabbar {
+  flex: 0 0 auto;
+  display: flex;
+  z-index: 60;
   padding-bottom: var(--safe-b);
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+}
+
+.tabbtn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  height: var(--tab-h);
+  padding: 8px 0 6px;
+  color: var(--ink-soft);
+  background: none;
+  border: none;
+}
+
+.tabbtn.on {
+  color: var(--brand);
+}
+
+.tabicon {
+  position: relative;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.tablabel {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.tabbadge {
+  position: absolute;
+  top: -6px;
+  left: 11px;
+  padding: 0 4px;
+  min-width: 15px;
+  font-size: 9px;
+  font-weight: 800;
+  line-height: 15px;
+  color: #fff;
+  background: var(--accent);
+  border-radius: 8px;
 }
 
 /* ---------- 목록 ---------- */
@@ -300,12 +461,12 @@ button {
   font-size: 10px;
   font-weight: 800;
   color: #fff;
-  background: #e0533b;
+  background: var(--accent);
   border-radius: 4px;
 }
 
 .badge-wish {
-  color: #e0533b;
+  color: var(--accent);
   font-size: 12px;
 }
 
@@ -342,13 +503,19 @@ button {
   color: var(--brand);
 }
 
+.row-mine {
+  font-size: 12px;
+  color: #f0a830;
+  letter-spacing: -1px;
+}
+
 .row-dist {
   font-size: 11px;
   color: var(--ink-soft);
 }
 
 .empty {
-  padding: 36px 24px;
+  padding: 40px 24px;
   text-align: center;
 }
 
@@ -368,13 +535,110 @@ code {
   border-radius: 4px;
 }
 
+/* ---------- 지역 브라우징 ---------- */
+
+.region-browser {
+  padding-bottom: 24px;
+}
+
+.region-group {
+  border-bottom: 1px solid var(--line);
+}
+
+.region-sido {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 15px 16px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: left;
+  background: none;
+  border: none;
+}
+
+.region-sido.on {
+  color: var(--brand);
+}
+
+.region-name {
+  flex: 1;
+}
+
+.region-count {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--brand);
+  background: var(--brand-soft);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.region-caret {
+  color: var(--ink-soft);
+  transition: transform 0.16s;
+}
+
+.region-caret.on {
+  transform: rotate(90deg);
+}
+
+.region-children {
+  margin: 0;
+  padding: 0 0 6px;
+  list-style: none;
+  background: var(--bg);
+}
+
+.region-sigungu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 11px 16px 11px 28px;
+  font-size: 14px;
+  text-align: left;
+  background: none;
+  border: none;
+}
+
+.region-sigungu:active {
+  background: var(--brand-soft);
+}
+
+/* ---------- 저장 ---------- */
+
+.segment {
+  display: flex;
+  gap: 6px;
+  padding: 12px 14px;
+}
+
+.segment button {
+  flex: 1;
+  padding: 9px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink-soft);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.segment button.on {
+  color: #fff;
+  background: var(--brand);
+  border-color: var(--brand);
+}
+
 /* ---------- 상세 ---------- */
 
 .scrim {
   position: absolute;
   inset: 0;
-  z-index: 40;
-  background: rgba(40, 28, 18, 0.35);
+  z-index: 70;
+  background: rgba(40, 28, 18, 0.4);
 }
 
 .detail {
@@ -382,10 +646,10 @@ code {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 50;
-  max-height: 88%;
+  z-index: 80;
+  max-height: 92%;
   overflow-y: auto;
-  padding: 18px 18px calc(24px + var(--safe-b));
+  padding: 8px 18px calc(24px + var(--safe-b));
   background: var(--surface);
   border-radius: 18px 18px 0 0;
   box-shadow: 0 -4px 24px rgba(60, 40, 20, 0.2);
@@ -394,9 +658,17 @@ code {
 
 @keyframes rise {
   from {
-    transform: translateY(16px);
+    transform: translateY(24px);
     opacity: 0;
   }
+}
+
+.detail-grip {
+  width: 36px;
+  height: 4px;
+  margin: 4px auto 12px;
+  background: var(--line);
+  border-radius: 2px;
 }
 
 .detail-head {
@@ -460,6 +732,39 @@ code {
   border-radius: 12px;
 }
 
+/* 길찾기 · 전화 · 주소복사 · 공유 */
+.quick-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+.qa {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 0;
+  font-size: 11.5px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.qa-icon {
+  font-size: 16px;
+  line-height: 1;
+  color: var(--brand);
+}
+
+.qa.disabled {
+  opacity: 0.35;
+}
+
 .detail-info {
   display: grid;
   grid-template-columns: 62px 1fr;
@@ -474,10 +779,6 @@ code {
 
 .detail-info dd {
   margin: 0;
-}
-
-.detail-info a {
-  color: var(--brand);
 }
 
 .unverified {
@@ -498,7 +799,7 @@ code {
 
 .btn {
   flex: 1;
-  padding: 12px;
+  padding: 13px;
   font-size: 14px;
   font-weight: 700;
   text-align: center;
@@ -510,14 +811,16 @@ code {
 }
 
 .btn.primary {
+  flex: 1.6;
   color: #fff;
   background: var(--brand);
   border-color: var(--brand);
 }
 
-.btn.on {
-  color: #e0533b;
-  border-color: #e0533b;
+.btn.wishbtn.on {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: #fff5f3;
 }
 
 .rating {
@@ -555,25 +858,81 @@ code {
   margin-left: 8px;
 }
 
+/* 주변 추천 */
+.nearby {
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.nearby h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.nearby ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nearby button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.nearby-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nearby-meta {
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
 .disclaimer {
-  margin: 18px 0 0;
+  margin: 20px 0 0;
   font-size: 11px;
   line-height: 1.6;
   color: var(--ink-soft);
 }
 
-@media (min-width: 720px) {
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(var(--tab-h) + 24px);
+  transform: translateX(-50%);
+  z-index: 90;
+  padding: 10px 16px;
+  font-size: 13px;
+  color: #fff;
+  background: rgba(44, 36, 29, 0.92);
+  border-radius: 20px;
+  animation: rise 0.18s ease;
+}
+
+/* ---------- 넓은 화면 ---------- */
+
+@media (min-width: 760px) {
   .topbar {
-    max-width: 420px;
+    max-width: 440px;
   }
 
   .sheet {
     left: 12px;
-    width: 400px;
-    max-height: calc(100% - 200px);
+    width: 420px;
+    max-height: calc(100% - var(--tab-h) - 220px);
     border-radius: 18px;
-    bottom: 12px;
-    transform: translateY(calc(100% - 132px));
+    bottom: calc(var(--tab-h) + var(--safe-b) + 12px);
+    transform: translateY(calc(100% - 128px));
   }
 
   .sheet.expanded {
@@ -583,8 +942,14 @@ code {
   .detail {
     left: auto;
     right: 12px;
-    bottom: 12px;
-    width: 400px;
+    bottom: calc(var(--tab-h) + 12px);
+    width: 420px;
     border-radius: 18px;
+  }
+
+  .panel-body {
+    max-width: 720px;
+    margin: 0 auto;
+    width: 100%;
   }
 }

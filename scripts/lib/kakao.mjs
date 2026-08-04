@@ -42,6 +42,44 @@ export async function searchKeyword(query, { size = 15 } = {}) {
 const norm = (s) => s.replace(/[\s·・.,'"()\-–—]/g, '').toLowerCase();
 
 /**
+ * 시도 약칭 → 카카오 주소 표기.
+ * 카카오는 광역시를 "대전", 도를 "강원특별자치도"처럼 섞어 쓰므로 둘 다 허용한다.
+ */
+const SIDO_PATTERN = {
+  서울: /^서울/, 부산: /^부산/, 대구: /^대구/, 인천: /^인천/, 광주: /^광주/,
+  대전: /^대전/, 울산: /^울산/, 세종: /^세종/, 경기: /^경기/, 강원: /^강원/,
+  충북: /^(충북|충청북도)/, 충남: /^(충남|충청남도)/,
+  전북: /^(전북|전라북도)/, 전남: /^(전남|전라남도)/,
+  경북: /^(경북|경상북도)/, 경남: /^(경남|경상남도)/, 제주: /^제주/,
+};
+
+/**
+ * 주소가 정말 그 시군구인지 검사한다.
+ *
+ * 시군구만 보면 안 된다 — 중구·서구·남구·북구·동구는 여러 시도에 같은 이름으로
+ * 존재해서, "서울 중구"를 찾는데 대전 중구의 성심당이 통과해버린다.
+ * 시도와 시군구를 함께, 그리고 시군구는 접미사까지 온전히 일치시킨다.
+ */
+function addressMatchesRegion(address, region) {
+  const sido = SIDO_PATTERN[region.sido];
+  if (sido && !sido.test(address)) return false;
+  return address.includes(region.sigungu);
+}
+
+/** 지명·역명과 이름이 겹치는지. 겹치면 블로그 언급량을 액면 그대로 믿을 수 없다. */
+const PLACEY_SUFFIX = /(동|가|길|로|거리|역|시장|해변|해수욕장|공원|마을)$/;
+
+function looksPlacey(candidate, docs) {
+  if (PLACEY_SUFFIX.test(candidate) && candidate.length >= 3) return true;
+  // 검색 결과에 "<후보>역" 같은 지하철역이 섞여 있으면 지명일 가능성이 높다.
+  return docs.some(
+    (d) =>
+      d.category_group_code === 'SW8' &&
+      norm(d.place_name).startsWith(norm(candidate)),
+  );
+}
+
+/**
  * 블로그에서 뽑은 상호 후보를 카카오에 던져 실존 여부를 검증한다.
  * 통과 조건 3가지를 모두 만족해야 채택:
  *   1) 카페/베이커리 카테고리
@@ -64,18 +102,26 @@ export async function verifyPlace(candidate, region) {
     const nameOk = nc.length >= 3 ? np.includes(nc) || nc.includes(np) : np === nc;
     if (!nameOk) continue;
 
-    const addr = d.road_address_name || d.address_name || '';
-    if (!addr.includes(region.sigungu.replace(/시$|군$|구$/, ''))) continue;
+    // 도로명이 비어 있는 곳이 있어 지번도 함께 본다. 둘 중 하나라도 맞으면 통과.
+    const road = d.road_address_name || '';
+    const jibun = d.address_name || '';
+    if (
+      !addressMatchesRegion(road, region) &&
+      !addressMatchesRegion(jibun, region)
+    ) {
+      continue;
+    }
 
     return {
       id: d.id,
       name: d.place_name,
       lat: Number(d.y),
       lng: Number(d.x),
-      address: addr,
+      address: road || jibun,
       phone: d.phone || undefined,
       categoryName: d.category_name,
       placeUrl: d.place_url,
+      placey: looksPlacey(candidate, docs),
     };
   }
   return null;

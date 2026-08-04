@@ -5,11 +5,9 @@ type Props = {
   tags: Set<string>;
   availableTags: string[];
   query: string;
-  onlyWish: boolean;
   onToggleCategory: (c: Category) => void;
   onToggleTag: (t: string) => void;
   onQueryChange: (q: string) => void;
-  onToggleWish: () => void;
   onLocate: () => void;
   locating: boolean;
 };
@@ -21,11 +19,9 @@ export default function Filters({
   tags,
   availableTags,
   query,
-  onlyWish,
   onToggleCategory,
   onToggleTag,
   onQueryChange,
-  onToggleWish,
   onLocate,
   locating,
 }: Props) {
@@ -50,7 +46,7 @@ export default function Filters({
         </button>
       </div>
 
-      <div className="filters-row chips" role="group" aria-label="카테고리 필터">
+      <div className="filters-row chips scroll" role="group" aria-label="필터">
         {CATEGORIES.map((c) => (
           <button
             key={c}
@@ -61,29 +57,18 @@ export default function Filters({
             {CATEGORY_LABEL[c]}
           </button>
         ))}
-        <button
-          className={`chip wish ${onlyWish ? 'on' : ''}`}
-          aria-pressed={onlyWish}
-          onClick={onToggleWish}
-        >
-          ♥ 위시
-        </button>
+        <span className="chip-sep" />
+        {availableTags.map((t) => (
+          <button
+            key={t}
+            className={`chip tag ${tags.has(t) ? 'on' : ''}`}
+            aria-pressed={tags.has(t)}
+            onClick={() => onToggleTag(t)}
+          >
+            {t}
+          </button>
+        ))}
       </div>
-
-      {availableTags.length > 0 && (
-        <div className="filters-row chips scroll" role="group" aria-label="태그 필터">
-          {availableTags.map((t) => (
-            <button
-              key={t}
-              className={`chip tag ${tags.has(t) ? 'on' : ''}`}
-              aria-pressed={tags.has(t)}
-              onClick={() => onToggleTag(t)}
-            >
-              {t}
-            </button>
-          ))}
-        </div>
-      )}
     </div>
   );
 }

@@ -1,33 +1,79 @@
+import { useState } from 'react';
 import { CATEGORY_LABEL, type Place, type UserRecord } from '../types';
-import { formatDistance } from '../lib/geo';
+import { distanceKm, formatDistance } from '../lib/geo';
 
 type Props = {
   place: Place;
+  nearby: Place[];
   distanceKm: number | null;
   record: UserRecord | undefined;
   onClose: () => void;
   onToggleWish: () => void;
   onRate: (rating: number) => void;
+  onSelect: (id: string) => void;
 };
+
+/** 카카오맵 길찾기 딥링크. 앱이 있으면 앱으로, 없으면 웹으로 열린다. */
+function routeUrl(p: Place) {
+  return `https://map.kakao.com/link/to/${encodeURIComponent(p.name)},${p.lat},${p.lng}`;
+}
 
 export default function PlaceDetail({
   place,
-  distanceKm,
+  nearby,
+  distanceKm: distFromMe,
   record,
   onClose,
   onToggleWish,
   onRate,
+  onSelect,
 }: Props) {
+  const [toast, setToast] = useState<string | null>(null);
   const visited = record?.visited;
+
+  const flash = (msg: string) => {
+    setToast(msg);
+    setTimeout(() => setToast(null), 1600);
+  };
+
+  const shareUrl = `${location.origin}${location.pathname}?place=${place.id}`;
+
+  const share = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: place.name, url: shareUrl });
+        return;
+      } catch {
+        return; // 사용자가 공유 시트를 닫은 경우
+      }
+    }
+    try {
+      await navigator.clipboard.writeText(shareUrl);
+      flash('링크를 복사했습니다');
+    } catch {
+      flash('복사에 실패했습니다');
+    }
+  };
+
+  const copyAddress = async () => {
+    try {
+      await navigator.clipboard.writeText(place.address);
+      flash('주소를 복사했습니다');
+    } catch {
+      flash('복사에 실패했습니다');
+    }
+  };
 
   return (
     <div className="detail">
+      <div className="detail-grip" />
+
       <div className="detail-head">
         <div>
           <h2>{place.name}</h2>
           <p className="detail-sub">
             {place.category.map((c) => CATEGORY_LABEL[c]).join(' · ')}
-            {distanceKm != null && <> · {formatDistance(distanceKm)}</>}
+            {distFromMe != null && <> · 내 위치에서 {formatDistance(distFromMe)}</>}
           </p>
         </div>
         <button className="icon-btn" onClick={onClose} aria-label="닫기">
@@ -50,6 +96,27 @@ export default function PlaceDetail({
         </div>
       )}
 
+      <div className="quick-actions">
+        <a className="qa" href={routeUrl(place)} target="_blank" rel="noreferrer">
+          <span className="qa-icon">↗</span>길찾기
+        </a>
+        {place.phone ? (
+          <a className="qa" href={`tel:${place.phone}`}>
+            <span className="qa-icon">☎</span>전화
+          </a>
+        ) : (
+          <span className="qa disabled">
+            <span className="qa-icon">☎</span>전화
+          </span>
+        )}
+        <button className="qa" onClick={copyAddress}>
+          <span className="qa-icon">⧉</span>주소복사
+        </button>
+        <button className="qa" onClick={share}>
+          <span className="qa-icon">↑</span>공유
+        </button>
+      </div>
+
       <dl className="detail-info">
         <dt>주소</dt>
         <dd>{place.address}</dd>
@@ -69,22 +136,18 @@ export default function PlaceDetail({
             </dd>
           </>
         )}
-        {place.phone && (
-          <>
-            <dt>전화</dt>
-            <dd>
-              <a href={`tel:${place.phone}`}>{place.phone}</a>
-            </dd>
-          </>
-        )}
       </dl>
 
       <div className="detail-actions">
         <a className="btn primary" href={place.placeUrl} target="_blank" rel="noreferrer">
-          카카오맵에서 열기
+          카카오맵에서 자세히 보기
         </a>
-        <button className={`btn ${record?.wish ? 'on' : ''}`} onClick={onToggleWish}>
-          {record?.wish ? '♥ 위시' : '♡ 위시'}
+        <button
+          className={`btn wishbtn ${record?.wish ? 'on' : ''}`}
+          onClick={onToggleWish}
+          aria-pressed={!!record?.wish}
+        >
+          {record?.wish ? '♥ 저장됨' : '♡ 저장'}
         </button>
       </div>
 
@@ -105,10 +168,30 @@ export default function PlaceDetail({
         </div>
       </div>
 
+      {nearby.length > 0 && (
+        <div className="nearby">
+          <h3>주변에 이런 곳도</h3>
+          <ul>
+            {nearby.map((n) => (
+              <li key={n.id}>
+                <button onClick={() => onSelect(n.id)}>
+                  <span className="nearby-name">{n.name}</span>
+                  <span className="nearby-meta">
+                    {formatDistance(distanceKm(place, n))} · 평판 {n.score.toFixed(0)}
+                  </span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       <p className="disclaimer">
         영업시간 · 휴무는 블로그 본문에서 자동 추출한 값이라 실제와 다를 수 있습니다.
         방문 전 카카오맵에서 확인하세요.
       </p>
+
+      {toast && <div className="toast">{toast}</div>}
     </div>
   );
 }
