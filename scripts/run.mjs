@@ -85,9 +85,12 @@ async function collectRegion(region) {
   console.log(`\n▶ ${region.sido} ${region.sigungu}`);
 
   // [1] 블로그 수집
+  // "중구 카페 추천"처럼 여러 시도에 있는 구 이름은 그대로 쓰면 남의 동네 글만 잡힌다.
+  // regions.json 의 query 가 있으면 시도를 붙인 검색어를 쓴다.
+  const searchName = region.query ?? region.sigungu;
   const items = [];
   for (const kw of KEYWORDS) {
-    const query = `${region.sigungu} ${kw}`;
+    const query = `${searchName} ${kw}`;
     try {
       const got = await searchBlog(query, { pages: 2, sort: 'sim' });
       items.push(...got);
