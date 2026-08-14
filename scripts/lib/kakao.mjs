@@ -107,8 +107,14 @@ export async function verifyPlace(candidate, region) {
 
     const np = norm(d.place_name);
     // 지점명이 붙는 경우(예: "테라로사 강릉본점")를 고려해 양방향 포함을 허용하되,
-    // 후보가 너무 짧으면 오매칭이 급증하므로 완전일치만 인정한다.
-    const nameOk = nc.length >= 3 ? np.includes(nc) || nc.includes(np) : np === nc;
+    // 부분일치는 양쪽 다 충분히 길 때만 인정한다.
+    //
+    // 상호 길이를 안 보면 짧은 상호가 아무거나 빨아들인다. 실제로 "후"라는
+    // 가게가 "후해브레드" 같은 후보에, "좋은"이 "분위기좋은"에 걸려 통과했고,
+    // 그렇게 모인 언급수로 전국 1위까지 올라갔다. 완전일치만 허용하면 막힌다.
+    const nameOk =
+      np === nc ||
+      (nc.length >= 3 && np.length >= 3 && (np.includes(nc) || nc.includes(np)));
     if (!nameOk) continue;
 
     // 도로명이 비어 있는 곳이 있어 지번도 함께 본다. 둘 중 하나라도 맞으면 통과.
