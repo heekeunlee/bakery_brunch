@@ -30,15 +30,16 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,json}'],
-        // places.json 은 매일 커지는 수 MB 짜리 데이터라 프리캐시에 넣지 않는다.
+        // data/ 아래 JSON 은 수 MB 짜리 수집 결과라 프리캐시에 넣지 않는다.
         // 넣으면 (1) 워크박스 2MiB 한도에 걸려 빌드가 실패하고,
         // (2) 데이터가 바뀔 때마다 서비스워커 전체가 갱신되어 앱을 통째로 다시 받는다.
-        // 대신 아래 runtimeCaching 으로 받아 두어 오프라인에서도 열린다.
-        globIgnores: ['**/data/places.json'],
+        // 파일 이름을 하나씩 적지 않는다 — places.json 만 빼뒀다가 details.json 이
+        // 생기면서 똑같이 배포가 깨진 적이 있다.
+        globIgnores: ['**/data/*.json'],
         runtimeCaching: [
           {
             // 데이터는 항상 최신을 먼저 시도하고, 오프라인이면 마지막으로 받은 것을 쓴다.
-            urlPattern: ({ url }) => url.pathname.endsWith('/data/places.json'),
+            urlPattern: ({ url }) => /\/data\/[^/]+\.json$/.test(url.pathname),
             handler: 'NetworkFirst',
             options: {
               cacheName: 'places-data',
