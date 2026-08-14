@@ -1,4 +1,9 @@
-import { CATEGORY_LABEL, type Place, type PlaceDetails } from '../types';
+import {
+  CATEGORY_LABEL,
+  type ChainStore,
+  type Place,
+  type PlaceDetails,
+} from '../types';
 
 const esc = (s: string) =>
   s.replace(/[&<>"']/g, (c) =>
@@ -63,6 +68,21 @@ export function balloonHtml(place: Place, detail?: PlaceDetails): string {
         ${menus}
         ${facility}
         <p class="bl-more">클릭하면 사진 · 메뉴 · 후기까지</p>
+      </div>
+    </div>`;
+}
+
+/** 체인 매장 풍선. 평판 점수가 없으니 위치와 이름만 담백하게. */
+export function chainBalloonHtml(store: ChainStore): string {
+  return `
+    <div class="balloon chain">
+      <div class="bl-body">
+        <div class="bl-head">
+          <strong>${esc(store.name)}</strong>
+          <span class="bl-brand">${esc(store.brand)}</span>
+        </div>
+        <p class="bl-sub">${esc(store.address)}</p>
+        <p class="bl-more">클릭하면 카카오맵에서 열립니다</p>
       </div>
     </div>`;
 }

@@ -14,7 +14,13 @@ import {
   type LatLng,
 } from './lib/geo';
 import { searchRegion } from './lib/geocode';
-import type { Category, PlaceDetails, PlacesFile, UserRecord } from './types';
+import type {
+  Category,
+  ChainStore,
+  PlaceDetails,
+  PlacesFile,
+  UserRecord,
+} from './types';
 
 /** 지역을 찾아 옮겨갔을 때의 지도 배율. 동네 하나가 화면에 들어오는 정도. */
 const NEARBY_LEVEL = 5;
@@ -51,6 +57,8 @@ export default function App() {
   const [data, setData] = useState<PlacesFile | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [details, setDetails] = useState<Map<string, PlaceDetails>>(new Map());
+  const [chains, setChains] = useState<ChainStore[]>([]);
+  const [showChains, setShowChains] = useState(false);
 
   const initial = useMemo(readUrlState, []);
   const [tab, setTab] = useState<Tab>(initial.region ? 'list' : 'map');
@@ -94,6 +102,15 @@ export default function App() {
       })
       .catch(() => {});
   }, []);
+
+  // 스타벅스는 켤 때만 받아온다. 2,000곳짜리 파일을 안 볼 사람에게까지 지울 이유가 없다.
+  useEffect(() => {
+    if (!showChains || chains.length) return;
+    fetch(`${import.meta.env.BASE_URL}data/chains.json`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((file) => file?.stores && setChains(file.stores))
+      .catch(() => {});
+  }, [showChains, chains.length]);
 
   // 앱을 열면 바로 내 주변 지도를 띄운다.
   // 권한을 거부하거나 실패해도 조용히 넘어간다 — 시작하자마자 경고창이 뜨면
@@ -323,7 +340,7 @@ export default function App() {
   if (loadError) {
     return (
       <div className="fatal">
-        <h1>빵집지도</h1>
+        <h1>전국 베이커리 &amp; 브런치 카페</h1>
         <p>{loadError}</p>
       </div>
     );
@@ -363,6 +380,7 @@ export default function App() {
           researchNonce={researchNonce}
           visible={tab === 'map'}
           details={details}
+          chains={showChains ? chains : []}
         />
         <button className="research" onClick={handleResearch}>
           ↻ 현위치에서 재검색
@@ -371,6 +389,7 @@ export default function App() {
 
       {(tab === 'map' || tab === 'list') && (
         <header className="topbar">
+          <h1 className="apptitle">전국 베이커리 &amp; 브런치 카페</h1>
           <Filters
             categories={categories}
             tags={tags}
@@ -378,6 +397,8 @@ export default function App() {
             query={query}
             onToggleCategory={(c) => setCategories((s) => toggle(s, c))}
             onToggleTag={(t) => setTags((s) => toggle(s, t))}
+            showChains={showChains}
+            onToggleChains={() => setShowChains((v) => !v)}
             onQueryChange={setQuery}
             onLocate={handleLocate}
             locating={locating}

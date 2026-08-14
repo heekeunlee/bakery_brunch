@@ -42,6 +42,14 @@ export const CATEGORY_LABEL: Record<Category, string> = {
   dessert: '디저트',
 };
 
+/** 지도 핀에 붙는 짧은 꼬리표. "퀸스가든/브런치카페" 처럼 읽히게. */
+export const CATEGORY_PIN_LABEL: Record<Category, string> = {
+  bakery: '베이커리',
+  brunch: '브런치카페',
+  cafe: '카페',
+  dessert: '디저트',
+};
+
 export const CATEGORY_COLOR: Record<Category, string> = {
   bakery: '#c8763c',
   brunch: '#5c8a4a',
@@ -89,3 +97,24 @@ export type DetailsFile = {
   count: number;
   details: PlaceDetails[];
 };
+
+/** 체인 매장. 평판 점수 없이 지도 레이어로만 쓴다. */
+export type ChainStore = {
+  id: string;
+  name: string;
+  brand: string;
+  lat: number;
+  lng: number;
+  address: string;
+  region: { sido: string; sigungu: string };
+  phone?: string;
+  placeUrl: string;
+};
+
+export type ChainsFile = {
+  generatedAt: string;
+  count: number;
+  stores: ChainStore[];
+};
+
+export const STARBUCKS_COLOR = '#00704a';

@@ -1,8 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useRef, useState } from 'react';
 import { loadKakao } from '../lib/kakaoLoader';
-import { CATEGORY_COLOR, type Place, type PlaceDetails } from '../types';
-import { balloonHtml } from '../lib/balloon';
+import {
+  CATEGORY_COLOR,
+  CATEGORY_PIN_LABEL,
+  STARBUCKS_COLOR,
+  type ChainStore,
+  type Place,
+  type PlaceDetails,
+} from '../types';
+import { balloonHtml, chainBalloonHtml } from '../lib/balloon';
 import { distanceKm, type FocusTarget, type LatLng } from '../lib/geo';
 
 type Props = {
@@ -18,14 +25,24 @@ type Props = {
   visible: boolean;
   /** 마커 풍선에 쓸 부가 정보. 늦게 도착해도 되도록 ref 로만 읽는다. */
   details: Map<string, PlaceDetails>;
+  /** 스타벅스 레이어. 평판 목록과 섞지 않고 지도 위에만 따로 그린다. */
+  chains: ChainStore[];
 };
+
+const PIN_PATH =
+  'M13 0C5.8 0 0 5.8 0 13c0 9.4 11.3 20 12.2 20.8a1.2 1.2 0 0 0 1.6 0C14.7 33 26 22.4 26 13 26 5.8 20.2 0 13 0z';
+
+const escXml = (s: string) =>
+  s.replace(/[&<>"']/g, (c) =>
+    ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' })[c]!,
+  );
 
 /** 카테고리 색을 입힌 핀. 클러스터러가 Marker 만 받으므로 CustomOverlay 대신 SVG 이미지를 쓴다. */
 function pinImage(kakao: any, color: string, active: boolean) {
   const w = active ? 34 : 26;
   const h = active ? 44 : 34;
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 26 34">
-    <path d="M13 0C5.8 0 0 5.8 0 13c0 9.4 11.3 20 12.2 20.8a1.2 1.2 0 0 0 1.6 0C14.7 33 26 22.4 26 13 26 5.8 20.2 0 13 0z" fill="${color}"/>
+    <path d="${PIN_PATH}" fill="${color}"/>
     <circle cx="13" cy="13" r="5" fill="#fff" opacity="${active ? 1 : 0.85}"/>
   </svg>`;
   return new kakao.maps.MarkerImage(
@@ -34,6 +51,52 @@ function pinImage(kakao: any, color: string, active: boolean) {
     { offset: new kakao.maps.Point(w / 2, h) },
   );
 }
+
+/**
+ * 상호가 붙은 핀. 카카오 Marker 는 글자를 직접 못 그리므로 SVG 안에 같이 그린다.
+ *
+ * 글자 폭을 정확히 잴 방법이 없어 한 글자 6.6px 로 어림잡는다. 조금 넉넉하게
+ * 잡아야 배경 알약이 글자를 자르지 않는다.
+ */
+function labeledPinImage(kakao: any, color: string, active: boolean, label: string) {
+  const text = label.length > 18 ? `${label.slice(0, 17)}…` : label;
+  const fs = 11;
+  const padX = 6;
+  const boxW = Math.ceil(text.length * 6.6) + padX * 2;
+  const boxH = 18;
+  const pinW = active ? 30 : 24;
+  const pinH = Math.round(pinW * (34 / 26));
+  const w = Math.max(boxW, pinW);
+  const h = pinH + boxH + 3;
+  const pinX = (w - pinW) / 2;
+
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+    <g transform="translate(${pinX} 0) scale(${pinW / 26})">
+      <path d="${PIN_PATH}" fill="${color}"/>
+      <circle cx="13" cy="13" r="5" fill="#fff" opacity="${active ? 1 : 0.85}"/>
+    </g>
+    <rect x="${(w - boxW) / 2}" y="${pinH + 3}" width="${boxW}" height="${boxH}" rx="9"
+          fill="#fff" fill-opacity="0.94" stroke="${color}" stroke-width="1"/>
+    <text x="${w / 2}" y="${pinH + 3 + boxH / 2 + 4}" text-anchor="middle"
+          font-family="-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif"
+          font-size="${fs}" font-weight="700" fill="#2c241d">${escXml(text)}</text>
+  </svg>`;
+
+  return new kakao.maps.MarkerImage(
+    `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`,
+    new kakao.maps.Size(w, h),
+    // 핀 끝이 좌표에 닿아야 하므로 꼬리표 높이만큼 위를 기준으로 잡는다.
+    { offset: new kakao.maps.Point(w / 2, pinH) },
+  );
+}
+
+/** "퀸스가든/브런치카페" */
+export function pinLabel(p: Place) {
+  return `${p.name}/${CATEGORY_PIN_LABEL[p.category[0] ?? 'cafe']}`;
+}
+
+/** 이 배율보다 가까이 봐야 상호를 띄운다. 멀리서 다 띄우면 글자가 서로 겹쳐 못 읽는다. */
+const LABEL_LEVEL = 5;
 
 export default function MapView({
   places,
@@ -45,6 +108,7 @@ export default function MapView({
   researchNonce,
   visible,
   details,
+  chains,
 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
@@ -61,6 +125,13 @@ export default function MapView({
   // 그다음 hover 부터 바로 반영된다.
   const detailsRef = useRef(details);
   detailsRef.current = details;
+  /** 마커에 붙일 정보. report 가 지도 생성 시 한 번만 만들어지므로 ref 로 읽는다. */
+  const placeByIdRef = useRef<Map<string, Place>>(new Map());
+  const selectedIdRef = useRef(selectedId);
+  selectedIdRef.current = selectedId;
+  /** 지금 상호를 달고 있는 마커들. 매 idle 마다 전부 다시 그리지 않으려고 기억해 둔다. */
+  const labeledRef = useRef<Set<string>>(new Set());
+  const chainMarkersRef = useRef<any[]>([]);
   const [error, setError] = useState<string | null>(null);
   // 지도 준비 여부는 ref 가 아니라 state 로 들고 있어야 한다.
   // ref 는 바뀌어도 리렌더가 안 나서, 데이터가 SDK 보다 먼저 도착하면
@@ -93,6 +164,26 @@ export default function MapView({
             if (bounds.contain(marker.getPosition())) ids.push(id);
           });
           onVisibleChange(ids);
+
+          // 가까이 봤을 때만, 그리고 화면에 있는 마커에만 상호를 붙인다.
+          // 5,500개를 매번 다시 그리면 확대할 때마다 지도가 멈춘다.
+          const want = new Set(map.getLevel() <= LABEL_LEVEL ? ids : []);
+          const had = labeledRef.current;
+          const paint = (id: string, labeled: boolean) => {
+            const marker = markersRef.current.get(id);
+            const p = placeByIdRef.current.get(id);
+            if (!marker || !p) return;
+            const color = CATEGORY_COLOR[p.category[0] ?? 'cafe'];
+            const active = p.id === selectedIdRef.current;
+            marker.setImage(
+              labeled
+                ? labeledPinImage(kakao, color, active, pinLabel(p))
+                : pinImage(kakao, color, active),
+            );
+          };
+          want.forEach((id) => !had.has(id) && paint(id, true));
+          had.forEach((id) => !want.has(id) && paint(id, false));
+          labeledRef.current = want;
         };
         reportRef.current = report;
         // 풍선은 하나만 만들어 두고 내용만 갈아 끼운다.
@@ -129,6 +220,8 @@ export default function MapView({
 
     clusterer.clear();
     markersRef.current.clear();
+    labeledRef.current.clear();
+    placeByIdRef.current = new Map(places.map((p) => [p.id, p]));
 
     const markers = places.map((p) => {
       const marker = new kakao.maps.Marker({
@@ -164,6 +257,52 @@ export default function MapView({
       onVisibleChange(ids);
     }
   }, [ready, places, selectedId, onSelect, onVisibleChange]);
+
+  /**
+   * 스타벅스 레이어.
+   *
+   * 평판 마커와 클러스터를 공유하지 않는다 — 섞이면 "이 지역 N곳" 숫자가
+   * 체인점까지 세게 되고, 평판순 정렬에도 점수 없는 항목이 끼어든다.
+   * 지도 위에만, 초록 핀으로 따로 얹는다.
+   */
+  useEffect(() => {
+    const kakao = kakaoRef.current;
+    const map = mapRef.current;
+    if (!ready || !kakao || !map) return;
+
+    chainMarkersRef.current.forEach((m) => m.setMap(null));
+    chainMarkersRef.current = [];
+    if (!chains.length) return;
+
+    chainMarkersRef.current = chains.map((c) => {
+      const marker = new kakao.maps.Marker({
+        position: new kakao.maps.LatLng(c.lat, c.lng),
+        title: c.name,
+        image: pinImage(kakao, STARBUCKS_COLOR, false),
+        zIndex: 2,
+      });
+      kakao.maps.event.addListener(marker, 'mouseover', () => {
+        const overlay = balloonRef.current;
+        if (!overlay) return;
+        overlay.setContent(chainBalloonHtml(c));
+        overlay.setPosition(marker.getPosition());
+        overlay.setMap(map);
+      });
+      kakao.maps.event.addListener(marker, 'mouseout', () =>
+        balloonRef.current?.setMap(null),
+      );
+      kakao.maps.event.addListener(marker, 'click', () => {
+        window.open(c.placeUrl, '_blank', 'noopener');
+      });
+      marker.setMap(map);
+      return marker;
+    });
+
+    return () => {
+      chainMarkersRef.current.forEach((m) => m.setMap(null));
+      chainMarkersRef.current = [];
+    };
+  }, [ready, chains]);
 
   // 내 위치 표시
   useEffect(() => {

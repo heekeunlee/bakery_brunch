@@ -77,11 +77,17 @@ jobs:
             *)   node scripts/enrich.mjs --top "${{ inputs.top || '2500' }}" $FORCE ;;
           esac
 
+      - name: 스타벅스 매장 수집
+        if: steps.guard.outputs.ok == 'true'
+        env:
+          KAKAO_REST_KEY: ${{ secrets.KAKAO_REST_KEY }}
+        run: node scripts/chains.mjs
+
       - name: 변경분 커밋
         id: commit
         if: steps.guard.outputs.ok == 'true'
         run: |
-          if git diff --quiet -- public/data/details.json; then
+          if git diff --quiet -- public/data/details.json public/data/chains.json; then
             echo "변경 없음."
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
@@ -89,8 +95,9 @@ jobs:
           TOTAL=$(node -e "console.log(require('./public/data/details.json').count)")
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/details.json
-          git commit -m "부가 정보 갱신: ${TOTAL}곳 ($(date -u -d '+9 hours' '+%Y-%m-%d'))"
+          CHAINS=$(node -e "console.log(require('./public/data/chains.json').count)")
+          git add public/data/details.json public/data/chains.json
+          git commit -m "부가 정보 갱신: ${TOTAL}곳 · 스타벅스 ${CHAINS}곳 ($(date -u -d '+9 hours' '+%Y-%m-%d'))"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
 

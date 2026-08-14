@@ -13,6 +13,8 @@ type Props = {
   onFind: () => void;
   finding: boolean;
   findError: string | null;
+  showChains: boolean;
+  onToggleChains: () => void;
 };
 
 const CATEGORIES: Category[] = ['bakery', 'brunch', 'cafe', 'dessert'];
@@ -30,6 +32,8 @@ export default function Filters({
   onFind,
   finding,
   findError,
+  showChains,
+  onToggleChains,
 }: Props) {
   return (
     <div className="filters">
@@ -76,6 +80,13 @@ export default function Filters({
             {CATEGORY_LABEL[c]}
           </button>
         ))}
+        <button
+          className={`chip starbucks ${showChains ? 'on' : ''}`}
+          aria-pressed={showChains}
+          onClick={onToggleChains}
+        >
+          ☕ 스타벅스
+        </button>
         <span className="chip-sep" />
         {availableTags.map((t) => (
           <button

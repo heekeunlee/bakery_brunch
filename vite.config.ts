@@ -14,8 +14,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg'],
       manifest: {
-        name: '빵집지도 — 전국 베이커리 · 브런치 카페',
-        short_name: '빵집지도',
+        name: '전국 베이커리 & 브런치 카페',
+        short_name: '베이커리맵',
         description: '여행지 주변의 평판 좋은 베이커리 카페와 브런치 카페를 찾아보세요.',
         theme_color: '#8b5e34',
         background_color: '#fdfaf6',

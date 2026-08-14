@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "collect": "node scripts/run.mjs",
     "collect:region": "node scripts/run.mjs --region",
-    "enrich": "node scripts/enrich.mjs"
+    "enrich": "node scripts/enrich.mjs",
+    "chains": "node scripts/chains.mjs"
   },
   "dependencies": {
     "react": "^19.1.0",
