@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import MapView from './components/MapView';
 import Filters from './components/Filters';
 import PlaceList from './components/PlaceList';
@@ -18,6 +18,8 @@ import type { Category, PlacesFile, UserRecord } from './types';
 
 /** 지역을 찾아 옮겨갔을 때의 지도 배율. 동네 하나가 화면에 들어오는 정도. */
 const NEARBY_LEVEL = 5;
+/** 시군구 하나를 고른 경우. 읍·면 단위보다 넓게 잡는다. */
+const REGION_LEVEL = 7;
 
 const ALL_CATEGORIES: Category[] = ['bakery', 'brunch', 'cafe', 'dessert'];
 
@@ -66,6 +68,7 @@ export default function App() {
   const [finding, setFinding] = useState(false);
   const [findError, setFindError] = useState<string | null>(null);
   const [visibleIds, setVisibleIds] = useState<string[] | null>(null);
+  const [researchNonce, setResearchNonce] = useState(0);
   const [selectedId, setSelectedId] = useState<string | null>(initial.place);
   const [expanded, setExpanded] = useState(false);
 
@@ -243,6 +246,52 @@ export default function App() {
     }
   }, [query]);
 
+  /**
+   * 시군구를 고르면 지도도 그리로 옮긴다.
+   *
+   * 이게 없으면 '지역'에서 강릉시를 골라도 지도는 서울에 남아 있고,
+   * 목록은 강릉만 남아 있으니 화면에 마커가 하나도 없는 빈 지도가 된다.
+   * 중심은 그 지역 가게들의 평균 좌표로 잡는다 — 행정 경계를 따로 안 받아도
+   * 실제로 가게가 몰린 쪽이 화면에 들어온다.
+   */
+  const focusRegion = useCallback(
+    (sido: string, sigungu: string, rows = places) => {
+      const hit = rows.filter(
+        (p) => p.region.sido === sido && p.region.sigungu === sigungu,
+      );
+      if (!hit.length) return;
+      setFocus({
+        lat: hit.reduce((s, p) => s + p.lat, 0) / hit.length,
+        lng: hit.reduce((s, p) => s + p.lng, 0) / hit.length,
+        level: REGION_LEVEL,
+      });
+    },
+    [places],
+  );
+
+  // 공유 링크(?sigungu=)로 들어온 경우에도 데이터가 도착하는 대로 그 지역을 비춘다.
+  const linkedRegionShown = useRef(false);
+  useEffect(() => {
+    if (linkedRegionShown.current || !initial.region || !places.length) return;
+    linkedRegionShown.current = true;
+    focusRegion(initial.region.sido, initial.region.sigungu, places);
+  }, [places, initial.region, focusRegion]);
+
+  /**
+   * 지금 보고 있는 지도 범위로 다시 찾는다.
+   *
+   * 줌아웃했는데 다른 지역이 안 나오는 건 대개 필터가 남아 있어서다 —
+   * '지역' 탭에서 시군구를 고르면 그 지역만 남고, 검색어가 있으면 이름이
+   * 안 맞는 곳이 통째로 빠진다. 지도만 넓혀도 걸러진 곳은 돌아오지 않는다.
+   * 그래서 이 버튼은 범위를 다시 훑기 전에 그 두 필터를 먼저 푼다.
+   */
+  const handleResearch = useCallback(() => {
+    setRegionFilter(null);
+    setQuery('');
+    setFindError(null);
+    setResearchNonce((n) => n + 1);
+  }, []);
+
   const handleSelect = useCallback(
     (id: string) => {
       setSelectedId(id);
@@ -298,7 +347,12 @@ export default function App() {
           focus={focus}
           onSelect={handleSelect}
           onVisibleChange={setVisibleIds}
+          researchNonce={researchNonce}
+          visible={tab === 'map'}
         />
+        <button className="research" onClick={handleResearch}>
+          ↻ 현위치에서 재검색
+        </button>
       </div>
 
       {(tab === 'map' || tab === 'list') && (
@@ -399,6 +453,7 @@ export default function App() {
               places={places}
               onPick={(sido, sigungu) => {
                 setRegionFilter({ sido, sigungu });
+                focusRegion(sido, sigungu);
                 setTab('list');
               }}
             />

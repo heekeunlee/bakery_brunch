@@ -11,6 +11,10 @@ type Props = {
   focus: FocusTarget | null;
   onSelect: (id: string) => void;
   onVisibleChange: (ids: string[]) => void;
+  /** 값이 바뀔 때마다 지금 화면 범위를 다시 훑는다. '재검색' 버튼이 올린다. */
+  researchNonce: number;
+  /** 지도 탭이 보이는 중인지. 숨겨진 동안 생긴 지도는 크기가 0이라 다시 잡아줘야 한다. */
+  visible: boolean;
 };
 
 /** 카테고리 색을 입힌 핀. 클러스터러가 Marker 만 받으므로 CustomOverlay 대신 SVG 이미지를 쓴다. */
@@ -35,6 +39,8 @@ export default function MapView({
   focus,
   onSelect,
   onVisibleChange,
+  researchNonce,
+  visible,
 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
@@ -42,6 +48,10 @@ export default function MapView({
   const clustererRef = useRef<any>(null);
   const markersRef = useRef<Map<string, any>>(new Map());
   const userMarkerRef = useRef<any>(null);
+  /** 화면 범위 보고 함수. 지도 생성 시 만들어 두고 '재검색'에서도 불러 쓴다. */
+  const reportRef = useRef<(() => void) | null>(null);
+  /** 마지막으로 요청받은 위치. relayout 후 중심을 다시 맞추는 데 쓴다. */
+  const focusRef = useRef<FocusTarget | null>(null);
   const [error, setError] = useState<string | null>(null);
   // 지도 준비 여부는 ref 가 아니라 state 로 들고 있어야 한다.
   // ref 는 바뀌어도 리렌더가 안 나서, 데이터가 SDK 보다 먼저 도착하면
@@ -75,6 +85,7 @@ export default function MapView({
           });
           onVisibleChange(ids);
         };
+        reportRef.current = report;
         kakao.maps.event.addListener(map, 'idle', report);
         setReady(true);
       })
@@ -150,6 +161,7 @@ export default function MapView({
     const map = mapRef.current;
     if (!kakao || !map || !focus) return;
 
+    focusRef.current = focus;
     if (focus.level != null) map.setLevel(focus.level);
 
     const target = new kakao.maps.LatLng(focus.lat, focus.lng);
@@ -160,6 +172,28 @@ export default function MapView({
     if (far) map.setCenter(target);
     else map.panTo(target);
   }, [ready, focus]);
+
+  /**
+   * 탭을 옮겨도 지도 상태를 잃지 않으려고 숨겨서 마운트해 두는데,
+   * 숨겨진 컨테이너는 크기가 0이라 그대로 두면 다시 켰을 때 타일도 마커도
+   * 엉뚱하게 그려진다. 보이는 순간 크기를 다시 재고 중심을 잡아준다.
+   */
+  useEffect(() => {
+    const kakao = kakaoRef.current;
+    const map = mapRef.current;
+    if (!ready || !map || !visible) return;
+    map.relayout();
+    const f = focusRef.current;
+    if (f) map.setCenter(new kakao.maps.LatLng(f.lat, f.lng));
+    reportRef.current?.();
+  }, [ready, visible]);
+
+  // 필터가 풀린 뒤 목록을 지금 화면 기준으로 다시 채운다.
+  // 지도를 움직이지 않으면 idle 이 안 나서, 버튼을 눌러도 목록이 그대로다.
+  useEffect(() => {
+    if (!ready || !researchNonce) return;
+    reportRef.current?.();
+  }, [ready, researchNonce]);
 
   if (error) {
     return (
