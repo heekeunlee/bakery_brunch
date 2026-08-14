@@ -2,13 +2,13 @@
 import { useEffect, useRef, useState } from 'react';
 import { loadKakao } from '../lib/kakaoLoader';
 import { CATEGORY_COLOR, type Place } from '../types';
-import type { LatLng } from '../lib/geo';
+import { distanceKm, type FocusTarget, type LatLng } from '../lib/geo';
 
 type Props = {
   places: Place[];
   selectedId: string | null;
   userPos: LatLng | null;
-  focus: LatLng | null;
+  focus: FocusTarget | null;
   onSelect: (id: string) => void;
   onVisibleChange: (ids: string[]) => void;
 };
@@ -43,6 +43,10 @@ export default function MapView({
   const markersRef = useRef<Map<string, any>>(new Map());
   const userMarkerRef = useRef<any>(null);
   const [error, setError] = useState<string | null>(null);
+  // 지도 준비 여부는 ref 가 아니라 state 로 들고 있어야 한다.
+  // ref 는 바뀌어도 리렌더가 안 나서, 데이터가 SDK 보다 먼저 도착하면
+  // 마커 이펙트가 clusterer 가 없는 채로 한 번 돌고 다시는 실행되지 않는다.
+  const [ready, setReady] = useState(false);
 
   // 지도 1회 생성
   useEffect(() => {
@@ -72,6 +76,7 @@ export default function MapView({
           onVisibleChange(ids);
         };
         kakao.maps.event.addListener(map, 'idle', report);
+        setReady(true);
       })
       .catch((err: Error) => !cancelled && setError(err.message));
 
@@ -114,7 +119,7 @@ export default function MapView({
       });
       onVisibleChange(ids);
     }
-  }, [places, selectedId, onSelect, onVisibleChange]);
+  }, [ready, places, selectedId, onSelect, onVisibleChange]);
 
   // 내 위치 표시
   useEffect(() => {
@@ -137,15 +142,24 @@ export default function MapView({
       ),
       zIndex: 20,
     });
-  }, [userPos]);
+  }, [ready, userPos]);
 
   // 외부에서 요청한 위치로 이동
   useEffect(() => {
     const kakao = kakaoRef.current;
     const map = mapRef.current;
     if (!kakao || !map || !focus) return;
-    map.panTo(new kakao.maps.LatLng(focus.lat, focus.lng));
-  }, [focus]);
+
+    if (focus.level != null) map.setLevel(focus.level);
+
+    const target = new kakao.maps.LatLng(focus.lat, focus.lng);
+    const c = map.getCenter();
+    // panTo 는 먼 곳으로 갈 때 전국을 가로지르며 훑어서 느리고 어지럽다.
+    // 다른 동네로 건너뛰는 수준이면 그냥 끊어서 옮긴다.
+    const far = distanceKm({ lat: c.getLat(), lng: c.getLng() }, focus) > 20;
+    if (far) map.setCenter(target);
+    else map.panTo(target);
+  }, [ready, focus]);
 
   if (error) {
     return (

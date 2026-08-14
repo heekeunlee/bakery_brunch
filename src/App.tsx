@@ -7,8 +7,17 @@ import RegionBrowser from './components/RegionBrowser';
 import SavedView from './components/SavedView';
 import TabBar, { type Tab } from './components/TabBar';
 import { loadRecords, saveRecords } from './lib/storage';
-import { distanceKm, getCurrentPosition, type LatLng } from './lib/geo';
+import {
+  distanceKm,
+  getCurrentPosition,
+  type FocusTarget,
+  type LatLng,
+} from './lib/geo';
+import { searchRegion } from './lib/geocode';
 import type { Category, PlacesFile, UserRecord } from './types';
+
+/** 지역을 찾아 옮겨갔을 때의 지도 배율. 동네 하나가 화면에 들어오는 정도. */
+const NEARBY_LEVEL = 5;
 
 const ALL_CATEGORIES: Category[] = ['bakery', 'brunch', 'cafe', 'dessert'];
 
@@ -51,7 +60,11 @@ export default function App() {
   const [records, setRecords] = useState<Record<string, UserRecord>>(loadRecords);
   const [userPos, setUserPos] = useState<LatLng | null>(null);
   const [locating, setLocating] = useState(false);
-  const [focus, setFocus] = useState<LatLng | null>(null);
+  const [focus, setFocus] = useState<FocusTarget | null>(null);
+  /** '찾기'로 옮겨간 지역. 여기가 있으면 거리는 내 위치가 아니라 이 지점 기준이다. */
+  const [searchPin, setSearchPin] = useState<(LatLng & { name: string }) | null>(null);
+  const [finding, setFinding] = useState(false);
+  const [findError, setFindError] = useState<string | null>(null);
   const [visibleIds, setVisibleIds] = useState<string[] | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(initial.place);
   const [expanded, setExpanded] = useState(false);
@@ -65,6 +78,25 @@ export default function App() {
       .then(setData)
       .catch((e: Error) => setLoadError(e.message));
   }, []);
+
+  // 앱을 열면 바로 내 주변 지도를 띄운다.
+  // 권한을 거부하거나 실패해도 조용히 넘어간다 — 시작하자마자 경고창이 뜨면
+  // 링크로 들어온 사람까지 붙잡히므로, 공유 링크(가게·지역 지정)일 땐 아예 묻지 않는다.
+  useEffect(() => {
+    if (initial.place || initial.region) return;
+    let cancelled = false;
+    getCurrentPosition()
+      .then((pos) => {
+        if (cancelled) return;
+        setUserPos(pos);
+        setFocus({ ...pos, level: NEARBY_LEVEL });
+        setSort('distance');
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [initial.place, initial.region]);
 
   useEffect(() => {
     const q = new URLSearchParams();
@@ -104,17 +136,21 @@ export default function App() {
     });
   }, [places, categories, tags, query, regionFilter]);
 
+  // 거리의 기준점. 지역을 찾아 옮겨갔다면 그 동네가 기준이어야
+  // "여기서 가까운 곳"이 말이 된다. 아니면 내 위치.
+  const origin = searchPin ?? userPos;
+
   const distances = useMemo(() => {
     const m = new Map<string, number>();
-    if (!userPos) return m;
-    for (const p of filtered) m.set(p.id, distanceKm(userPos, p));
+    if (!origin) return m;
+    for (const p of filtered) m.set(p.id, distanceKm(origin, p));
     return m;
-  }, [filtered, userPos]);
+  }, [filtered, origin]);
 
   const sortRows = useCallback(
     <T extends { id: string; score: number; firstSeen: string }>(rows: T[]) => {
       const out = [...rows];
-      if (sort === 'distance' && userPos) {
+      if (sort === 'distance' && origin) {
         out.sort((a, b) => (distances.get(a.id) ?? 1e9) - (distances.get(b.id) ?? 1e9));
       } else if (sort === 'new') {
         out.sort((a, b) => b.firstSeen.localeCompare(a.firstSeen) || b.score - a.score);
@@ -123,7 +159,7 @@ export default function App() {
       }
       return out;
     },
-    [sort, userPos, distances],
+    [sort, origin, distances],
   );
 
   /** 지도 탭의 리스트는 "지금 화면에 보이는 곳"만 — 지도와 목록이 따로 놀지 않게. */
@@ -167,7 +203,9 @@ export default function App() {
     try {
       const pos = await getCurrentPosition();
       setUserPos(pos);
-      setFocus(pos);
+      setSearchPin(null); // 내 위치로 돌아왔으니 찾아둔 지역 기준은 푼다
+      setFindError(null);
+      setFocus({ ...pos, level: NEARBY_LEVEL });
       setSort('distance');
     } catch (e) {
       alert((e as Error).message);
@@ -175,6 +213,35 @@ export default function App() {
       setLocating(false);
     }
   }, []);
+
+  /**
+   * 입력한 지역으로 지도를 옮기고 그 주변을 보여준다.
+   * 검색어는 지도를 옮긴 뒤 비운다 — 글자로 목록까지 걸러버리면
+   * 정작 "주변에 뭐가 있나"를 못 보기 때문이다. 대신 어디로 왔는지는 칩으로 남긴다.
+   */
+  const handleFind = useCallback(async () => {
+    const q = query.trim();
+    if (!q) return;
+    setFinding(true);
+    setFindError(null);
+    try {
+      const hit = await searchRegion(q);
+      if (!hit) {
+        setFindError(`'${q}' 위치를 찾지 못했습니다. 시·군·구나 읍·면·동 이름으로 해보세요.`);
+        return;
+      }
+      setSearchPin({ lat: hit.lat, lng: hit.lng, name: hit.name });
+      setFocus({ lat: hit.lat, lng: hit.lng, level: NEARBY_LEVEL });
+      setQuery('');
+      setRegionFilter(null); // 지역 필터가 남아 있으면 옮겨간 동네가 통째로 가려진다
+      setSort('distance');
+      setTab('map');
+    } catch (e) {
+      setFindError((e as Error).message);
+    } finally {
+      setFinding(false);
+    }
+  }, [query]);
 
   const handleSelect = useCallback(
     (id: string) => {
@@ -207,7 +274,7 @@ export default function App() {
           key={s}
           className={`sortbtn ${sort === s ? 'on' : ''}`}
           onClick={() => {
-            if (s === 'distance' && !userPos) {
+            if (s === 'distance' && !origin) {
               handleLocate();
               return;
             }
@@ -246,12 +313,28 @@ export default function App() {
             onQueryChange={setQuery}
             onLocate={handleLocate}
             locating={locating}
+            onFind={handleFind}
+            finding={finding}
+            findError={findError}
           />
-          {regionFilter && (
+          {(regionFilter || searchPin) && (
             <div className="region-chip-row">
-              <button className="region-chip" onClick={() => setRegionFilter(null)}>
-                {regionFilter.sido} {regionFilter.sigungu} ✕
-              </button>
+              {searchPin && (
+                <button
+                  className="region-chip pin"
+                  onClick={() => {
+                    setSearchPin(null);
+                    setSort('score');
+                  }}
+                >
+                  📍 {searchPin.name} ✕
+                </button>
+              )}
+              {regionFilter && (
+                <button className="region-chip" onClick={() => setRegionFilter(null)}>
+                  {regionFilter.sido} {regionFilter.sigungu} ✕
+                </button>
+              )}
             </div>
           )}
         </header>
@@ -347,7 +430,7 @@ export default function App() {
           <PlaceDetail
             place={selected}
             nearby={nearby}
-            distanceKm={userPos ? distanceKm(userPos, selected) : null}
+            distanceKm={origin ? distanceKm(origin, selected) : null}
             record={records[selected.id]}
             onClose={() => setSelectedId(null)}
             onToggleWish={() =>

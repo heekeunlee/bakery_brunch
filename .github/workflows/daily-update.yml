@@ -1,26 +1,26 @@
-name: 매일 아침 자동 수집
+name: 매주 목요일 자동 수집
 
 on:
   schedule:
-    # GitHub cron 은 UTC 기준. 21:00 UTC = 다음날 06:00 KST.
-    - cron: '0 21 * * *'
+    # GitHub cron 은 UTC 기준. 수요일 21:00 UTC = 목요일 06:00 KST.
+    - cron: '0 21 * * 3'
   workflow_dispatch:
     inputs:
       mode:
         description: '수집 범위'
         required: false
-        default: 'shard'
+        default: 'all'
         type: choice
         options:
-          - shard    # 오늘의 순환 샤드 (기본, 매일 자동 실행이 쓰는 방식)
+          - all      # 전국 전체 (기본, 주간 자동 실행이 쓰는 방식)
           - missing  # 아직 한 곳도 못 건진 지역만
-          - all      # 전국 전체
+          - shard    # 전국을 며칠로 나눈 조각 하나만
       region:
         description: '특정 지역만 수집 (예: 강릉시). 입력하면 mode 보다 우선합니다.'
         required: false
         type: string
       shards:
-        description: '전국을 며칠에 나눠 돌지 (기본 7일)'
+        description: 'shard 모드에서 전국을 몇 조각으로 나눌지 (기본 7)'
         required: false
         default: '7'
         type: string
@@ -68,13 +68,15 @@ jobs:
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
           KAKAO_REST_KEY: ${{ secrets.KAKAO_REST_KEY }}
         run: |
+          # 스케줄 실행에는 inputs 가 비어 있다. 주 1회로 바뀐 뒤로는 전국을 한 번에 돈다 —
+          # 샤드 순환(연중 일수 % 7)은 7일 간격으로 돌면 매번 같은 조각만 걸려 무의미하다.
           if [ -n "${{ inputs.region }}" ]; then
             node scripts/run.mjs --region "${{ inputs.region }}"
           else
-            case "${{ inputs.mode || 'shard' }}" in
-              all)     node scripts/run.mjs --all ;;
+            case "${{ inputs.mode || 'all' }}" in
               missing) node scripts/run.mjs --missing ;;
-              *)       node scripts/run.mjs --shard auto --shards "${{ inputs.shards || '7' }}" ;;
+              shard)   node scripts/run.mjs --shard auto --shards "${{ inputs.shards || '7' }}" ;;
+              *)       node scripts/run.mjs --all ;;
             esac
           fi
 

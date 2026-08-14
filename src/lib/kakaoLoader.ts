@@ -30,7 +30,8 @@ export function loadKakao(): Promise<any> {
     script.async = true;
     script.src =
       `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${key}` +
-      `&libraries=clusterer&autoload=false`;
+      // services 는 지역명(시군구·읍면리)을 좌표로 바꾸는 데 쓴다.
+      `&libraries=clusterer,services&autoload=false`;
     script.onload = () => window.kakao.maps.load(() => resolve(window.kakao));
     script.onerror = () =>
       reject(new Error('카카오맵 SDK 로드 실패 — 앱 키의 도메인 설정을 확인하세요.'));

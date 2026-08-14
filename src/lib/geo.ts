@@ -1,5 +1,8 @@
 export type LatLng = { lat: number; lng: number };
 
+/** 지도를 옮겨달라는 요청. level 을 주면 확대 배율까지 맞춘다(작을수록 가깝다). */
+export type FocusTarget = LatLng & { level?: number };
+
 const R = 6371; // km
 
 export function distanceKm(a: LatLng, b: LatLng): number {

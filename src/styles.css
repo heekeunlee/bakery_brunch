@@ -139,6 +139,29 @@ button {
   border-color: var(--brand);
 }
 
+.find {
+  flex: 0 0 auto;
+  height: 42px;
+  padding: 0 16px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--brand);
+  border: none;
+  border-radius: 21px;
+  box-shadow: var(--shadow);
+}
+
+.find:disabled {
+  opacity: 0.45;
+}
+
+.find-error {
+  margin: 6px 2px 0;
+  font-size: 13px;
+  color: #c0392b;
+}
+
 .locate {
   flex: 0 0 42px;
   width: 42px;
@@ -216,6 +239,8 @@ button {
 
 .region-chip-row {
   display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
   margin-top: 8px;
   pointer-events: auto;
 }
