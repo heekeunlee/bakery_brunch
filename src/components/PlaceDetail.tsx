@@ -1,9 +1,13 @@
 import { useState } from 'react';
-import { CATEGORY_LABEL, type Place, type UserRecord } from '../types';
+import { CATEGORY_LABEL, type Place, type PlaceDetails, type UserRecord } from '../types';
 import { distanceKm, formatDistance } from '../lib/geo';
+import FacilityBadges from './FacilityBadges';
+
+const won = (n: number) => `${n.toLocaleString('ko-KR')}원`;
 
 type Props = {
   place: Place;
+  detail: PlaceDetails | undefined;
   nearby: Place[];
   distanceKm: number | null;
   record: UserRecord | undefined;
@@ -20,6 +24,7 @@ function routeUrl(p: Place) {
 
 export default function PlaceDetail({
   place,
+  detail,
   nearby,
   distanceKm: distFromMe,
   record,
@@ -68,6 +73,23 @@ export default function PlaceDetail({
     <div className="detail">
       <div className="detail-grip" />
 
+      {detail?.photo && (
+        <figure className="detail-photo">
+          <img
+            src={detail.photo.thumb}
+            alt=""
+            loading="lazy"
+            // 네이버 썸네일은 referer 를 보고 막는 경우가 있다. 도메인이 바뀌어도
+            // 깨지지 않도록 referer 를 아예 안 보낸다.
+            referrerPolicy="no-referrer"
+            onError={(e) => {
+              (e.currentTarget.closest('figure') as HTMLElement).style.display = 'none';
+            }}
+          />
+          <figcaption>네이버 이미지 검색 · {detail.photo.title}</figcaption>
+        </figure>
+      )}
+
       <div className="detail-head">
         <div>
           <h2>{place.name}</h2>
@@ -95,6 +117,8 @@ export default function PlaceDetail({
           ))}
         </div>
       )}
+
+      {detail?.facility && <FacilityBadges facility={detail.facility} />}
 
       <div className="quick-actions">
         <a className="qa" href={routeUrl(place)} target="_blank" rel="noreferrer">
@@ -137,6 +161,70 @@ export default function PlaceDetail({
           </>
         )}
       </dl>
+
+      {detail && detail.menus.length > 0 && (
+        <section className="detail-block">
+          <h3>대표 메뉴</h3>
+          <ul className="menu-list">
+            {detail.menus.map((m) => (
+              <li key={`${m.name}-${m.price}`}>
+                <span>{m.name}</span>
+                <b>{won(m.price)}</b>
+              </li>
+            ))}
+          </ul>
+          <p className="unverified">
+            블로그 후기에서 모은 값이라 실제 가격과 다를 수 있습니다.
+          </p>
+        </section>
+      )}
+
+      {detail && detail.blogs.length > 0 && (
+        <section className="detail-block">
+          <h3>손님 후기</h3>
+          <ul className="blog-list">
+            {detail.blogs.map((b) => (
+              <li key={b.link}>
+                <a href={b.link} target="_blank" rel="noreferrer">
+                  <span className="blog-title">{b.title}</span>
+                  <span className="blog-meta">
+                    {b.blogger} · {b.date}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {detail?.facility && (detail.facility.parkingNearest || detail.facility.evNearest) && (
+        <section className="detail-block">
+          <h3>주변 시설</h3>
+          <dl className="detail-info">
+            {detail.facility.parkingNearest && (
+              <>
+                <dt>주차장</dt>
+                <dd>
+                  {detail.facility.parkingNearest.name} ·{' '}
+                  {detail.facility.parkingNearest.distance}m
+                  {detail.facility.parkingNearby > 1 &&
+                    ` (300m 안에 ${detail.facility.parkingNearby}곳)`}
+                </dd>
+              </>
+            )}
+            {detail.facility.evNearest && (
+              <>
+                <dt>전기차 충전</dt>
+                <dd>
+                  {detail.facility.evNearest.name} · {detail.facility.evNearest.distance}m
+                  {detail.facility.evNearby > 1 &&
+                    ` (700m 안에 ${detail.facility.evNearby}곳)`}
+                </dd>
+              </>
+            )}
+          </dl>
+        </section>
+      )}
 
       <div className="detail-actions">
         <a className="btn primary" href={place.placeUrl} target="_blank" rel="noreferrer">
@@ -187,8 +275,9 @@ export default function PlaceDetail({
       )}
 
       <p className="disclaimer">
-        영업시간 · 휴무는 블로그 본문에서 자동 추출한 값이라 실제와 다를 수 있습니다.
-        방문 전 카카오맵에서 확인하세요.
+        영업시간 · 휴무 · 메뉴 가격은 블로그 본문에서 자동으로 뽑은 값이라 실제와 다를
+        수 있습니다. 주차장 · 전기차 충전소는 가게 전용 시설이 아니라 주변 반경 안에
+        있는 곳입니다. 방문 전 카카오맵에서 확인하세요.
       </p>
 
       {toast && <div className="toast">{toast}</div>}

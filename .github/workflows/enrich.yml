@@ -1,0 +1,101 @@
+name: 부가 정보 수집
+
+# 사진·메뉴·후기·주변시설은 가게 발굴과 따로 돈다.
+# 네이버 검색 API 일일 한도를 같은 날 둘이 나눠 쓰면 둘 다 반쯤에서 끊긴다.
+on:
+  schedule:
+    # 일요일 21:00 UTC = 월요일 06:00 KST. 수집(목요일)과 사흘 떨어뜨린다.
+    - cron: '0 21 * * 0'
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: '대상 범위'
+        required: false
+        default: 'top'
+        type: choice
+        options:
+          - top    # 평판 상위 N곳 (기본)
+          - all    # 30일 지난 곳 전부
+      top:
+        description: 'scope=top 일 때 상위 몇 곳 (기본 2500)'
+        required: false
+        default: '2500'
+        type: string
+      force:
+        description: '최근에 채운 곳도 다시 수집'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: enrich
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 시크릿 확인
+        id: guard
+        run: |
+          if [ -z "${{ secrets.NAVER_CLIENT_ID }}" ] || [ -z "${{ secrets.KAKAO_REST_KEY }}" ]; then
+            echo "::warning::시크릿이 없어 부가 정보 수집을 건너뜁니다."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 수집 실행
+        if: steps.guard.outputs.ok == 'true'
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          KAKAO_REST_KEY: ${{ secrets.KAKAO_REST_KEY }}
+        run: |
+          FORCE=""
+          if [ "${{ inputs.force }}" = "true" ]; then FORCE="--force"; fi
+          # 기본은 평판 상위 2,500곳. 전국 5,500곳을 다 채우면 details.json 이
+          # 압축 후에도 1.8MB 라 앱이 매주 그만큼을 다시 받는다. 상위 2,500곳이면
+          # 800KB 선이고, 그 아래는 어차피 열어보는 일이 드물다.
+          # 부가 정보가 없는 가게도 풍선과 상세는 기본 정보로 정상 동작한다.
+          case "${{ inputs.scope || 'top' }}" in
+            all) node scripts/enrich.mjs --all $FORCE ;;
+            *)   node scripts/enrich.mjs --top "${{ inputs.top || '2500' }}" $FORCE ;;
+          esac
+
+      - name: 변경분 커밋
+        id: commit
+        if: steps.guard.outputs.ok == 'true'
+        run: |
+          if git diff --quiet -- public/data/details.json; then
+            echo "변경 없음."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          TOTAL=$(node -e "console.log(require('./public/data/details.json').count)")
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/details.json
+          git commit -m "부가 정보 갱신: ${TOTAL}곳 ($(date -u -d '+9 hours' '+%Y-%m-%d'))"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    needs: enrich
+    if: needs.enrich.outputs.changed == 'true'
+    uses: ./.github/workflows/deploy.yml
+    secrets: inherit

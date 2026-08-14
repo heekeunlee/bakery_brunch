@@ -8,7 +8,8 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "collect": "node scripts/run.mjs",
-    "collect:region": "node scripts/run.mjs --region"
+    "collect:region": "node scripts/run.mjs --region",
+    "enrich": "node scripts/enrich.mjs"
   },
   "dependencies": {
     "react": "^19.1.0",

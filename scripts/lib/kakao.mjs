@@ -169,3 +169,22 @@ export function toCategories(categoryName, contexts = []) {
   if (out.size === 0) out.add('cafe');
   return [...out];
 }
+
+/**
+ * 좌표 주변을 훑는다. 주차장·전기차 충전소처럼 "근처에 있나"를 볼 때 쓴다.
+ * 가게 자체의 시설 정보가 아니라 반경 안에 있는 시설이라는 점을 화면에서 밝혀야 한다.
+ */
+export async function searchNearby({ lat, lng, radius, categoryCode, query }) {
+  const base = categoryCode
+    ? `https://dapi.kakao.com/v2/local/search/category.json?category_group_code=${categoryCode}`
+    : `https://dapi.kakao.com/v2/local/search/keyword.json?query=${encodeURIComponent(query)}`;
+  const url = `${base}&x=${lng}&y=${lat}&radius=${radius}&size=5&sort=distance`;
+  const data = await getJson(url, headers());
+  const docs = data.documents ?? [];
+  return {
+    count: data.meta?.total_count ?? docs.length,
+    nearest: docs[0]
+      ? { name: docs[0].place_name, distance: Number(docs[0].distance) }
+      : undefined,
+  };
+}

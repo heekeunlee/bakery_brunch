@@ -14,7 +14,7 @@ import {
   type LatLng,
 } from './lib/geo';
 import { searchRegion } from './lib/geocode';
-import type { Category, PlacesFile, UserRecord } from './types';
+import type { Category, PlaceDetails, PlacesFile, UserRecord } from './types';
 
 /** 지역을 찾아 옮겨갔을 때의 지도 배율. 동네 하나가 화면에 들어오는 정도. */
 const NEARBY_LEVEL = 5;
@@ -50,6 +50,7 @@ function readUrlState() {
 export default function App() {
   const [data, setData] = useState<PlacesFile | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
+  const [details, setDetails] = useState<Map<string, PlaceDetails>>(new Map());
 
   const initial = useMemo(readUrlState, []);
   const [tab, setTab] = useState<Tab>(initial.region ? 'list' : 'map');
@@ -80,6 +81,18 @@ export default function App() {
       })
       .then(setData)
       .catch((e: Error) => setLoadError(e.message));
+  }, []);
+
+  // 사진·메뉴·후기는 지도가 먼저 뜬 뒤에 따로 받아온다.
+  // 첫 화면을 붙잡지 않아야 하고, 없으면 없는 대로 동작해야 하므로 실패는 무시한다.
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}data/details.json`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((file) => {
+        if (!file?.details) return;
+        setDetails(new Map(file.details.map((d: PlaceDetails) => [d.id, d])));
+      })
+      .catch(() => {});
   }, []);
 
   // 앱을 열면 바로 내 주변 지도를 띄운다.
@@ -349,6 +362,7 @@ export default function App() {
           onVisibleChange={setVisibleIds}
           researchNonce={researchNonce}
           visible={tab === 'map'}
+          details={details}
         />
         <button className="research" onClick={handleResearch}>
           ↻ 현위치에서 재검색
@@ -484,6 +498,7 @@ export default function App() {
           <div className="scrim" onClick={() => setSelectedId(null)} />
           <PlaceDetail
             place={selected}
+            detail={details.get(selected.id)}
             nearby={nearby}
             distanceKm={origin ? distanceKm(origin, selected) : null}
             record={records[selected.id]}

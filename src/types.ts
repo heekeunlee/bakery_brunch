@@ -48,3 +48,44 @@ export const CATEGORY_COLOR: Record<Category, string> = {
   cafe: '#7a6a58',
   dessert: '#b5578c',
 };
+
+/* -------------------------------------------------------------------------
+ * 부가 정보. places.json 과 따로 받아온다 — 첫 화면에는 지도와 목록만 있으면
+ * 되는데 여기까지 합치면 첫 로딩이 배로 무거워진다.
+ * ---------------------------------------------------------------------- */
+
+export type MenuItem = { name: string; price: number };
+
+export type BlogPost = {
+  title: string;
+  link: string;
+  blogger: string;
+  date: string;
+};
+
+export type Facility = {
+  /** 블로그 본문이 말하는 주차 사정. */
+  parkingHint: 'yes' | 'hard' | 'unknown';
+  /** 반경 300m 안의 주차장 수. 가게 전용 주차장이 아니라 '주변'이다. */
+  parkingNearby: number;
+  parkingNearest?: { name: string; distance: number };
+  /** 반경 700m 안의 전기차 충전소 수. */
+  evNearby: number;
+  evNearest?: { name: string; distance: number };
+  kids: 'ok' | 'no' | 'unknown';
+};
+
+export type PlaceDetails = {
+  id: string;
+  photo?: { thumb: string; title: string };
+  menus: MenuItem[];
+  blogs: BlogPost[];
+  facility: Facility;
+  enrichedAt: string;
+};
+
+export type DetailsFile = {
+  generatedAt: string;
+  count: number;
+  details: PlaceDetails[];
+};

@@ -321,26 +321,31 @@ button {
 
 /* ---------- 바텀시트 (지도 탭) ---------- */
 
-/* 접힌 시트(128px) 바로 위에 띄운다. 시트를 펼치면 z-index 상 자연스럽게 가려진다. */
+/*
+ * 접힌 시트 바로 위, 지도 아래쪽에 붙인다. 가운데에 두면 지도를 보는 눈을 계속 가린다.
+ * 색은 배경(지도)과 확실히 갈리는 주황으로 — 흰 버튼은 지도 위에서 묻힌다.
+ */
 .research {
   position: absolute;
   left: 50%;
-  bottom: calc(var(--tab-h) + var(--safe-b) + 140px);
+  bottom: calc(var(--tab-h) + var(--safe-b) + 138px);
   z-index: 25;
   transform: translateX(-50%);
-  padding: 9px 18px;
+  padding: 10px 20px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.2px;
   white-space: nowrap;
-  color: var(--brand);
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  box-shadow: 0 2px 10px rgba(60, 40, 20, 0.18);
+  color: #fff;
+  background: #f2683c;
+  border: none;
+  border-radius: 22px;
+  box-shadow: 0 4px 14px rgba(242, 104, 60, 0.45);
 }
 
 .research:active {
-  background: var(--bg);
+  background: #d8552c;
+  transform: translateX(-50%) scale(0.97);
 }
 
 .sheet {
@@ -986,6 +991,16 @@ code {
     transform: translateY(0);
   }
 
+  /*
+   * 넓은 화면에서는 시트가 왼쪽 420px 패널이라 지도 아래쪽이 통째로 비어 있다.
+   * 버튼을 화면 한복판에 띄워둘 이유가 없으므로 시트 오른쪽 여백의 가운데,
+   * 탭바 바로 위까지 내린다.
+   */
+  .research {
+    left: calc(50% + 222px);
+    bottom: calc(var(--tab-h) + var(--safe-b) + 16px);
+  }
+
   .detail {
     left: auto;
     right: 12px;
@@ -999,4 +1014,234 @@ code {
     margin: 0 auto;
     width: 100%;
   }
+}
+
+
+/* ---------- 마커 풍선 (지도 hover) ---------- */
+
+.balloon {
+  display: flex;
+  gap: 10px;
+  width: 264px;
+  padding: 10px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 6px 22px rgba(50, 32, 16, 0.28);
+  font-size: 13px;
+  line-height: 1.45;
+  cursor: pointer;
+}
+
+.bl-photo {
+  flex: 0 0 68px;
+}
+
+.bl-photo img {
+  width: 68px;
+  height: 68px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.bl-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.bl-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.bl-head strong {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bl-score {
+  flex: 0 0 auto;
+  font-weight: 800;
+  color: var(--brand);
+}
+
+.bl-sub {
+  margin: 1px 0 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.bl-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 5px;
+}
+
+.bl-tags span {
+  padding: 1px 6px;
+  font-size: 11px;
+  color: var(--brand);
+  background: var(--bg);
+  border-radius: 8px;
+}
+
+.bl-menus {
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bl-menus li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.bl-menus li span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bl-fac {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.bl-fac span {
+  padding: 1px 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #2f6b3d;
+  background: #e8f4ea;
+  border-radius: 8px;
+}
+
+.bl-more {
+  margin: 6px 0 0;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* ---------- 편의시설 배지 ---------- */
+
+.facilities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.fac {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 12px;
+}
+
+.fac.ok {
+  color: #2f6b3d;
+  background: #e8f4ea;
+}
+
+.fac.warn {
+  color: #9a4a1c;
+  background: #fbeadf;
+}
+
+.fac-icon {
+  font-size: 12px;
+}
+
+/* ---------- 상세: 사진 · 메뉴 · 후기 ---------- */
+
+.detail-photo {
+  margin: 0 0 12px;
+}
+
+.detail-photo img {
+  width: 100%;
+  height: 168px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: var(--bg);
+}
+
+.detail-photo figcaption {
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.detail-block {
+  margin-top: 18px;
+}
+
+.detail-block h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.menu-list li:last-child {
+  border-bottom: none;
+}
+
+.blog-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-list a {
+  display: block;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+  color: inherit;
+  text-decoration: none;
+}
+
+.blog-list li:last-child a {
+  border-bottom: none;
+}
+
+.blog-title {
+  display: block;
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.blog-meta {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--muted);
 }

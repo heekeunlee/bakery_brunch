@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useRef, useState } from 'react';
 import { loadKakao } from '../lib/kakaoLoader';
-import { CATEGORY_COLOR, type Place } from '../types';
+import { CATEGORY_COLOR, type Place, type PlaceDetails } from '../types';
+import { balloonHtml } from '../lib/balloon';
 import { distanceKm, type FocusTarget, type LatLng } from '../lib/geo';
 
 type Props = {
@@ -15,6 +16,8 @@ type Props = {
   researchNonce: number;
   /** 지도 탭이 보이는 중인지. 숨겨진 동안 생긴 지도는 크기가 0이라 다시 잡아줘야 한다. */
   visible: boolean;
+  /** 마커 풍선에 쓸 부가 정보. 늦게 도착해도 되도록 ref 로만 읽는다. */
+  details: Map<string, PlaceDetails>;
 };
 
 /** 카테고리 색을 입힌 핀. 클러스터러가 Marker 만 받으므로 CustomOverlay 대신 SVG 이미지를 쓴다. */
@@ -41,6 +44,7 @@ export default function MapView({
   onVisibleChange,
   researchNonce,
   visible,
+  details,
 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
@@ -52,6 +56,11 @@ export default function MapView({
   const reportRef = useRef<(() => void) | null>(null);
   /** 마지막으로 요청받은 위치. relayout 후 중심을 다시 맞추는 데 쓴다. */
   const focusRef = useRef<FocusTarget | null>(null);
+  const balloonRef = useRef<any>(null);
+  // 부가 정보는 지도보다 늦게 도착한다. ref 로 읽어야 마커를 다시 만들지 않고도
+  // 그다음 hover 부터 바로 반영된다.
+  const detailsRef = useRef(details);
+  detailsRef.current = details;
   const [error, setError] = useState<string | null>(null);
   // 지도 준비 여부는 ref 가 아니라 state 로 들고 있어야 한다.
   // ref 는 바뀌어도 리렌더가 안 나서, 데이터가 SDK 보다 먼저 도착하면
@@ -86,7 +95,21 @@ export default function MapView({
           onVisibleChange(ids);
         };
         reportRef.current = report;
+        // 풍선은 하나만 만들어 두고 내용만 갈아 끼운다.
+        balloonRef.current = new kakao.maps.CustomOverlay({
+          content: '',
+          yAnchor: 1.35,
+          zIndex: 40,
+          clickable: false,
+        });
         kakao.maps.event.addListener(map, 'idle', report);
+        // 지도를 끌거나 확대하면 마커에서 커서가 떠나도 mouseout 이 안 오는 경우가 있다.
+        kakao.maps.event.addListener(map, 'dragstart', () =>
+          balloonRef.current?.setMap(null),
+        );
+        kakao.maps.event.addListener(map, 'zoom_start', () =>
+          balloonRef.current?.setMap(null),
+        );
         setReady(true);
       })
       .catch((err: Error) => !cancelled && setError(err.message));
@@ -115,6 +138,16 @@ export default function MapView({
         zIndex: p.id === selectedId ? 10 : 1,
       });
       kakao.maps.event.addListener(marker, 'click', () => onSelect(p.id));
+      kakao.maps.event.addListener(marker, 'mouseover', () => {
+        const overlay = balloonRef.current;
+        if (!overlay) return;
+        overlay.setContent(balloonHtml(p, detailsRef.current.get(p.id)));
+        overlay.setPosition(marker.getPosition());
+        overlay.setMap(mapRef.current);
+      });
+      kakao.maps.event.addListener(marker, 'mouseout', () => {
+        balloonRef.current?.setMap(null);
+      });
       markersRef.current.set(p.id, marker);
       return marker;
     });

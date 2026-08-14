@@ -35,3 +35,12 @@ export async function blogTotal(query) {
   const data = await getJson(url, headers());
   return data.total ?? 0;
 }
+
+/** 이미지 검색. 가게 사진 후보를 얻는 데 쓴다. */
+export async function searchImage(query, { display = 5 } = {}) {
+  const url =
+    `https://openapi.naver.com/v1/search/image?query=${encodeURIComponent(query)}` +
+    `&display=${display}&filter=medium&sort=sim`;
+  const data = await getJson(url, headers());
+  return data.items ?? [];
+}
