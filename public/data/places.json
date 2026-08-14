@@ -1,68 +1,7 @@
 {
   "generatedAt": "2026-08-14T00:30:09.186Z",
-  "count": 5577,
+  "count": 5563,
   "places": [
-    {
-      "id": "1369502695",
-      "name": "좋은",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 37.6377262112243,
-      "lng": 126.396748564905,
-      "address": "인천 강화군 화도면 해안남로 2892",
-      "region": {
-        "sido": "인천",
-        "sigungu": "강화군"
-      },
-      "score": 100,
-      "scoreParts": {
-        "mention": 1,
-        "buzz": 1,
-        "mine": null
-      },
-      "mentions": 45,
-      "tags": [
-        "브런치"
-      ],
-      "hours": "11:00~20:00",
-      "placeUrl": "http://place.map.kakao.com/1369502695",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-11"
-    },
-    {
-      "id": "601039655",
-      "name": "바다",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 35.26506201811442,
-      "lng": 129.2360495355082,
-      "address": "부산 기장군 일광읍 이천길 21",
-      "region": {
-        "sido": "부산",
-        "sigungu": "기장군"
-      },
-      "score": 100,
-      "scoreParts": {
-        "mention": 1,
-        "buzz": 1,
-        "mine": null
-      },
-      "mentions": 30,
-      "tags": [
-        "오션뷰",
-        "브런치"
-      ],
-      "phone": "0502-5551-1845",
-      "placeUrl": "http://place.map.kakao.com/601039655",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-10"
-    },
     {
       "id": "1431190934",
       "name": "타네",
@@ -3189,37 +3128,6 @@
       "lastSeen": "2026-08-12"
     },
     {
-      "id": "1349496467",
-      "name": "숲속",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 35.21010259065823,
-      "lng": 127.64331326393884,
-      "address": "경남 하동군 화개면 정금대비길 33",
-      "region": {
-        "sido": "경남",
-        "sigungu": "하동군"
-      },
-      "score": 82.6,
-      "scoreParts": {
-        "mention": 0.9,
-        "buzz": 0.59,
-        "mine": null
-      },
-      "mentions": 18,
-      "tags": [
-        "산뷰"
-      ],
-      "hours": "09:30~18:00",
-      "closedDay": "매주 수요일, 목요일 건물 바로",
-      "phone": "055-810-8999",
-      "placeUrl": "http://place.map.kakao.com/1349496467",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-08"
-    },
-    {
       "id": "1793369966",
       "name": "탄티",
       "category": [
@@ -4760,37 +4668,6 @@
       "placeUrl": "http://place.map.kakao.com/11831570",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-07"
-    },
-    {
-      "id": "1943444282",
-      "name": "탁",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 35.84285659500675,
-      "lng": 129.20991245625217,
-      "address": "경북 경주시 봉황로 37",
-      "region": {
-        "sido": "경북",
-        "sigungu": "경주시"
-      },
-      "score": 80.2,
-      "scoreParts": {
-        "mention": 0.81,
-        "buzz": 0.78,
-        "mine": null
-      },
-      "mentions": 13,
-      "tags": [
-        "웨이팅있음",
-        "브런치"
-      ],
-      "phone": "070-7789-2072",
-      "placeUrl": "http://place.map.kakao.com/1943444282",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
     },
     {
       "id": "1855308108",
@@ -13556,33 +13433,6 @@
       "lastSeen": "2026-08-10"
     },
     {
-      "id": "1075136384",
-      "name": "후",
-      "category": [
-        "cafe",
-        "bakery",
-        "dessert"
-      ],
-      "lat": 36.97778725567449,
-      "lng": 128.35637426574047,
-      "address": "충북 단양군 단양읍 상진13길 5-1",
-      "region": {
-        "sido": "충북",
-        "sigungu": "단양군"
-      },
-      "score": 72.9,
-      "scoreParts": {
-        "mention": 0.64,
-        "buzz": 1,
-        "mine": null
-      },
-      "mentions": 7,
-      "tags": [],
-      "placeUrl": "http://place.map.kakao.com/1075136384",
-      "firstSeen": "2026-08-13",
-      "lastSeen": "2026-08-13"
-    },
-    {
       "id": "1129793201",
       "name": "이룰",
       "category": [
@@ -17234,33 +17084,6 @@
       "placeUrl": "http://place.map.kakao.com/408091227",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-09"
-    },
-    {
-      "id": "16002630",
-      "name": "후",
-      "category": [
-        "cafe",
-        "bakery",
-        "dessert"
-      ],
-      "lat": 36.7100141783827,
-      "lng": 127.413776221272,
-      "address": "충북 청주시 청원구 오창읍 구룡4길 7",
-      "region": {
-        "sido": "충북",
-        "sigungu": "청주시"
-      },
-      "score": 69.8,
-      "scoreParts": {
-        "mention": 0.6,
-        "buzz": 1,
-        "mine": null
-      },
-      "mentions": 6,
-      "tags": [],
-      "placeUrl": "http://place.map.kakao.com/16002630",
-      "firstSeen": "2026-08-10",
-      "lastSeen": "2026-08-10"
     },
     {
       "id": "1296376130",
@@ -22420,34 +22243,6 @@
       "placeUrl": "http://place.map.kakao.com/947495197",
       "firstSeen": "2026-08-13",
       "lastSeen": "2026-08-13"
-    },
-    {
-      "id": "1097854623",
-      "name": "후",
-      "category": [
-        "cafe",
-        "bakery"
-      ],
-      "lat": 35.1731714484374,
-      "lng": 126.880835979696,
-      "address": "전남광주통합특별시 북구 대자로 76",
-      "region": {
-        "sido": "광주",
-        "sigungu": "북구"
-      },
-      "score": 66.2,
-      "scoreParts": {
-        "mention": 0.55,
-        "buzz": 1,
-        "mine": null
-      },
-      "mentions": 5,
-      "tags": [
-        "주차가능"
-      ],
-      "placeUrl": "http://place.map.kakao.com/1097854623",
-      "firstSeen": "2026-08-14",
-      "lastSeen": "2026-08-14"
     },
     {
       "id": "1009753713",
@@ -29914,36 +29709,6 @@
       "lastSeen": "2026-08-07"
     },
     {
-      "id": "349147799",
-      "name": "후",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch"
-      ],
-      "lat": 35.091120160318,
-      "lng": 129.039908724187,
-      "address": "부산 영도구 절영로35번길 11",
-      "region": {
-        "sido": "부산",
-        "sigungu": "영도구"
-      },
-      "score": 62,
-      "scoreParts": {
-        "mention": 0.49,
-        "buzz": 1,
-        "mine": null
-      },
-      "mentions": 4,
-      "tags": [
-        "주차가능",
-        "브런치"
-      ],
-      "placeUrl": "http://place.map.kakao.com/349147799",
-      "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-11"
-    },
-    {
       "id": "1951773933",
       "name": "거실",
       "category": [
@@ -32918,32 +32683,6 @@
       "lastSeen": "2026-08-07"
     },
     {
-      "id": "2103653538",
-      "name": "빵",
-      "category": [
-        "bakery"
-      ],
-      "lat": 37.82495748771088,
-      "lng": 127.15357416865515,
-      "address": "경기 포천시 소흘읍 죽엽산로 56",
-      "region": {
-        "sido": "경기",
-        "sigungu": "포천시"
-      },
-      "score": 60.6,
-      "scoreParts": {
-        "mention": 0.55,
-        "buzz": 0.77,
-        "mine": null
-      },
-      "mentions": 5,
-      "tags": [],
-      "phone": "010-9705-0393",
-      "placeUrl": "http://place.map.kakao.com/2103653538",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-07"
-    },
-    {
       "id": "311156284",
       "name": "농도",
       "category": [
@@ -33255,37 +32994,6 @@
       "placeUrl": "http://place.map.kakao.com/1409612894",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "611858811",
-      "name": "담",
-      "category": [
-        "cafe",
-        "bakery",
-        "brunch",
-        "dessert"
-      ],
-      "lat": 35.323725082477544,
-      "lng": 126.98451508143955,
-      "address": "전남광주통합특별시 담양군 담양읍 객사4길 42",
-      "region": {
-        "sido": "전남",
-        "sigungu": "담양군"
-      },
-      "score": 60.3,
-      "scoreParts": {
-        "mention": 0.55,
-        "buzz": 0.76,
-        "mine": null
-      },
-      "mentions": 5,
-      "tags": [
-        "브런치"
-      ],
-      "phone": "061-381-8886",
-      "placeUrl": "http://place.map.kakao.com/611858811",
-      "firstSeen": "2026-08-08",
-      "lastSeen": "2026-08-08"
     },
     {
       "id": "1677328272",
@@ -36839,34 +36547,6 @@
       "tags": [],
       "phone": "02-2699-9987",
       "placeUrl": "http://place.map.kakao.com/129444315",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "18783876",
-      "name": "탄",
-      "category": [
-        "cafe",
-        "bakery",
-        "dessert"
-      ],
-      "lat": 37.69335547075988,
-      "lng": 126.77429614701141,
-      "address": "경기 고양시 일산서구 탄현로6번길 23-5",
-      "region": {
-        "sido": "경기",
-        "sigungu": "고양시"
-      },
-      "score": 58.8,
-      "scoreParts": {
-        "mention": 0.55,
-        "buzz": 0.7,
-        "mine": null
-      },
-      "mentions": 5,
-      "tags": [],
-      "phone": "031-919-4569",
-      "placeUrl": "http://place.map.kakao.com/18783876",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -41380,32 +41060,6 @@
       "tags": [],
       "phone": "0507-1304-2932",
       "placeUrl": "http://place.map.kakao.com/2135760354",
-      "firstSeen": "2026-08-10",
-      "lastSeen": "2026-08-10"
-    },
-    {
-      "id": "933409444",
-      "name": "작은",
-      "category": [
-        "cafe"
-      ],
-      "lat": 37.20545167698177,
-      "lng": 127.01502732694577,
-      "address": "경기 화성시 병점구 용주로 16",
-      "region": {
-        "sido": "경기",
-        "sigungu": "화성시"
-      },
-      "score": 56.9,
-      "scoreParts": {
-        "mention": 0.43,
-        "buzz": 1,
-        "mine": null
-      },
-      "mentions": 3,
-      "tags": [],
-      "phone": "010-8678-5747",
-      "placeUrl": "http://place.map.kakao.com/933409444",
       "firstSeen": "2026-08-10",
       "lastSeen": "2026-08-10"
     },
@@ -70652,37 +70306,6 @@
       ],
       "phone": "010-5944-1041",
       "placeUrl": "http://place.map.kakao.com/1163820830",
-      "firstSeen": "2026-08-04",
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "2100365175",
-      "name": "릿",
-      "category": [
-        "cafe",
-        "brunch"
-      ],
-      "lat": 37.5694208165427,
-      "lng": 126.928242616573,
-      "address": "서울 서대문구 연희로11길 71",
-      "region": {
-        "sido": "서울",
-        "sigungu": "서대문구"
-      },
-      "score": 47.9,
-      "scoreParts": {
-        "mention": 0.64,
-        "buzz": 0,
-        "mine": null
-      },
-      "mentions": 7,
-      "tags": [
-        "브런치"
-      ],
-      "hours": "09:00-18:00",
-      "closedDay": "화장실 외부",
-      "phone": "010-2694-0508",
-      "placeUrl": "http://place.map.kakao.com/2100365175",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
     },
@@ -126654,36 +126277,6 @@
       "placeUrl": "http://place.map.kakao.com/1654598093",
       "firstSeen": "2026-08-04",
       "lastSeen": "2026-08-04"
-    },
-    {
-      "id": "1724150050",
-      "name": "뮴",
-      "category": [
-        "dessert",
-        "cafe",
-        "bakery"
-      ],
-      "lat": 35.9511514584761,
-      "lng": 126.822202132693,
-      "address": "전북특별자치도 군산시 대야면 수림로 35",
-      "region": {
-        "sido": "전북",
-        "sigungu": "군산시"
-      },
-      "score": 36.5,
-      "scoreParts": {
-        "mention": 0.43,
-        "buzz": 0.18,
-        "mine": null
-      },
-      "mentions": 3,
-      "tags": [
-        "대형"
-      ],
-      "phone": "063-451-8774",
-      "placeUrl": "http://place.map.kakao.com/1724150050",
-      "firstSeen": "2026-08-07",
-      "lastSeen": "2026-08-07"
     },
     {
       "id": "941290930",
